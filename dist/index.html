@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SafeSpace — practical, no-nonsense advice for protecting your private data. No cookies, no accounts, just knowledge.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="SafeSpace — Your Privacy, Protected">
+  <meta property="og:description" content="Practical advice, curated software reviews, and clear guides to help you take control of your digital privacy.">
+  <meta property="og:type" content="website">
+  <title>SafeSpace — Your Privacy, Protected</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- Background decorative mesh -->
+<div class="bg-mesh" aria-hidden="true"></div>
+
+<!-- ── Navigation ──────────────────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" id="nav-logo">
+      <div class="nav__logo-icon" aria-hidden="true">🔒</div>
+      Safe<span class="accent">Space</span>
+    </a>
+    <div class="nav__links" role="list">
+      <a href="index.html"    class="nav__link" id="nav-home"     role="listitem">Home</a>
+      <a href="articles.html" class="nav__link" id="nav-articles" role="listitem">Articles</a>
+      <a href="reviews.html"  class="nav__link" id="nav-reviews"  role="listitem">Reviews</a>
+      <a href="about.html"    class="nav__link" id="nav-about"    role="listitem">About</a>
+    </div>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav__drawer" id="nav-drawer" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html"    class="nav__link" id="drawer-home">Home</a>
+  <a href="articles.html" class="nav__link" id="drawer-articles">Articles</a>
+  <a href="reviews.html"  class="nav__link" id="drawer-reviews">Reviews</a>
+  <a href="about.html"    class="nav__link" id="drawer-about">About</a>
+</div>
+
+<!-- ── Hero ────────────────────────────────────────────────── -->
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero__grid">
+
+      <!-- Content -->
+      <div class="hero__content">
+        <div class="hero__eyebrow anim-fade-up" style="animation-delay:.1s">
+          Zero Cookies · Zero Accounts · Pure Knowledge
+        </div>
+
+        <h1 class="hero__title anim-fade-up" id="hero-title" style="animation-delay:.2s">
+          Take back<br>your <span class="highlight">privacy</span>
+        </h1>
+
+        <p class="hero__description anim-fade-up" style="animation-delay:.3s">
+          SafeSpace gives you clear, actionable guidance to protect your personal data — no jargon, no fear-mongering, no tracking. Just knowledge.
+        </p>
+
+        <div class="hero__cta anim-fade-up" style="animation-delay:.4s">
+          <a href="articles.html" class="btn btn-primary" id="hero-cta-articles">
+            Read the guides →
+          </a>
+          <a href="reviews.html" class="btn btn-secondary" id="hero-cta-reviews">
+            Software reviews
+          </a>
+        </div>
+
+        <div class="hero__stats anim-fade-up" style="animation-delay:.5s">
+          <div>
+            <span class="hero__stat-value" id="stat-articles">—</span>
+            <span class="hero__stat-label">In-depth guides</span>
+          </div>
+          <div>
+            <span class="hero__stat-value" id="stat-reviews">—</span>
+            <span class="hero__stat-label">Tool reviews</span>
+          </div>
+          <div>
+            <span class="hero__stat-value">0</span>
+            <span class="hero__stat-label">Cookies used</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="shield-graphic">
+          <div class="shield-graphic__base">
+            <div class="shield-graphic__icon">🛡️</div>
+            <div class="shield-graphic__label">Protected</div>
+          </div>
+          <div class="shield-ring"></div>
+          <div class="shield-ring"></div>
+          <div class="shield-ring"></div>
+        </div>
+
+        <!-- Floating status badges -->
+        <div class="floating-badge" style="top:5%;right:-5%">
+          <span class="dot dot-green"></span>
+          No trackers active
+        </div>
+        <div class="floating-badge" style="top:42%;left:-18%">
+          <span class="dot dot-teal"></span>
+          DNS encrypted
+        </div>
+        <div class="floating-badge" style="bottom:15%;right:-8%">
+          <span class="dot dot-purple"></span>
+          Zero cookies
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Privacy promise bar ──────────────────────────────────── -->
+<div class="privacy-bar" role="complementary" aria-label="Privacy promise">
+  <div class="container">
+    <div class="privacy-bar__inner">
+      <div class="privacy-pill"><span class="icon">🍪</span> No cookies — ever</div>
+      <div class="privacy-pill"><span class="icon">👤</span> No accounts required</div>
+      <div class="privacy-pill"><span class="icon">📡</span> No third-party requests</div>
+      <div class="privacy-pill"><span class="icon">📊</span> No analytics scripts</div>
+      <div class="privacy-pill"><span class="icon">⚖️</span> Open source</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Quick Tips ───────────────────────────────────────────── -->
+<section class="section" aria-labelledby="tips-title">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Start Here</div>
+      <h2 class="section-title" id="tips-title">Your first five moves</h2>
+      <p class="section-desc">Small changes with the biggest impact on your privacy, right now.</p>
+    </div>
+
+    <div class="grid grid-auto stagger" id="tips-grid">
+
+      <div class="tip-card">
+        <div class="tip-card__icon">🔑</div>
+        <div class="tip-card__content">
+          <h3 class="tip-card__title">Use a password manager</h3>
+          <p class="tip-card__text">Generate unique, strong passwords for every account. If one site is breached, the rest stay safe. Bitwarden is free and open source.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-card__icon">💬</div>
+        <div class="tip-card__content">
+          <h3 class="tip-card__title">Switch to Signal</h3>
+          <p class="tip-card__text">End-to-end encrypted messaging by default. The non-profit behind it has been compelled by courts — and had nothing to hand over.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-card__icon">🧱</div>
+        <div class="tip-card__content">
+          <h3 class="tip-card__title">Install uBlock Origin</h3>
+          <p class="tip-card__text">The most effective content blocker available. Stops ads, trackers, and fingerprinting scripts before they load. Free and open source.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-card__icon">🔐</div>
+        <div class="tip-card__content">
+          <h3 class="tip-card__title">Enable 2FA everywhere</h3>
+          <p class="tip-card__text">Two-factor authentication prevents account takeovers even if your password is stolen. Use an authenticator app, not SMS.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-card__icon">📱</div>
+        <div class="tip-card__content">
+          <h3 class="tip-card__title">Audit your app permissions</h3>
+          <p class="tip-card__text">Check which apps have access to your location, microphone, and camera. Revoke anything that doesn't need it to function.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Featured Articles ─────────────────────────────────────── -->
+<section class="section" id="featured-articles" aria-labelledby="articles-title">
+  <div class="container">
+    <div class="section-header flex justify-between items-center" style="flex-wrap:wrap;gap:var(--space-4)">
+      <div>
+        <div class="section-label">Learn</div>
+        <h2 class="section-title" id="articles-title">Latest articles</h2>
+      </div>
+      <a href="articles.html" class="btn btn-ghost btn-sm" id="home-all-articles">View all →</a>
+    </div>
+
+    <div class="grid grid-auto stagger" id="home-articles-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ── Featured Reviews ──────────────────────────────────────── -->
+<section class="section" id="featured-reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="section-header flex justify-between items-center" style="flex-wrap:wrap;gap:var(--space-4)">
+      <div>
+        <div class="section-label">Tools</div>
+        <h2 class="section-title" id="reviews-title">Top-rated software</h2>
+      </div>
+      <a href="reviews.html" class="btn btn-ghost btn-sm" id="home-all-reviews">View all →</a>
+    </div>
+
+    <div class="grid grid-auto stagger" id="home-reviews-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA Banner ────────────────────────────────────────────── -->
+<section class="section-sm" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="verify-box reveal">
+      <div class="verify-box__icon">🔎</div>
+      <h2 class="verify-box__title" id="cta-title">Verify us — we mean it</h2>
+      <p class="verify-box__text">
+        Open your browser's DevTools right now. Check the Network tab, Application → Cookies, and Console. You will find zero third-party requests, zero cookies, and zero analytics. This is a promise, not a policy.
+      </p>
+      <div class="code-block" style="max-width:480px;margin-inline:auto;margin-bottom:var(--space-6)">
+        DevTools → Network → ☑ Third-party requests<br>
+        <span style="color:var(--teal);opacity:.6">// Result: empty ✓</span><br><br>
+        DevTools → Application → Cookies<br>
+        <span style="color:var(--teal);opacity:.6">// Result: none ✓</span>
+      </div>
+      <a href="about.html" class="btn btn-primary" id="cta-about">Learn about our commitment</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── Footer ───────────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" style="display:inline-flex">
+          <div class="nav__logo-icon" aria-hidden="true">🔒</div>
+          Safe<span class="accent">Space</span>
+        </a>
+        <p>A privacy education resource. No cookies. No accounts. No trackers. No compromise.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Content</div>
+        <nav class="footer__links" aria-label="Footer content links">
+          <a href="articles.html" class="footer__link" id="footer-articles">Articles</a>
+          <a href="reviews.html"  class="footer__link" id="footer-reviews">Reviews</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">About</div>
+        <nav class="footer__links" aria-label="Footer about links">
+          <a href="about.html"    class="footer__link" id="footer-about">About SafeSpace</a>
+          <a href="about.html#privacy" class="footer__link" id="footer-privacy">Privacy Commitment</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">Resources</div>
+        <nav class="footer__links" aria-label="Footer resource links">
+          <a href="https://privacyguides.org"  class="footer__link" id="footer-privacyguides" rel="noopener noreferrer" target="_blank">Privacy Guides ↗</a>
+          <a href="https://eff.org"            class="footer__link" id="footer-eff"            rel="noopener noreferrer" target="_blank">EFF ↗</a>
+          <a href="https://spreadprivacy.com"  class="footer__link" id="footer-duckduckgo"     rel="noopener noreferrer" target="_blank">Spread Privacy ↗</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 SafeSpace. Content is for educational purposes.</p>
+      <p class="footer__motto">Made with <span>🛡️</span> and no cookies whatsoever</p>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import { initNav }  from './js/nav.js';
+  import { initTheme } from './js/theme.js';
+  import { createArticleCard } from './js/guides.js';
+  import { createReviewCard } from './js/software.js';
+  import ARTICLES from './data/guides.js';
+  import REVIEWS  from './data/software.js';
+  import { initReveal } from './js/utils.js';
+
+  initNav();
+  initTheme();
+
+  // Dynamic stats — always reflects actual data file counts
+  document.getElementById('stat-articles').textContent = ARTICLES.length;
+  document.getElementById('stat-reviews').textContent  = REVIEWS.length;
+
+  // Render 3 featured articles
+  const articlesGrid = document.getElementById('home-articles-grid');
+  ARTICLES.slice(0, 3).forEach((a, i) => {
+    const card = createArticleCard(a);
+    card.style.animationDelay = `${i * 0.08}s`;
+    articlesGrid?.appendChild(card);
+  });
+
+  // Render 3 featured reviews
+  const reviewsGrid = document.getElementById('home-reviews-grid');
+  REVIEWS.slice(0, 3).forEach((r, i) => {
+    const card = createReviewCard(r);
+    card.style.animationDelay = `${i * 0.08}s`;
+    reviewsGrid?.appendChild(card);
+  });
+
+  initReveal();
+</script>
+</body>
+</html>

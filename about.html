@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about SafeSpace — a privacy education website with no cookies, no accounts, and no trackers. Here's what we believe and how we operate.">
+  <meta name="robots" content="index, follow">
+  <title>About — SafeSpace</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="bg-mesh" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" id="nav-logo">
+      <div class="nav__logo-icon" aria-hidden="true">🔒</div>
+      Safe<span class="accent">Space</span>
+    </a>
+    <div class="nav__links" role="list">
+      <a href="index.html"    class="nav__link" id="nav-home"     role="listitem">Home</a>
+      <a href="articles.html" class="nav__link" id="nav-articles" role="listitem">Articles</a>
+      <a href="reviews.html"  class="nav__link" id="nav-reviews"  role="listitem">Reviews</a>
+      <a href="about.html"    class="nav__link" id="nav-about"    role="listitem">About</a>
+    </div>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav__drawer" id="nav-drawer" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html"    class="nav__link" id="drawer-home">Home</a>
+  <a href="articles.html" class="nav__link" id="drawer-articles">Articles</a>
+  <a href="reviews.html"  class="nav__link" id="drawer-reviews">Reviews</a>
+  <a href="about.html"    class="nav__link" id="drawer-about">About</a>
+</div>
+
+<main class="page-top">
+
+  <!-- Page hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero__eyebrow anim-fade-up">🌐 Our mission</div>
+      <h1 class="page-hero__title anim-fade-up" style="animation-delay:.1s">About SafeSpace</h1>
+      <p class="page-hero__desc anim-fade-up" style="animation-delay:.2s">
+        We believe privacy is a fundamental human right, not a premium feature. SafeSpace exists to make privacy knowledge free, clear, and accessible to everyone.
+      </p>
+    </div>
+  </div>
+
+  <!-- Mission -->
+  <section class="section-sm">
+    <div class="container">
+      <div style="max-width:720px;margin-inline:auto">
+
+        <div class="section-label reveal">Why we exist</div>
+        <h2 class="section-title reveal reveal-delay-1">Privacy shouldn't require a computer science degree</h2>
+        <div class="prose reveal reveal-delay-2" style="margin-top:var(--space-6)">
+          <p>The surveillance economy is built on complexity. Privacy settings are buried. Terms of service run to 50 pages. Cookie banners are designed to confuse. This is not an accident — it's a deliberate friction machine designed to make privacy the path of most resistance.</p>
+          <p>SafeSpace cuts through that. We translate technical privacy concepts into plain language, evaluate tools honestly, and give you actionable steps. We don't profit from your attention or your data. We have no business model that depends on keeping you confused.</p>
+          <p>We practice what we preach: this site sets no cookies, makes no third-party network requests, requires no account, and runs no analytics. You can verify every one of these claims in your browser's DevTools in under 30 seconds.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy commitments -->
+  <section class="section" id="privacy" aria-labelledby="commitments-title">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label">Our commitments</div>
+        <h2 class="section-title" id="commitments-title">What we promise — and deliver</h2>
+        <p class="section-desc">These aren't policies. They're technical guarantees you can verify yourself.</p>
+      </div>
+
+      <div class="commitment-grid stagger">
+
+        <div class="commitment-card">
+          <div class="commitment-card__icon">🍪</div>
+          <h3 class="commitment-card__title">Zero cookies</h3>
+          <p class="commitment-card__text">No cookies are set — not even "essential" ones. We need zero cookies to operate. Check Application → Cookies in DevTools right now.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-card__icon">👤</div>
+          <h3 class="commitment-card__title">No accounts</h3>
+          <p class="commitment-card__text">There is no login, no signup, no membership. You never need to identify yourself to access any content on this site.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-card__icon">📡</div>
+          <h3 class="commitment-card__title">No third-party requests</h3>
+          <p class="commitment-card__text">Every asset — CSS, fonts (system fonts only), JavaScript — is served from this domain. No CDN calls, no Google Fonts, no external APIs.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-card__icon">📊</div>
+          <h3 class="commitment-card__title">No analytics</h3>
+          <p class="commitment-card__text">No Google Analytics, no Matomo, no Plausible — nothing. We genuinely do not track how many people read any article. We don't need to know.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-card__icon">💾</div>
+          <h3 class="commitment-card__title">No persistent storage</h3>
+          <p class="commitment-card__text">We don't use localStorage across sessions. The theme toggle (if used) stores only in sessionStorage — gone when you close the tab.</p>
+        </div>
+
+        <div class="commitment-card">
+          <div class="commitment-card__icon">📖</div>
+          <h3 class="commitment-card__title">Auditable by design</h3>
+          <p class="commitment-card__text">This site is plain HTML, CSS, and JavaScript. View source any time. There's nothing minified, obfuscated, or hidden. We welcome scrutiny.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Verify section -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="verify-box reveal">
+        <div class="verify-box__icon">🔬</div>
+        <h2 class="verify-box__title" id="verify-title">Verify it yourself — right now</h2>
+        <p class="verify-box__text">
+          Open your browser's Developer Tools (F12) and check the following. You should see exactly what we claim.
+        </p>
+        <div class="code-block" style="max-width:560px;margin-inline:auto;margin-bottom:var(--space-6);text-align:left">
+          <span style="color:var(--text-muted)">/* Open DevTools → Network tab */</span><br>
+          Filter: "third-party"<br>
+          <span style="color:var(--teal)">→ Result: 0 requests ✓</span><br><br>
+          <span style="color:var(--text-muted)">/* Open DevTools → Application */</span><br>
+          Storage → Cookies → safespace<br>
+          <span style="color:var(--teal)">→ Result: (empty) ✓</span><br><br>
+          <span style="color:var(--text-muted)">/* Open DevTools → Console */</span><br>
+          Look for tracking or analytics errors<br>
+          <span style="color:var(--teal)">→ Result: none ✓</span>
+        </div>
+        <p style="font-size:var(--text-sm);color:var(--text-muted)">
+          If you find anything that contradicts our commitments, please report it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial standards -->
+  <section class="section-sm">
+    <div class="container">
+      <div style="max-width:720px;margin-inline:auto">
+
+        <div class="section-label reveal">Editorial</div>
+        <h2 class="section-title reveal reveal-delay-1">How we evaluate tools</h2>
+        <div class="prose reveal reveal-delay-2" style="margin-top:var(--space-6)">
+          <p>We review privacy tools against a consistent set of criteria:</p>
+          <ul>
+            <li><strong>Open source?</strong> — Can the code be independently audited?</li>
+            <li><strong>Independently audited?</strong> — Has a reputable third party reviewed the security claims?</li>
+            <li><strong>Zero-knowledge?</strong> — Is the service technically unable to see your data?</li>
+            <li><strong>Business model alignment</strong> — Does the company profit from your data, or from your subscription?</li>
+            <li><strong>Proven track record</strong> — How has the company responded to legal demands or security incidents?</li>
+            <li><strong>Jurisdiction</strong> — Where is the company incorporated, and what laws apply?</li>
+          </ul>
+          <p>We receive no payments, sponsorships, or affiliate commissions from any company we review. Our Trust Scores are our honest assessment. We update reviews when facts change.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" style="display:inline-flex">
+          <div class="nav__logo-icon" aria-hidden="true">🔒</div>
+          Safe<span class="accent">Space</span>
+        </a>
+        <p>A privacy education resource. No cookies. No accounts. No trackers.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Content</div>
+        <nav class="footer__links">
+          <a href="articles.html" class="footer__link" id="footer-articles">Articles</a>
+          <a href="reviews.html"  class="footer__link" id="footer-reviews">Reviews</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">About</div>
+        <nav class="footer__links">
+          <a href="about.html"         class="footer__link" id="footer-about">About SafeSpace</a>
+          <a href="about.html#privacy" class="footer__link" id="footer-privacy">Privacy Commitment</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">Resources</div>
+        <nav class="footer__links">
+          <a href="https://privacyguides.org" class="footer__link" id="footer-pg"  rel="noopener noreferrer" target="_blank">Privacy Guides ↗</a>
+          <a href="https://eff.org"           class="footer__link" id="footer-eff" rel="noopener noreferrer" target="_blank">EFF ↗</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 SafeSpace. Educational content only.</p>
+      <p class="footer__motto">Made with <span>🛡️</span> and no cookies whatsoever</p>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import { initNav }   from './js/nav.js';
+  import { initTheme } from './js/theme.js';
+  import { initReveal } from './js/utils.js';
+
+  initNav();
+  initTheme();
+  initReveal();
+</script>
+</body>
+</html>

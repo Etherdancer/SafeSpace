@@ -1,0 +1,181 @@
+/* ============================================================
+   SafeSpace — animations.css
+   Micro-animations, keyframes, entrance effects
+   ============================================================ */
+
+/* ── Keyframes ──────────────────────────────────────────────── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.85); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes draw-line {
+  from { stroke-dashoffset: 1000; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes number-count {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Entrance animations ────────────────────────────────────── */
+.anim-fade-up {
+  opacity: 0;
+  animation: fade-in-up 0.6s ease forwards;
+}
+
+.anim-fade-in {
+  opacity: 0;
+  animation: fade-in 0.5s ease forwards;
+}
+
+/* Stagger children */
+.stagger > * {
+  opacity: 0;
+  animation: fade-in-up 0.5s ease forwards;
+}
+
+.stagger > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger > *:nth-child(2) { animation-delay: 0.12s; }
+.stagger > *:nth-child(3) { animation-delay: 0.19s; }
+.stagger > *:nth-child(4) { animation-delay: 0.26s; }
+.stagger > *:nth-child(5) { animation-delay: 0.33s; }
+.stagger > *:nth-child(6) { animation-delay: 0.40s; }
+.stagger > *:nth-child(7) { animation-delay: 0.47s; }
+.stagger > *:nth-child(8) { animation-delay: 0.54s; }
+.stagger > *:nth-child(9) { animation-delay: 0.61s; }
+
+/* Intersection Observer targets */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ── Shimmer skeleton loading ───────────────────────────────── */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.03) 0%,
+    rgba(255,255,255,0.08) 50%,
+    rgba(255,255,255,0.03) 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 1.5s linear infinite;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Gradient text animation ────────────────────────────────── */
+.gradient-text-animate {
+  background: linear-gradient(
+    135deg,
+    var(--teal) 0%,
+    var(--purple) 33%,
+    var(--teal-bright) 66%,
+    var(--purple-bright) 100%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ── Typing cursor ──────────────────────────────────────────── */
+.typing-cursor::after {
+  content: '|';
+  color: var(--teal);
+  animation: pulse 1s step-end infinite;
+}
+
+/* ── Glow pulse on featured items ───────────────────────────── */
+.glow-teal {
+  animation: glow-teal-pulse 3s ease-in-out infinite;
+}
+
+@keyframes glow-teal-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(0,212,170,0.15); }
+  50%       { box-shadow: 0 0 40px rgba(0,212,170,0.35); }
+}
+
+/* ── Spinner ────────────────────────────────────────────────── */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(0,212,170,0.2);
+  border-top-color: var(--teal);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* ── Hover lift utility ─────────────────────────────────────── */
+.hover-lift {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Hero title word by word reveal ────────────────────────── */
+.word-reveal span {
+  display: inline-block;
+  opacity: 0;
+  animation: fade-in-up 0.5s ease forwards;
+}
+
+/* ── Page transition ────────────────────────────────────────── */
+.page-fade {
+  animation: fade-in 0.35s ease;
+}
+
+/* ── Reduce motion ──────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

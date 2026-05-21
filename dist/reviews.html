@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Honest, in-depth software reviews. We evaluate privacy tools — VPNs, password managers, browsers, messaging apps — so you can choose with confidence.">
+  <meta name="robots" content="index, follow">
+  <title>Software Reviews — SafeSpace</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="bg-mesh" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" id="nav-logo">
+      <div class="nav__logo-icon" aria-hidden="true">🔒</div>
+      Safe<span class="accent">Space</span>
+    </a>
+    <div class="nav__links" role="list">
+      <a href="index.html"    class="nav__link" id="nav-home"     role="listitem">Home</a>
+      <a href="articles.html" class="nav__link" id="nav-articles" role="listitem">Articles</a>
+      <a href="reviews.html"  class="nav__link" id="nav-reviews"  role="listitem">Reviews</a>
+      <a href="about.html"    class="nav__link" id="nav-about"    role="listitem">About</a>
+    </div>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav__drawer" id="nav-drawer" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html"    class="nav__link" id="drawer-home">Home</a>
+  <a href="articles.html" class="nav__link" id="drawer-articles">Articles</a>
+  <a href="reviews.html"  class="nav__link" id="drawer-reviews">Reviews</a>
+  <a href="about.html"    class="nav__link" id="drawer-about">About</a>
+</div>
+
+<main class="page-top">
+
+  <!-- Page hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero__eyebrow anim-fade-up">🔬 Evaluated</div>
+      <h1 class="page-hero__title anim-fade-up" style="animation-delay:.1s">Software Reviews</h1>
+      <p class="page-hero__desc anim-fade-up" style="animation-delay:.2s">
+        We evaluate privacy tools honestly — checking open-source status, independent audits, business models, and real-world track records. Every review has a Trust Score out of 100.
+      </p>
+
+      <!-- Trust score legend -->
+      <div class="flex gap-4 flex-wrap" style="margin-top:var(--space-6)" aria-label="Trust score legend">
+        <div class="privacy-pill anim-fade-up" style="animation-delay:.3s">
+          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#22c55e;margin-right:4px"></span>
+          90–100 Excellent
+        </div>
+        <div class="privacy-pill anim-fade-up" style="animation-delay:.35s">
+          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--teal);margin-right:4px"></span>
+          75–89 Good
+        </div>
+        <div class="privacy-pill anim-fade-up" style="animation-delay:.4s">
+          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--amber);margin-right:4px"></span>
+          &lt;75 Use with caution
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews section -->
+  <section class="section-sm">
+    <div class="container">
+
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4);margin-bottom:var(--space-4)">
+        <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter reviews by category">
+          <!-- Buttons injected by JS -->
+        </div>
+        <p class="text-secondary" style="font-size:var(--text-sm)">
+          <span id="reviews-count">—</span>
+        </p>
+      </div>
+
+      <div class="grid grid-auto" id="reviews-grid" style="gap:var(--space-6)" aria-live="polite" aria-label="Reviews grid">
+        <!-- Cards injected by JS -->
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" style="display:inline-flex">
+          <div class="nav__logo-icon" aria-hidden="true">🔒</div>
+          Safe<span class="accent">Space</span>
+        </a>
+        <p>A privacy education resource. No cookies. No accounts. No trackers.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Content</div>
+        <nav class="footer__links">
+          <a href="articles.html" class="footer__link" id="footer-articles">Articles</a>
+          <a href="reviews.html"  class="footer__link" id="footer-reviews">Reviews</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">About</div>
+        <nav class="footer__links">
+          <a href="about.html"         class="footer__link" id="footer-about">About SafeSpace</a>
+          <a href="about.html#privacy" class="footer__link" id="footer-privacy">Privacy Commitment</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">Resources</div>
+        <nav class="footer__links">
+          <a href="https://privacyguides.org" class="footer__link" id="footer-pg"  rel="noopener noreferrer" target="_blank">Privacy Guides ↗</a>
+          <a href="https://eff.org"           class="footer__link" id="footer-eff" rel="noopener noreferrer" target="_blank">EFF ↗</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 SafeSpace. Educational content only.</p>
+      <p class="footer__motto">Made with <span>🛡️</span> and no cookies whatsoever</p>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import { initNav }     from './js/nav.js';
+  import { initTheme }   from './js/theme.js';
+  import { initReviews } from './js/software.js';
+  import { initReveal }  from './js/utils.js';
+
+  initNav();
+  initTheme();
+  initReviews();
+  initReveal();
+</script>
+</body>
+</html>
