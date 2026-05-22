@@ -300,8 +300,8 @@
   initTheme();
 
   // Dynamic stats — always reflects actual data file counts
-  document.getElementById('stat-articles').textContent = ARTICLES.length;
-  document.getElementById('stat-reviews').textContent  = REVIEWS.length;
+  document.getElementById('stat-articles').textContent = ARTICLES.filter(a => !a.draft).length;
+  document.getElementById('stat-reviews').textContent  = REVIEWS.filter(r => !r.draft).length;
 
   // Render 3 featured articles
   const articlesGrid = document.getElementById('home-articles-grid');

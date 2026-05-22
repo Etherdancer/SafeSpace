@@ -5,21 +5,97 @@
 
 const ARTICLES = [
   {
+    id: 'practical-privacy-stack',
+    index: 1,
+    title: 'Building a Practical Privacy Stack',
+    category: 'Basics',
+    date: '2026-05-22',
+    readTime: '12 min read',
+    excerpt: 'Privacy isn\'t about perfect anonymity, it\'s about layering good software choices, compartmentalisation, and disciplined habits. Here is a practical overview.',
+    tags: ['privacy', 'basics', 'stack', 'compartmentalisation'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    relatedReviews: ['brave', 'firefox', 'bitwarden', 'signal', 'mullvad', 'protonmail', 'grapheneos', 'aegis-authenticator', '2fas'],
+    content: `
+      <h2>The Core Mindset: It's Not Binary</h2>
+      <p>A common misconception is that privacy is all-or-nothing — that if you use Google Maps, there's no point in using a private browser. This is false. Privacy is about layers. If your goal is to "stay private online" across your devices, the biggest gains usually come from a combination of good software choices, compartmentalisation, and disciplined habits.</p>
+      <p>No single app makes you private. The strongest setup is a layered "privacy stack." Even modest changes dramatically improve your privacy and put you far ahead of the average internet user.</p>
+
+      <h2>1. Browser Privacy (Most Important Daily Layer)</h2>
+      <p>Your browser leaks enormous amounts of data by default. Moving away from standard Chrome is the most impactful step you can take.</p>
+      <ul>
+        <li><strong>Beginner-friendly:</strong> <strong>Brave Browser</strong> offers strong defaults and built-in tracker/ad blocking. It's the best "install and forget" option. <strong>Firefox</strong> is open-source, highly customisable, and excellent with privacy tweaks (like uBlock Origin).</li>
+        <li><strong>Advanced anonymity:</strong> <strong>Tor Browser</strong> routes traffic through the Tor network for strong anonymity protections, though it is much slower and some sites block it. <strong>Mullvad Browser</strong> is a good middle ground, designed to reduce browser fingerprinting without the Tor network's speed penalty.</li>
+      </ul>
+
+      <h2>2. Password Management (Critical)</h2>
+      <p>This is the single highest-value security improvement most people can make. Without a password manager, people reuse passwords — one of the biggest security risks online.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>A password manager generates unique passwords, stores them encrypted, autofills your logins, and supports two-factor authentication (2FA). This prevents a breach at one website from compromising your other accounts.</div></div>
+      <ul>
+        <li><strong>Best balance:</strong> <strong>Bitwarden</strong> is open-source, audited, and works everywhere with an excellent free plan.</li>
+        <li><strong>Most polished UX:</strong> <strong>1Password</strong> has excellent family/team features and a strong security architecture, though it is closed-source.</li>
+        <li><strong>Privacy ecosystem:</strong> <strong>Proton Pass</strong> is open-source, integrates with Proton Mail/VPN, and includes email aliases.</li>
+        <li><strong>Offline option:</strong> <strong>KeePassXC</strong> uses a local encrypted database with no cloud dependency.</li>
+      </ul>
+
+      <h2>3. Encrypted Messaging</h2>
+      <p>Normal SMS and many social apps expose metadata and message content.</p>
+      <ul>
+        <li><strong>Best mainstream option:</strong> <strong>Signal</strong> is end-to-end encrypted by default, open-source, and collects minimal metadata. It is the gold standard.</li>
+        <li><strong>More anonymity-focused:</strong> <strong>Session</strong> requires no phone number and uses decentralized routing, though the user experience is slightly rougher.</li>
+      </ul>
+      <p>Avoid SMS, regular Facebook Messenger, Instagram DMs, or Telegram regular chats (which are not end-to-end encrypted by default) for sensitive conversations.</p>
+
+      <h2>4. VPNs (Useful, But Often Misunderstood)</h2>
+      <p>A VPN hides your traffic from your ISP, hides your IP from websites, and protects you on public Wi-Fi. It does <em>not</em> make you anonymous, stop fingerprinting, or stop Google/Facebook tracking if you are logged in. Avoid free, random VPNs — many monetise your traffic.</p>
+      <ul>
+        <li><strong>Strong privacy VPNs:</strong> <strong>Mullvad</strong> has an excellent privacy reputation and anonymous account numbers. <strong>Proton VPN</strong> offers a strong privacy focus, open-source apps, and a good free tier. <strong>Private Internet Access (PIA)</strong> is very configurable and good for advanced users.</li>
+      </ul>
+
+      <h2>5. Email Privacy</h2>
+      <p>Email is often your identity backbone. Using privacy-oriented providers like <strong>Proton Mail</strong>, <strong>Tuta Mail</strong>, or <strong>Fastmail</strong> is a solid step up from Big Tech providers.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>A highly useful practice is using email aliases — creating one unique email address per service. This helps contain data breaches and prevents companies from correlating your accounts. Good tools for this include Proton aliases, SimpleLogin, and Addy.io.</div></div>
+
+      <h2>6. Operating Systems</h2>
+      <ul>
+        <li><strong>Android:</strong> The best privacy setup is <strong>GrapheneOS</strong> (a hardened Android fork for Pixel devices). A more practical mainstream setup is to use regular Android but disable the ad ID, remove unnecessary apps, use Signal/Firefox/Brave, and avoid using a Google account where possible.</li>
+        <li><strong>Windows:</strong> The main weaknesses are telemetry and ad tracking. Use a local account instead of a Microsoft account, disable telemetry where possible, and use full-disk encryption.</li>
+        <li><strong>macOS:</strong> Generally better privacy defaults than Windows, but Apple still collects metadata. Disable analytics sharing, use FileVault, and avoid unnecessary iCloud syncing.</li>
+        <li><strong>Linux:</strong> Best for control and transparency (e.g., Fedora, Debian, Linux Mint). For advanced privacy, Qubes OS or Tails are exceptional.</li>
+      </ul>
+
+      <h2>7. Essential Practices (More Important Than Apps)</h2>
+      <p>These habits matter more than buying "privacy software":</p>
+      <ul>
+        <li><strong>Use unique passwords everywhere:</strong> A password manager solves this.</li>
+        <li><strong>Enable MFA / 2FA:</strong> Use authenticator apps like <strong>Aegis</strong> or <strong>2FAS</strong>, or hardware security keys. Avoid SMS 2FA when possible.</li>
+        <li><strong>Separate identities:</strong> Don't use one identity for banking, gaming, activism, and shopping. Compartmentalisation is one of the strongest privacy tools.</li>
+        <li><strong>Reduce data sharing:</strong> Deny unnecessary permissions, turn off location unless needed, and avoid "sign in with Google/Facebook".</li>
+        <li><strong>Keep software updated:</strong> Most real-world compromises happen through outdated browsers or vulnerable apps, not "nation-state hacking".</li>
+      </ul>
+
+      <h2>The Honest Bottom Line</h2>
+      <p>For normal users, the biggest risks are password reuse, phishing, data breaches, ad-tech tracking, and oversharing. You don't need extreme paranoia or complicated setups. A password manager, Signal, browser hardening, less Big Tech dependence, and better habits put you in an incredibly strong position.</p>
+    `
+  },
+
+  {
     id: 'browser-fingerprinting',
+    index: 7,
     title: 'Why Your Browser Is Leaking Your Identity',
     category: 'Browsers',
     date: '2025-05-10',
     readTime: '14 min read',
     excerpt: 'Even without cookies, websites can identify you with startling precision through a technique called browser fingerprinting. Here\'s how it works — and exactly how to stop it.',
     tags: ['fingerprinting', 'tracking', 'browser'],
-    relatedReviews: ['brave', 'firefox', 'tor-browser', 'ublock-origin'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    relatedReviews: ['brave', 'firefox', 'tor-browser', 'ublock-origin', 'nextdns'],
     content: `
       <h2>The Invisible Name Tag You Don't Know You're Wearing</h2>
       <p>Imagine walking into a shop where the staff can't see your face or know your name — but they can tell it's you because of the exact combination of your height, your accent, the brand of your shoes, the watch on your wrist, and the way you hold your bag. Nobody else in the world has that exact combination. So every time you walk in, they know it's you.</p>
       <p>That's browser fingerprinting. Every time you visit a website, your browser quietly shares dozens of tiny technical details about your device and setup. Individually, each detail is unremarkable. Together, they form a pattern so unique that you can be identified and tracked across the internet — with no cookies, no login, and no warning.</p>
       <p>This isn't a hypothetical threat. It's happening right now, on millions of websites, to virtually everyone reading this.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Browser fingerprinting works by collecting a combination of browser attributes — User-Agent string, screen resolution, timezone, installed fonts, Canvas API rendering output, WebGL renderer info, AudioContext fingerprint, and hardware concurrency — and hashing them into a near-unique identifier that persists across sessions without any client-side storage. <br><strong>Plain:</strong> Websites run a tiny invisible test on your device when you load a page. Your browser tells them things like your screen size, your fonts, and how your graphics chip draws shapes. Put all that together and it's as unique as a fingerprint — no cookie needed.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Websites run a tiny invisible test on your device when you load a page. Your browser tells them things like your screen size, your fonts, and how your graphics chip draws shapes. Technically, this works by collecting browser attributes — User-Agent string, screen resolution, timezone, installed fonts, Canvas API rendering output, WebGL renderer info, AudioContext fingerprint, and hardware concurrency — and hashing them into a near-unique identifier that persists across sessions without any client-side storage. Put all that together and it's as unique as a fingerprint — no cookie needed.</div></div>
 
       <h2>What Exactly Gets Collected?</h2>
       <p>When you load a webpage, a fingerprinting script can silently gather all of the following in under a second:</p>
@@ -37,13 +113,13 @@ const ARTICLES = [
         <li><strong>How many CPU cores you have</strong></li>
         <li><strong>Your network connection type</strong> — WiFi vs mobile vs wired</li>
       </ul>
-      <p>A 2016 study by researchers at Princeton University found that just the canvas fingerprint alone could identify users with over 90% accuracy. Combine that with everything else in the list above, and you have a near-perfect identifier.</p>
+      <p>A 2014 study by researchers at Princeton University found that canvas fingerprinting could uniquely identify a large proportion of browsers tested. Combine that with everything else in the list above, and you have a near-perfect identifier.</p>
 
       <h2>Why Incognito Mode Doesn't Save You</h2>
       <p>This is one of the biggest misconceptions in online privacy. Incognito mode (also called "Private Browsing" in Firefox and Safari) does exactly one thing: it stops your browser from saving your history, cookies, and form data <em>locally on your device</em>. It doesn't change anything about how your browser appears to websites.</p>
       <p>Your screen resolution is the same in incognito mode. Your installed fonts are the same. Your graphics card renders canvas drawings identically. Your fingerprint is completely unchanged. A website that fingerprints you in regular mode will recognise you in incognito mode without any difficulty at all.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Incognito mode suppresses local storage of cookies, history, and form data, but does not alter the browser's User-Agent string, rendering engine properties, or hardware attributes — the exact signals used for fingerprinting. <br><strong>Plain:</strong> Going incognito is like wearing a disguise that only hides things from the person sitting next to you — not from the website you're visiting. Your browser still looks exactly the same to any site that's fingerprinting you.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Going incognito is like wearing a disguise that only hides things from the person sitting next to you — not from the website you're visiting. Technically, incognito mode suppresses local storage of cookies, history, and form data, but does not alter the browser's User-Agent string, rendering engine properties, or hardware attributes — the exact signals used for fingerprinting. Your browser still looks exactly the same to any site that's fingerprinting you.</div></div>
 
       <p>Private mode is useful for things like using someone else's computer without leaving your history behind, or stopping your partner from seeing what birthday present you Googled. It is not a privacy tool in any meaningful sense.</p>
 
@@ -51,7 +127,7 @@ const ARTICLES = [
       <p>You can see how unique your browser fingerprint is by visiting the Electronic Frontier Foundation's free tool: <strong>coveryourtracks.eff.org</strong>. Click "Test Your Browser" and it will show you a report of your fingerprint and whether you are protected, partially protected, or fully trackable. Most people are shocked by the result.</p>
       <p>If the tool says your fingerprint is "unique among the browsers it has seen," that means any website using fingerprinting can identify you with complete certainty — no cookies needed.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Websites can build a stable cross-session identifier by collecting browser attributes without setting any cookies or using any client-side storage. Clearing cookies or switching to incognito does not affect these attributes. <br><strong>Plain:</strong> Websites can tell it's you by reading dozens of tiny technical details about your device — like a doctor identifying a patient from an X-ray rather than a name tag. Clearing your cookies or going incognito does nothing about this because none of those details change.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Websites can tell it's you by reading dozens of tiny technical details about your device — like a doctor identifying a patient from an X-ray rather than a name tag. Technically, this works by building a stable cross-session identifier by collecting browser attributes without setting any cookies or using any client-side storage. Clearing your cookies or going incognito does nothing about this because none of those details change.</div></div>
 
       <h2>How to Protect Yourself</h2>
       <p>The key insight is this: you can't make your fingerprint disappear. But you <em>can</em> make it look identical to thousands of other people. The goal is to blend in, not to hide. Here are the three best approaches, from easiest to most thorough.</p>
@@ -59,7 +135,7 @@ const ARTICLES = [
       <h2>Option 1: Switch to Brave Browser (Easiest)</h2>
       <p>Brave is a free browser that looks and works very much like Chrome — it even supports the same extensions — but it has fingerprint protection built in by default. Instead of reporting your real canvas rendering, fonts, and audio data, Brave introduces tiny, random variations each time a website checks. The result looks plausible, but it's different from session to session, making consistent tracking impossible.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Brave applies randomised noise to Canvas, WebGL, and AudioContext fingerprinting APIs on a per-session, per-origin basis. Each site receives a slightly different but plausible set of values, breaking stable cross-site fingerprint correlation. <br><strong>Plain:</strong> Every time a website tries to read your device's "fingerprint," Brave feeds it slightly different fake readings. The site can't build a consistent ID for you because the readings change each time.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every time a website tries to read your device's "fingerprint," Brave feeds it slightly different fake readings. Technically, Brave applies randomised noise to Canvas, WebGL, and AudioContext fingerprinting APIs on a per-session, per-origin basis — each site receives a slightly different but plausible set of values, breaking stable cross-site fingerprint correlation. The site can't build a consistent ID for you because the readings change each time.</div></div>
 
       <p>Here's how to get started with Brave:</p>
       <ol>
@@ -93,7 +169,7 @@ const ARTICLES = [
         <li>Once installed, uBlock Origin works automatically. You don't need to configure anything.</li>
         <li>For stronger protection, click the uBlock Origin icon (a red shield), then click the settings gear icon. Go to <strong>Filter lists</strong> and check the box for <strong>"uBlock filters — Privacy"</strong> and <strong>"EasyPrivacy"</strong>. Click "Apply changes."</li>
       </ol>
-      <p><strong>Note for Chrome users:</strong> Google is making changes to Chrome (called "Manifest V3") that will permanently weaken how content blockers work in Chrome. uBlock Origin's full functionality will remain available in Firefox indefinitely. This is one more reason to consider switching to Firefox or Brave.</p>
+      <p><strong>Note for Chrome users:</strong> Google has made changes to Chrome (called "Manifest V3") that permanently weaken how content blockers work in Chrome. uBlock Origin's full functionality will remain available in Firefox indefinitely. This is one more reason to consider switching to Firefox or Brave.</p>
 
       <h2>The Honest Bottom Line</h2>
       <p>If you do nothing else after reading this article, install Brave or install uBlock Origin on your current browser. Either action immediately makes you significantly harder to track. If you want the strongest protection available without slowing down your browsing, use Brave or Firefox with the settings above and uBlock Origin installed. If you need the absolute maximum privacy for genuinely sensitive browsing, use the Tor Browser — which we cover in our anonymous browsing guide.</p>
@@ -102,20 +178,22 @@ const ARTICLES = [
   },
   {
     id: 'password-managers-guide',
+    index: 8,
     title: 'The Complete Guide to Password Managers',
     category: 'Passwords',
     date: '2025-05-02',
     readTime: '16 min read',
     excerpt: 'Reusing passwords is the single biggest security mistake most people make. Password managers solve this completely — and they\'re far simpler to use than most people expect.',
     tags: ['passwords', 'security', 'tools'],
-    relatedReviews: ['bitwarden', 'keepassxc', 'aegis-authenticator'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    relatedReviews: ['bitwarden', 'keepassxc', 'aegis-authenticator', '2fas'],
     content: `
       <h2>The Problem With How Most People Handle Passwords</h2>
       <p>Here's the situation most people are in: they have one password they use everywhere, maybe with a number changed here or there. Or they have three or four passwords they rotate between. It feels manageable. It feels fine. It is, unfortunately, a serious security problem — and understanding why requires knowing how criminals actually break into accounts.</p>
       <p>Every year, thousands of websites get hacked and their user databases — which contain usernames and passwords — get stolen and sold online. This has already happened to LinkedIn, Adobe, Yahoo, Dropbox, and hundreds of other services you've probably used. Websites you've never heard of, too. Researchers estimate that over 10 billion username/password combinations are now available to criminals for free.</p>
       <p>What attackers do next is simple and devastatingly effective. They take your email address and password from the leaked database, and they automatically try it on Gmail, PayPal, Amazon, your bank, Facebook, and dozens of other services. This is called <strong>credential stuffing</strong>.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Credential stuffing is an automated attack where large sets of stolen username/password pairs from data breaches are systematically tested against other online services using bots, exploiting the common practice of password reuse. <br><strong>Plain:</strong> When a website gets hacked, criminals get your email and password. They then automatically try that same combination on hundreds of other sites — your bank, your email, your shopping accounts — all at once, without any human effort. If you reuse passwords, one breach opens all your accounts.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>When a website gets hacked, criminals get your email and password. They then automatically try that same combination on hundreds of other sites — your bank, your email, your shopping accounts — all at once, using bots, without any human effort. This automated attack exploits the common practice of password reuse. If you reuse passwords, one breach opens all your accounts.</div></div>
 
       <p>If you reuse your password, one breach at an obscure website means every account you have is at risk. Your email. Your bank. Your cloud storage. Everything.</p>
 
@@ -140,7 +218,7 @@ const ARTICLES = [
       <h2>How Does It Stay Secure?</h2>
       <p>You might be wondering: if all my passwords are in one place, isn't that a single point of failure? It's a fair question. The answer is that good password managers use a technique called <strong>zero-knowledge encryption</strong>.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Zero-knowledge encryption means your vault data is encrypted on your device using a key derived from your master password before it ever leaves your device. The server only stores ciphertext it cannot decrypt because it never receives the key. Even a full server compromise exposes nothing readable. <br><strong>Plain:</strong> Your passwords get scrambled on your own device before being sent anywhere. The company stores only the scrambled version — they have no key to unscramble it. Even if hackers broke into their servers, all they'd find is useless noise. Only your master password — which stays in your head — can unlock it.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your passwords get scrambled on your own device before being sent anywhere. The company stores only the scrambled version — they have no key to unscramble it. Technically, this is called zero-knowledge encryption: your vault data is encrypted on your device using a key derived from your master password before it ever leaves your device, so the server only ever holds ciphertext it cannot decrypt. Even if hackers broke into their servers, all they'd find is useless noise. Only your master password — which stays in your head — can unlock it.</div></div>
 
       <p>Here's how it works: when you create your master password, your password manager uses it to mathematically scramble (encrypt) all your stored passwords on your own device, before they're ever sent anywhere. The scrambled data is what gets stored or synced to the cloud. The company running the password manager only ever sees scrambled data that they cannot unscramble — because they don't have your master password. Even if their servers were hacked, or even if a government demanded your passwords, there's nothing to hand over. Only your master password — which exists only in your head — can unlock the data.</p>
 
@@ -179,14 +257,14 @@ const ARTICLES = [
       <h2>Enabling Two-Factor Authentication</h2>
       <p>Two-factor authentication (2FA) means that even if someone knows your master password, they still can't open your vault without a second form of verification — usually a six-digit code that changes every 30 seconds and is generated by an app on your phone.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Two-factor authentication (2FA) adds a second authentication factor — typically a time-based one-time password (TOTP) generated by an app like Aegis — that must be provided in addition to the password. Even a stolen password alone is not enough to log in. <br><strong>Plain:</strong> Even if someone steals your master password, they still can't get into your vault without your phone. The app generates a new 6-digit code every 30 seconds — and only your phone can generate the right one.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Even if someone steals your master password, they still can't get into your vault without your phone. Technically, this is called two-factor authentication (2FA): a second authentication factor — typically a time-based one-time password (TOTP) generated by an app like Aegis — that must be provided in addition to the password. The app generates a new 6-digit code every 30 seconds — and only your phone can generate the right one.</div></div>
 
       <ol>
         <li>Log in to your Bitwarden vault at <strong>vault.bitwarden.com</strong>.</li>
         <li>Click on your account name at the top right, then click <strong>Account Settings</strong>.</li>
         <li>Click the <strong>Security</strong> tab, then <strong>Two-step Login</strong>.</li>
         <li>Click <strong>Manage</strong> next to "Authenticator App".</li>
-        <li>Download an authenticator app on your phone — we recommend <strong>Aegis Authenticator</strong> (Android, free and open source) or <strong>Raivo OTP</strong> (iPhone, free).</li>
+        <li>Download an authenticator app on your phone — we recommend <strong>Aegis Authenticator</strong> (Android, free and open source) or <strong>2FAS</strong> (iPhone, free and open source).</li>
         <li>Open the authenticator app, tap the "+" button to add a new account, and scan the QR code shown on the Bitwarden website.</li>
         <li>Enter the six-digit code shown in the app to confirm it's working, then click <strong>Enable</strong>.</li>
       </ol>
@@ -212,17 +290,19 @@ const ARTICLES = [
   },
   {
     id: 'vpn-explainer',
+    index: 9,
     title: 'VPNs: What They Protect (And What They Don\'t)',
     category: 'Networks',
     date: '2025-04-25',
     readTime: '13 min read',
     excerpt: 'VPNs are sold as a complete privacy solution. They\'re not — but they do solve specific, real problems. This honest guide tells you exactly when a VPN helps and when it doesn\'t.',
     tags: ['vpn', 'network', 'privacy'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     relatedReviews: ['mullvad'],
     content: `
       <h2>What a VPN Actually Is</h2>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> A VPN (Virtual Private Network) creates an encrypted tunnel between your device and a remote server. All your internet traffic is routed through this tunnel. The destination sees the VPN server's IP address, not yours. Your ISP sees only an encrypted stream to the VPN server, not the sites you visit. <br><strong>Plain:</strong> A VPN is like a sealed, addressed envelope that you hand to your internet provider. They can see you sent an envelope, but they can't read what's inside or where it's really going. Websites see the VPN company's address, not your home address.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>A VPN is like a sealed, addressed envelope that you hand to your internet provider. They can see you sent an envelope, but they can't read what's inside or where it's really going. Technically, a VPN (Virtual Private Network) creates an encrypted tunnel between your device and a remote server — all your internet traffic is routed through this tunnel, destination websites see the VPN server's IP address rather than yours, and your ISP sees only an encrypted stream to the VPN server, not the sites you visit.</div></div>
 
       <p>VPN stands for Virtual Private Network (a private, encrypted connection through the internet). The name is technical, but the idea is simple: a VPN creates an encrypted tunnel between your device and a server run by the VPN company. All your internet traffic travels through that tunnel. Websites and online services see the VPN server's address, not your home address. Your internet provider sees only encrypted data travelling to the VPN server — they can't see what sites you visit or what you do online.</p>
       <p>Think of it like this: normally, when you visit a website, your internet provider (BT, Sky, Vodafone, Comcast — whoever you pay for internet) can see every website you visit and log it. It's like sending all your post through a post room that opens and reads your letters. A VPN is like sealing your letters in an opaque envelope before they reach the post room. The post room still passes the envelope along, but they can't see what's inside or where it's ultimately going.</p>
@@ -236,7 +316,6 @@ const ARTICLES = [
         <li><strong>Some forms of network-level tracking.</strong> Advertisers and data brokers sometimes build profiles using IP addresses. Changing your IP regularly disrupts this.</li>
         <li><strong>Accessing content blocked in your region.</strong> If a streaming service or website is unavailable in your country, a VPN server in another country can give you access.</li>
       </ul>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> A VPN encrypts traffic between your device and the VPN server. Your ISP can see that you're connected to a VPN server but not the destination sites or content. The VPN server makes requests on your behalf, so destination services see the VPN's IP address. <br><strong>Plain:</strong> Without a VPN, your internet provider sees every website you visit — like a postal worker who can read all your letters. A VPN puts your traffic in a sealed envelope they can't open. But remember: you're trusting the VPN company instead. Choose carefully.</div></div>
 
       <h2>What a VPN Does NOT Protect You From</h2>
       <p>This is the critical part that VPN marketing almost never tells you. A VPN does not make you private or anonymous in most of the ways people assume it does.</p>
@@ -261,7 +340,7 @@ const ARTICLES = [
         <li>Claims to make you "100% anonymous" — no VPN can do this</li>
         <li>Has a privacy policy that allows logging of "aggregate" or "anonymised" data — this language is vague and often meaningless</li>
         <li>Is free — running a VPN server costs money. If you're not paying, you are the product. Free VPNs have been repeatedly caught selling user data to advertisers.</li>
-        <li>Has its servers in countries with intrusive surveillance laws (USA, UK, Australia, Canada — the "Five Eyes" alliance)</li>
+        <li>Has its servers in countries with intrusive surveillance laws (USA, UK, Australia, Canada, New Zealand — the "Five Eyes" alliance)</li>
       </ul>
 
       <h2>Our Recommendation: Mullvad VPN</h2>
@@ -307,13 +386,15 @@ const ARTICLES = [
   },
   {
     id: 'smartphone-hardening',
+    index: 10,
     title: 'Hardening Your Smartphone in 10 Steps',
     category: 'Mobile',
     date: '2025-04-15',
     readTime: '18 min read',
     excerpt: 'Your phone knows where you\'ve been, who you talk to, what you buy, and what you search for. These 10 practical steps — with exact instructions for iPhone and Android — dramatically reduce what gets collected.',
     tags: ['mobile', 'android', 'ios', 'hardening'],
-    relatedReviews: ['signal', 'bitwarden', 'grapheneos', 'mullvad'],
+    platforms: ['iOS', 'Android'],
+    relatedReviews: ['signal', 'bitwarden', 'grapheneos', 'mullvad', 'osmand', 'invidious', 'standard-notes', 'joplin'],
     content: `
       <h2>Your Phone Knows More About You Than You Think</h2>
       <p>Your smartphone has a GPS that tracks everywhere you go. It has a microphone that's always available. It has a camera, an accelerometer, a gyroscope, a Bluetooth radio, and a WiFi radio — all of which can reveal information about your location and habits even when you think they're off. It runs dozens of apps, many of which are recording your behaviour and sending it to servers you've never heard of.</p>
@@ -339,9 +420,8 @@ const ARTICLES = [
 
       <h2>Step 2: Disable Your Advertising ID</h2>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Every smartphone OS assigns a resettable advertising identifier (IDFA on iOS, GAID on Android) — a unique code that advertising SDKs embedded in apps use to correlate your activity across different apps and build a cross-app behavioural profile without needing cookies. <br><strong>Plain:</strong> Your phone has a secret ID number that advertisers read from inside apps. When App A and App B both send this number to an ad network, that network knows it was you in both apps — and builds a profile of your interests across everything you do. Deleting this ID breaks that link.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your phone has a secret ID number that advertisers read from inside apps. When App A and App B both send this number to an ad network, that network knows it was you in both apps — and builds a profile of your interests across everything you do. Technically, every smartphone OS assigns a resettable advertising identifier (IDFA on iOS, GAID on Android) — a unique code that advertising SDKs embedded in apps use to correlate your activity across different apps and build a cross-app behavioural profile without needing cookies. Deleting this ID breaks that link.</div></div>
 
-      <p>Every smartphone has a unique advertising identifier — a code that advertisers use to track your behaviour across different apps. When App A and App B both send your advertising ID to an advertising network, that network can link your activity across both apps and build a detailed profile of you. Disabling or resetting this ID disrupts cross-app tracking significantly.</p>
       <p><strong>On iPhone:</strong></p>
       <ol>
         <li>Go to <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</li>
@@ -378,7 +458,7 @@ const ARTICLES = [
 
       <h2>Step 5: Enable Full-Disk Encryption</h2>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Full-disk encryption uses AES-256 (or similar) to encrypt all data stored on the device's flash storage. Without the correct PIN or password to derive the decryption key, the stored data is unreadable — even by someone with physical access to the hardware. <br><strong>Plain:</strong> Encryption scrambles everything saved on your phone. If someone steals it or seizes it, they see nothing but nonsense unless they know your PIN. Think of it like a combination lock on every file.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Encryption scrambles everything saved on your phone. If someone steals it or seizes it, they see nothing but nonsense unless they know your PIN. Technically, full-disk encryption uses AES-256 (or similar) to encrypt all data stored on the device's flash storage — without the correct PIN or password to derive the decryption key, the stored data is unreadable even by someone with physical access to the hardware. Think of it like a combination lock on every file.</div></div>
 
       <p>Encryption means that all the data stored on your phone is scrambled and unreadable without your PIN or password. If your phone is lost, stolen, or seized, no one can read its contents without unlocking it.</p>
       <p><strong>On iPhone:</strong> Full-disk encryption is automatically enabled whenever you set a passcode. If you have a passcode set (which you now do from Step 4), your iPhone is already encrypted.</p>
@@ -399,7 +479,7 @@ const ARTICLES = [
       <h2>Step 7: Switch to Signal for Messaging</h2>
       <p>Regular text messages (SMS) are not encrypted. Your mobile carrier can read every SMS you send. iMessage is encrypted only between Apple devices — messages to Android users fall back to unencrypted SMS. WhatsApp uses encryption but is owned by Meta (Facebook's parent company) and collects extensive metadata about who you talk to and when.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Signal uses the Signal Protocol — a double-ratchet algorithm providing forward secrecy and break-in recovery — for end-to-end encryption of all messages and calls. End-to-end encryption means only the sender and recipient can read the message; the service provider, Signal's servers, and any third party in between cannot decrypt the content. <br><strong>Plain:</strong> "End-to-end encrypted" means the message is scrambled on your phone and only unscrambled on the recipient's phone. Nobody in between — not Signal, not your phone company, not a hacker — can read it. It's like sealing a letter so only the recipient can open it.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>"End-to-end encrypted" means the message is scrambled on your phone and only unscrambled on the recipient's phone. Nobody in between — not Signal, not your phone company, not a hacker — can read it. It's like sealing a letter so only the recipient can open it. Technically, Signal uses the Signal Protocol — a double-ratchet algorithm providing forward secrecy and break-in recovery — for end-to-end encryption of all messages and calls, meaning only the sender and recipient can decrypt the content.</div></div>
 
       <p>Signal is the gold standard for private messaging. Every message, call, and video call through Signal is end-to-end encrypted by default. The organisation behind Signal is a non-profit, and the app's code is open source.</p>
       <ol>
@@ -414,7 +494,7 @@ const ARTICLES = [
 
       <h2>Step 8: Use an Encrypted DNS Server</h2>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> DNS (Domain Name System) is like the internet's phone book — it translates a domain name like "bbc.co.uk" into an IP address your device can connect to. By default, these lookups travel in plain text to your mobile carrier's DNS server, meaning your carrier logs every domain you visit. Encrypted DNS (DNS over HTTPS or DNS over TLS) wraps these lookups in encryption and routes them to a privacy-respecting resolver your carrier can't read. <br><strong>Plain:</strong> Every time you type a website address, your phone first asks a directory service what the address really is. Normally your phone company can see every website name you look up. Encrypted DNS puts that lookup in a sealed box — your carrier knows you looked something up, but not what.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every time you type a website address, your phone first asks a directory service what the address really is. Normally your phone company can see every website name you look up — this is because DNS (Domain Name System) lookups travel in plain text to your mobile carrier's DNS server by default. Encrypted DNS (DNS over HTTPS or DNS over TLS) puts that lookup in a sealed box — your carrier knows you looked something up, but not what — and routes it to a privacy-respecting resolver your carrier can't read.</div></div>
 
       <p>Every time you visit a website, your phone first looks up the website's address by contacting a DNS server — like looking someone up in a phone book. By default, this lookup goes to your mobile carrier's DNS server, and it's unencrypted, which means your carrier can see every website you visit (by name) even if the content of your browsing is encrypted. Switching to a privacy-respecting encrypted DNS resolver prevents this.</p>
       <p><strong>On iPhone:</strong></p>
@@ -456,22 +536,21 @@ const ARTICLES = [
   },
   {
     id: 'metadata-problem',
+    index: 11,
     title: 'The Metadata Problem: Your Data\'s Shadow',
     category: 'Basics',
     date: '2025-04-05',
     readTime: '12 min read',
-    excerpt: '"We kill people based on metadata." — General Michael Hayden, former director of the NSA and CIA. Metadata is often more revealing than the content it describes — and most people have no idea it exists.',
+    excerpt: 'Metadata is often more revealing than the content it describes — and most people have no idea it exists.',
     tags: ['metadata', 'surveillance', 'basics'],
-    relatedReviews: ['signal', 'exifcleaner'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    relatedReviews: ['signal', 'exifcleaner', 'metadata-cleaner'],
     content: `
-      <h2>The Quote That Should Change How You Think</h2>
-      <p>In 2014, General Michael Hayden — who had served as the director of both the National Security Agency and the CIA — was asked at a public discussion about the US government's use of metadata for drone targeting. His answer: <em>"We kill people based on metadata."</em></p>
-      <p>Let that sink in. The former head of two of the world's most powerful intelligence agencies was saying that metadata — not the content of communications, just the patterns of who talks to whom, when, and from where — is so revealing that it can be used to make life-or-death decisions.</p>
       <p>Most people, when they think about privacy, think about content: keeping the text of their messages private, encrypting their emails. This is reasonable but incomplete. Metadata often reveals more than content — and it's far harder to protect.</p>
 
       <h2>What Is Metadata? A Plain English Explanation</h2>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Metadata is structured data that describes other data — not the content itself, but attributes about it: sender, recipient, timestamp, duration, size, location, device, and routing information. It is typically collected automatically by the systems that transmit or store data, and is often legally easier to access than content. <br><strong>Plain:</strong> Metadata is everything about a message except what it says. Not the letter — the envelope, the postmark, the sender's address, the time it was sent, and how heavy it is. All of that can reveal a huge amount without anyone reading a single word.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Metadata is everything about a message except what it says — not the letter, but the envelope, the postmark, the sender's address, the time it was sent, and how heavy it is. Technically, metadata is structured data that describes other data: sender, recipient, timestamp, duration, size, location, device, and routing information. It is typically collected automatically by the systems that transmit or store data, and is often legally easier to access than content. All of that can reveal a huge amount without anyone reading a single word.</div></div>
 
       <p>Metadata is "data about data." Here is the classic example: imagine a letter. The <em>content</em> of the letter is what's written inside. The <em>metadata</em> is everything about the letter: who sent it, who it was addressed to, the postmark showing where and when it was sent, the stamp, the size and weight of the envelope, the handwriting on the address, and the route it took through the postal system.</p>
       <p>This metadata, without reading the letter at all, can tell you a great deal: if you receive a letter from an oncology clinic, you probably have cancer. If you receive letters from a divorce lawyer, you're probably getting divorced. If you're sending letters daily to the same person in another country, you're probably in a relationship.</p>
@@ -489,7 +568,7 @@ const ARTICLES = [
         <li>The subject line (this is often treated as metadata, not content, from a legal perspective)</li>
       </ul>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> End-to-end encryption (such as PGP or the encryption used within ProtonMail) encrypts the message body but leaves email headers — including To, From, Date, and Subject — visible to mail servers and, in many jurisdictions, to law enforcement without a warrant. <br><strong>Plain:</strong> Encrypting your email content is like sealing the letter — nobody can read what's inside. But the envelope is still visible. Your email provider can still see who you emailed, when, and how often. That pattern can reveal a lot on its own.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Encrypting your email content is like sealing the letter — nobody can read what's inside. But the envelope is still visible. Technically, end-to-end encryption (such as PGP or the encryption used within ProtonMail) encrypts the message body but leaves email headers — including To, From, Date, and Subject — visible to mail servers and, in many jurisdictions, to law enforcement without a warrant. Your email provider can still see who you emailed, when, and how often. That pattern can reveal a lot on its own.</div></div>
 
       <p>End-to-end encryption — like PGP, or what ProtonMail uses between its users — encrypts the body of the email. But the headers, including who you emailed and when, remain visible to mail servers and, in many jurisdictions, to law enforcement without a warrant. Your email provider knows your entire communication graph: everyone you've ever emailed, how often, and when.</p>
 
@@ -501,7 +580,7 @@ const ARTICLES = [
       <h2>The EXIF Problem: Every Photo You Take Carries a Map</h2>
       <p>This is one of the most practical and immediately actionable pieces of metadata knowledge you can have.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> EXIF (Exchangeable Image File Format) is a standard that embeds metadata directly into image files. This includes GPS coordinates (latitude and longitude), timestamp, device make and model, camera settings, and sometimes the owner's name. This data travels with the image file whenever it is shared, unless explicitly stripped. <br><strong>Plain:</strong> Every photo your phone takes secretly carries hidden data — including the exact GPS location where it was taken, the precise time, and your phone's make and model. When you share the photo, all that hidden data goes with it. That means someone can look at a photo you posted and know exactly where you were standing when you took it.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every photo your phone takes secretly carries hidden data — including the exact GPS location where it was taken, the precise time, and your phone's make and model. Technically, EXIF (Exchangeable Image File Format) is a standard that embeds this metadata directly into image files, including GPS coordinates, timestamp, device make and model, camera settings, and sometimes the owner's name. This data travels with the image file whenever it is shared, unless explicitly stripped. When you share the photo, all that hidden data goes with it — meaning someone can look at a photo you posted and know exactly where you were standing when you took it.</div></div>
 
       <p>Every photo taken with a smartphone or modern camera contains embedded data called <strong>EXIF</strong> (EXIF stands for Exchangeable Image File Format — it's hidden data baked into every photo file). This hidden data includes:</p>
       <ul>
@@ -565,13 +644,15 @@ const ARTICLES = [
   },
   {
     id: 'anonymous-browsing',
+    index: 12,
     title: 'How to Browse Anonymously: A Practical Guide',
     category: 'Browsers',
     date: '2025-03-28',
     readTime: '15 min read',
     excerpt: 'True anonymity online is genuinely difficult. But meaningful, practical privacy is available to everyone. This guide walks through a realistic, layered approach — starting with the simplest steps.',
     tags: ['anonymity', 'tor', 'browser', 'privacy'],
-    relatedReviews: ['brave', 'firefox', 'tor-browser', 'ublock-origin', 'mullvad', 'duckduckgo'],
+    platforms: ['Windows', 'macOS', 'Linux'],
+    relatedReviews: ['brave', 'firefox', 'tor-browser', 'ublock-origin', 'mullvad', 'duckduckgo', 'searxng', 'startpage', 'tails'],
     content: `
       <h2>Let's Be Honest About What "Anonymous" Actually Means</h2>
       <p>The word "anonymous" gets thrown around in privacy discussions as if it's a simple binary state you're either in or out of. The reality is more nuanced, and understanding that nuance is the first step to actually protecting yourself.</p>
@@ -587,7 +668,7 @@ const ARTICLES = [
       <p><strong>Privacy</strong> means that others cannot see the content of what you're doing — like a letter sealed in an envelope. Your ISP knows you connected to a website, but can't read what you did there.</p>
       <p><strong>Anonymity</strong> means others cannot determine <em>who</em> is doing it — like a letter with no return address. A website can see that someone visited it, but cannot tell who.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> HTTPS encrypts the content of traffic between your browser and a website (TLS encryption), but the destination domain is still visible to your ISP via DNS queries and TLS SNI (Server Name Indication). A VPN hides the destination from your ISP by routing all traffic through the VPN server. Tor provides stronger anonymity by routing traffic through three relays with layered encryption, so no single party knows both the source and destination. <br><strong>Plain:</strong> HTTPS (the padlock icon) keeps the contents of your browsing private — nobody can read the page. But your internet provider can still see which sites you visit. A VPN hides that from your provider. Tor hides it even better by bouncing your traffic through three computers so nobody can tell both who you are and where you're going.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>HTTPS (the padlock icon) keeps the contents of your browsing private — nobody can read the page. But your internet provider can still see which sites you visit. A VPN hides that from your provider. Tor hides it even better by bouncing your traffic through three computers so nobody can tell both who you are and where you're going. Technically, HTTPS encrypts the content of traffic between your browser and a website (TLS encryption), but the destination domain is still visible to your ISP via DNS queries and TLS SNI (Server Name Indication); a VPN hides the destination from your ISP by routing all traffic through the VPN server; and Tor provides stronger anonymity by routing traffic through three relays with layered encryption, so no single party knows both the source and destination.</div></div>
 
       <h2>Start Here: Your Threat Model</h2>
       <p>Before installing anything, ask yourself honestly: what am I trying to achieve? Pick the closest match:</p>
@@ -626,7 +707,7 @@ const ARTICLES = [
 
       <h2>Layer 3: DNS Over HTTPS</h2>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> DNS (Domain Name System) translates human-readable domain names into IP addresses. Standard DNS queries travel in plain text over UDP port 53, making them readable by your ISP and any network observer. DNS over HTTPS (DoH) wraps these queries in TLS-encrypted HTTPS connections sent to a privacy-respecting resolver, preventing your ISP from seeing which domains you look up. <br><strong>Plain:</strong> Every time you type a website address, your computer secretly looks it up in a phone book to find the actual address. Normally that lookup is sent in the open — your internet provider can read every name you look up. DNS over HTTPS locks that lookup in an envelope so your provider can't see what's inside.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every time you type a website address, your computer secretly looks it up in a phone book to find the actual address. Normally that lookup is sent in the open — your internet provider can read every name you look up. Technically, standard DNS queries travel in plain text over UDP port 53, making them readable by your ISP and any network observer. DNS over HTTPS (DoH) locks that lookup in an envelope so your provider can't see what's inside, by wrapping these queries in TLS-encrypted HTTPS connections sent to a privacy-respecting resolver.</div></div>
 
       <p>Every time you type a website address into your browser, your computer first asks a DNS (Domain Name System) server to translate that address into the numbers computers actually use. By default, this request goes to your internet provider's DNS server in plain text — meaning your ISP can log every single website you look up by name, even if the actual traffic is encrypted.</p>
       <p>DNS over HTTPS (DoH) encrypts these lookups and sends them to a privacy-respecting DNS resolver instead of your ISP's server. It's a simple change with meaningful impact.</p>
@@ -646,7 +727,7 @@ const ARTICLES = [
 
       <h2>Layer 4: Tor Browser (For When You Need Serious Anonymity)</h2>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Tor (The Onion Router) routes each connection through three volunteer-operated relays. Traffic is encrypted in layers — like an onion — so each relay decrypts only its own layer and knows only the previous and next hop. The destination server sees only the exit relay's IP address, not the origin. All Tor Browser users share the same browser fingerprint by design, providing a large anonymity set. <br><strong>Plain:</strong> Instead of your internet request going directly from you to a website (like a straight road), Tor bounces it through three separate computers in different countries, each knowing only the previous and next stop — never the whole route. The website only sees the last computer, not you. And everyone who uses Tor Browser looks the same to websites, so you blend into the crowd.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Instead of your internet request going directly from you to a website (like a straight road), Tor bounces it through three separate computers in different countries, each knowing only the previous and next stop — never the whole route. The website only sees the last computer, not you. And everyone who uses Tor Browser looks the same to websites, so you blend into the crowd. Technically, Tor (The Onion Router) routes each connection through three volunteer-operated relays with traffic encrypted in layers — each relay decrypts only its own layer and knows only the previous and next hop, while the destination server sees only the exit relay's IP address. All Tor Browser users share the same browser fingerprint by design, providing a large anonymity set.</div></div>
 
       <p>Tor (The Onion Router) is a network that routes your internet traffic through three separate volunteer-run servers (called "relays" — volunteer-run computers that pass your traffic along) around the world before it reaches its destination. Each relay only knows the step before it and the step after it — no single relay knows both where the traffic came from and where it's going. This makes it extraordinarily difficult to trace traffic back to you.</p>
       <p>The Tor Browser is a hardened version of Firefox that automatically uses the Tor network. Every user of Tor Browser has an identical fingerprint by design, preventing fingerprinting. It is the tool of choice for journalists, activists, whistleblowers, and anyone who genuinely needs to hide their browsing from a serious adversary.</p>
@@ -689,13 +770,15 @@ const ARTICLES = [
   },
   {
     id: 'user-accounts-and-privacy',
+    index: 6,
     title: 'The Account Problem: How Sign-Ups Track You — And What to Use Instead',
     category: 'Basics',
     date: '2025-05-18',
     readTime: '20 min read',
     excerpt: 'Creating an account ties everything you do to a permanent, detailed profile. Here\'s what that really means for your privacy — and a practical guide to account-free alternatives for every major category of app.',
     tags: ['accounts', 'alternatives', 'tracking', 'basics'],
-    relatedReviews: ['duckduckgo', 'organic-maps', 'jitsi-meet', 'syncthing', 'obsidian', 'protonmail', 'simplelogin', 'signal', 'freetube', 'keepassxc'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    relatedReviews: ['duckduckgo', 'organic-maps', 'jitsi-meet', 'syncthing', 'obsidian', 'protonmail', 'simplelogin', 'signal', 'freetube', 'keepassxc', 'invidious', 'searxng', 'startpage', 'matrix'],
     content: `
       <h2>Why Creating an Account Is a Privacy Event</h2>
       <p>Every time you create an account with a service — signing up for a new app, registering on a website, creating a profile — something specific and consequential happens from a privacy perspective: you give that company a permanent, stable identifier that links everything you ever do on their platform into a single, coherent profile tied to your real identity.</p>
@@ -729,7 +812,7 @@ const ARTICLES = [
         <li><strong>Work and school tools</strong> — If your employer or school mandates a specific platform, you may have limited choice. Minimise what you share and use it only for its intended purpose.</li>
         <li><strong>Encrypted email providers</strong> — Providers like ProtonMail still require an account, but they're a significant improvement over Gmail because they can't read your emails.
 
-          <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Zero-knowledge encryption means the service provider encrypts your data using a key derived from your password on your device. The server only ever holds encrypted ciphertext — the company mathematically cannot decrypt your data because they never receive the key. <br><strong>Plain:</strong> "Zero-knowledge" means the company holds your data but can't read it — like a storage unit where only you have the key. Even if someone breaks into the warehouse, all they find are locked boxes they can't open.</div></div>
+          <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>"Zero-knowledge" means the company holds your data but can't read it — like a storage unit where only you have the key. Even if someone breaks into the warehouse, all they find are locked boxes they can't open. Technically, zero-knowledge encryption means the service provider encrypts your data using a key derived from your password on your device, so the server only ever holds encrypted ciphertext — the company mathematically cannot decrypt your data because they never receive the key.</div></div>
 
           An account is required, but what the company knows about your email content is minimal.</li>
       </ul>
@@ -858,12 +941,14 @@ const ARTICLES = [
   },
   {
     id: 'android-privacy-settings',
+    index: 5,
     title: 'Android Privacy Settings: The Complete Guide',
     category: 'Mobile',
     date: '2025-05-19',
     readTime: '22 min read',
     excerpt: 'Every Android setting that touches your privacy — what it does, what you give up by changing it, and a clear verdict for each. Includes the full functionality vs. privacy comparison table.',
     tags: ['android', 'mobile', 'settings', 'hardening'],
+    platforms: ['Android'],
     relatedReviews: ['mullvad', 'organic-maps', 'syncthing', 'grapheneos', 'signal'],
     content: `
       <h2>How to Read This Guide</h2>
@@ -908,9 +993,8 @@ const ARTICLES = [
       <h3>WiFi and Bluetooth Scanning</h3>
       <p><strong>Where:</strong> <span class="setting-path">Settings &gt; Location &gt; Location services &gt; WiFi scanning</span> and <span class="setting-path">Bluetooth scanning</span></p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Even when WiFi and Bluetooth are disabled in the quick settings panel, Android can continue issuing probe requests for nearby networks and Bluetooth devices. These signals can be detected by commercial tracking beacons in shops and public venues to log your physical presence and movement, even when you believe the radios are off. <br><strong>Plain:</strong> Even when you turn off WiFi and Bluetooth, your phone may keep scanning in the background. Shops and airports can detect these invisible pings and use them to track which aisles you walk through — without you connecting to anything.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Even when you turn off WiFi and Bluetooth, your phone may keep scanning in the background. Shops and airports can detect these invisible pings and use them to track which aisles you walk through — without you connecting to anything. Technically, Android can continue issuing probe requests for nearby networks and Bluetooth devices even when the radios appear disabled, and these signals can be detected by commercial tracking beacons in shops and public venues to log your physical presence and movement.</div></div>
 
-      <p>Even when you turn WiFi and Bluetooth off in the quick settings panel, Android can continue scanning for nearby networks and devices to improve location accuracy. This means your phone is broadcasting signals that can be detected by shops, venues, and other devices to track your physical movements — even when you think WiFi and Bluetooth are off.</p>
       <p>What you lose: slightly faster WiFi reconnection and more accurate location in areas without GPS signal.</p>
       <p><strong>Verdict:</strong> Turn both off. The accuracy improvement is minor; the tracking risk is real.</p>
 
@@ -938,9 +1022,8 @@ const ARTICLES = [
       <h3>Ad Personalisation / Advertising ID</h3>
       <p><strong>Where:</strong> <span class="setting-path">Settings &gt; Privacy &gt; Ads</span></p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Android assigns each device a resettable Advertising ID (GAID — Google Advertising ID) — a UUID that advertising SDKs embedded in apps read to correlate your behaviour across apps and build a cross-app profile tied to your device. Deleting the ID removes this persistent cross-app identifier. <br><strong>Plain:</strong> Android gives your phone a secret tracking number that ad companies read from inside every app. When different apps all report the same number, advertisers know it's the same person — you. Deleting this number breaks that link.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Android gives your phone a secret tracking number that ad companies read from inside every app. When different apps all report the same number, advertisers know it's the same person — you. Technically, this is the Android Advertising ID (GAID — Google Advertising ID), a UUID that advertising SDKs embedded in apps read to correlate your behaviour across apps and build a cross-app profile tied to your device. Deleting this number breaks that link.</div></div>
 
-      <p>Android assigns your device a unique Advertising ID — a code that advertising networks use to track your behaviour across different apps and build a cross-app profile. You can delete this ID entirely (in Android 12 and later) or opt out of personalised advertising (older versions).</p>
       <p>What you lose: Ads that are "relevant" to your interests. You'll still see the same number of ads — they'll just be less targeted. From a privacy standpoint, this is a benefit, not a loss.</p>
       <p><strong>Verdict: Delete the Advertising ID.</strong> Tap "Delete advertising ID" and confirm.</p>
 
@@ -999,9 +1082,8 @@ const ARTICLES = [
       <h3>Private DNS</h3>
       <p><strong>Where:</strong> <span class="setting-path">Settings &gt; Network &amp; Internet &gt; Private DNS</span></p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> By default, DNS queries on Android use your carrier's resolver over unencrypted UDP. Private DNS (DNS over TLS — DoT) encrypts these lookups using TLS on port 853 and routes them to a specified privacy-respecting resolver, preventing your carrier from logging the domain names you look up. <br><strong>Plain:</strong> Every website name you look up is normally sent to your phone company in the open, like a postcard anyone can read. Private DNS seals those lookups in an envelope so your carrier can't see what websites you're looking up — even if they can still see that you're browsing.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every website name you look up is normally sent to your phone company in the open, like a postcard anyone can read. Technically, standard DNS queries on Android use your carrier's resolver over unencrypted UDP. Private DNS (DNS over TLS — DoT) encrypts these lookups using TLS on port 853 and routes them to a specified privacy-respecting resolver, preventing your carrier from logging the domain names you look up. It seals those lookups in an envelope so your carrier can't see what websites you're looking up — even if they can still see that you're browsing.</div></div>
 
-      <p>By default, your DNS queries (every website address you look up) go to your mobile carrier's DNS server in plain text. Your carrier can log every domain you visit. Private DNS (DNS over TLS) encrypts these lookups and sends them to a privacy-respecting resolver instead.</p>
       <p>Set to "Private DNS provider hostname" and enter <code>dns.mullvad.net</code>. This routes your DNS queries through Mullvad's no-log DNS resolver, encrypted.</p>
       <p>What you lose: nothing. DNS resolution still works; it's just encrypted and handled by a privacy-respecting server.</p>
       <p><strong>Verdict: Enable.</strong> Enter <code>dns.mullvad.net</code> or <code>dns.quad9.net</code> as the hostname. Zero downside.</p>
@@ -1014,9 +1096,8 @@ const ARTICLES = [
       <h3>MAC Address Randomisation</h3>
       <p><strong>Where:</strong> Tap any saved WiFi network under <span class="setting-path">Settings &gt; Network &amp; Internet &gt; Internet</span>, then "Privacy"</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> A MAC address (Media Access Control address) is a unique hardware identifier burned into your device's WiFi chip. Without randomisation, this permanent identifier can be used by WiFi access points and network sensors to track your device across different physical locations. Android 10+ supports per-network MAC randomisation, presenting a different randomly generated address to each network. <br><strong>Plain:</strong> Your phone's WiFi chip has a permanent serial number — like a fingerprint — that any WiFi network can see. Without randomisation, shops and networks can track that same number across locations to follow your movements. Randomisation gives each network a different fake number, so they can't track you across places.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your phone's WiFi chip has a permanent serial number — like a fingerprint — that any WiFi network can see. Without randomisation, shops and networks can track that same number across locations to follow your movements. Technically, a MAC address (Media Access Control address) is a unique hardware identifier burned into your device's WiFi chip, and Android 10+ supports per-network MAC randomisation, presenting a different randomly generated address to each network so they can't track you across places.</div></div>
 
-      <p>Your phone has a unique hardware address (MAC address) for its WiFi radio. Without randomisation, this can be used to track your device across locations. Android 10 and later support randomised MAC addresses — each network gets a different fake address, preventing cross-location tracking.</p>
       <p>Set each network to "Use randomised MAC." Some networks (corporate or school WiFi) may require the real MAC address to connect — in that case, switch to "Use device MAC" for that specific network only.</p>
       <p><strong>Verdict: Enable randomised MAC</strong> for all personal networks.</p>
 
@@ -1038,7 +1119,7 @@ const ARTICLES = [
       <p><strong>Where:</strong> <span class="setting-path">Settings &gt; System &gt; Backup</span></p>
       <p>Google's backup system stores a copy of your apps, settings, call history, SMS messages, and some app data on Google's servers. If your phone is lost or replaced, this lets you restore it quickly. The tradeoff: Google holds a snapshot of much of your digital life.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Google Backup encrypts backups, but the encryption key is tied to your Google account credentials — meaning Google can decrypt the backup if compelled to do so. This is different from end-to-end encryption, where only you hold the decryption key and the provider cannot access the plaintext even under a legal order. <br><strong>Plain:</strong> Google does lock your backup, but they hold a spare key. If a court orders them to open it, they can. End-to-end encryption is different — it's like a lock where only you have the only copy of the key. Nobody else can open it, including the company storing it.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Google does lock your backup, but they hold a spare key. If a court orders them to open it, they can. Technically, Google Backup encrypts backups with a key tied to your Google account credentials — meaning Google can decrypt the backup if compelled to do so. This is different from end-to-end encryption, where only you hold the decryption key and the provider cannot access the plaintext even under a legal order — like a lock where only you have the only copy of the key.</div></div>
 
       <p><strong>Verdict:</strong> This is a genuine tradeoff. If you value restore convenience and trust Google's legal protections, keep it on. If you're concerned about what a court order could reveal, turn it off and use local backups instead.</p>
 
@@ -1299,14 +1380,16 @@ const ARTICLES = [
   },
   {
     id: 'linux-privacy-security',
+    index: 3,
     title: 'Top 10 Linux Distributions for Privacy and Security (Plus 5 Mainstream Alternatives)',
     category: 'Operating Systems',
     date: '2026-05-20',
     readTime: '15 min read',
     excerpt: 'A comprehensive guide to the most secure and private Linux operating systems available today, and how the mainstream options compare.',
     tags: ['Linux', 'Privacy', 'Security', 'Operating Systems'],
-    relatedReviews: ['grapheneos'],
-    content: \`
+    platforms: ['Linux'],
+    relatedReviews: ['grapheneos', 'tails', 'qubes-os', 'librewolf', 'tor-browser', 'luks', 'veracrypt', 'metadata-cleaner', 'bleachbit', 'keepassxc', 'flatpak', 'firejail', 'ufw', 'nextdns'],
+    content: `
       <h2>Why Linux for Privacy and Security?</h2>
       <p>Windows and macOS are built by massive corporations whose business models often involve collecting data or locking you into their ecosystems. Linux is different. It is an open-source operating system kernel, meaning its code is public and can be inspected by anyone. Because of this, it has spawned hundreds of "distributions" (different versions of Linux), many of which are designed specifically to protect your privacy and security.</p>
       
@@ -1314,15 +1397,15 @@ const ARTICLES = [
       
       <h3>1. Tails (The Amnesic Incognito Live System)</h3>
       <p>Tails is the gold standard for anonymous browsing and leaving no trace on the computer you use.</p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Tails is an amnesic system that runs entirely from RAM and routes all internet traffic through the Tor network. On shutdown, all RAM is overwritten, leaving no forensic footprint on the host machine's physical storage.<br><strong>Plain:</strong> Tails is an operating system that forgets everything the moment you turn it off. It runs from a USB stick, sends all your internet traffic through a disguised network, and leaves zero trace on your computer.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Tails is an operating system that forgets everything the moment you turn it off. It runs from a USB stick, sends all your internet traffic through a disguised network, and leaves zero trace on your computer. Technically, Tails is an amnesic system that runs entirely from RAM and routes all internet traffic through the Tor network — on shutdown, all RAM is overwritten, leaving no forensic footprint on the host machine's physical storage.</div></div>
       
       <h3>2. Qubes OS</h3>
       <p>If Tails is about hiding your identity, Qubes is about unbreakable security on your own computer.</p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Qubes OS uses a bare-metal hypervisor (Type-1) to isolate hardware controllers and user applications into strictly confined Virtual Machines (qubes), mitigating the impact of software exploitation.<br><strong>Plain:</strong> Qubes puts every app in its own locked, soundproof box. If a hacker breaks into your web browser, they are trapped in that box and can't reach your personal files or other apps.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Qubes puts every app in its own locked, soundproof box. If a hacker breaks into your web browser, they are trapped in that box and can't reach your personal files or other apps. Technically, Qubes OS uses a bare-metal hypervisor (Type-1) to isolate hardware controllers and user applications into strictly confined Virtual Machines (qubes), mitigating the impact of software exploitation.</div></div>
 
       <h3>3. Whonix</h3>
       <p>Whonix is designed specifically to guarantee that your real IP address is never leaked, even if you are hacked.</p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Whonix uses a dual-VM architecture (a Gateway VM running Tor and a Workstation VM for the user) where the Workstation is physically incapable of accessing the external network directly, preventing IP leaks via malware.<br><strong>Plain:</strong> Whonix splits your computer in two. One side does your work, the other handles the internet. Because the working side can't talk to the internet directly, a virus can't accidentally reveal who you are.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Whonix splits your computer in two. One side does your work, the other handles the internet. Because the working side can't talk to the internet directly, a virus can't accidentally reveal who you are. Technically, Whonix uses a dual-VM architecture (a Gateway VM running Tor and a Workstation VM for the user) where the Workstation is physically incapable of accessing the external network directly, preventing IP leaks via malware.</div></div>
 
       <h3>4. Kali Linux</h3>
       <p>Kali is a famous operating system built specifically for "penetration testing" — legally hacking systems to find weaknesses. It comes pre-loaded with hundreds of security tools. It's not meant for daily use, but for actively testing security.</p>
@@ -1335,7 +1418,7 @@ const ARTICLES = [
 
       <h3>7. Alpine Linux</h3>
       <p>Alpine is designed for servers and advanced users who want the smallest, most secure foundation possible.</p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Alpine uses musl libc and BusyBox instead of standard GNU utilities, and compiles all user-space binaries as Position Independent Executables (PIE) with stack smashing protection, reducing the attack surface significantly.<br><strong>Plain:</strong> Alpine is stripped down to the bare minimum. Because there are fewer parts, there are fewer places for hackers to break in. It's like a fortress with only one heavily guarded door instead of a house with twenty windows.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Alpine is stripped down to the bare minimum. Because there are fewer parts, there are fewer places for hackers to break in. It's like a fortress with only one heavily guarded door instead of a house with twenty windows. Technically, Alpine uses musl libc and BusyBox instead of standard GNU utilities, and compiles all user-space binaries as Position Independent Executables (PIE) with stack smashing protection, reducing the attack surface significantly.</div></div>
 
       <h3>8. BlackArch Linux</h3>
       <p>BlackArch is an expansion for Arch Linux aimed at security researchers. It contains over 2,800 tools for testing network and computer security. Like Kali, it is highly specialized and not recommended for beginners.</p>
@@ -1345,7 +1428,7 @@ const ARTICLES = [
 
       <h3>10. Fedora Silverblue</h3>
       <p>Silverblue represents the future of secure desktop Linux.</p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Fedora Silverblue utilizes an immutable root filesystem, meaning the core OS files are read-only and updated atomically. Applications are installed and run strictly via Flatpak containers.<br><strong>Plain:</strong> Silverblue locks the core of your computer so that it cannot be changed or infected. You can install apps, but they run in separate, secure bubbles that can't mess with the rest of the system.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Silverblue locks the core of your computer so that it cannot be changed or infected. You can install apps, but they run in separate, secure bubbles that can't mess with the rest of the system. Technically, Fedora Silverblue utilizes an immutable root filesystem, meaning the core OS files are read-only and updated atomically, with applications installed and run strictly via Flatpak containers.</div></div>
 
       <h2>5 Mainstream Linux Distributions Compared</h2>
       <p>Not everyone wants to run a specialized, highly restricted system. If you just want a normal daily-driver computer, here is how the mainstream Linux options fare regarding privacy and security.</p>
@@ -1355,7 +1438,7 @@ const ARTICLES = [
 
       <h3>2. Fedora Workstation</h3>
       <p>Fedora is backed by Red Hat and is an excellent balance of up-to-date software and strong security.</p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Fedora implements SELinux (Security-Enhanced Linux) by default, providing a Mandatory Access Control (MAC) system that dictates exactly what files and network resources every application is allowed to access.<br><strong>Plain:</strong> Fedora uses a strict bouncer for every app. Even if an app has permission to run, the bouncer ensures it can only touch the exact files it was designed to touch, and nothing else.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Fedora uses a strict bouncer for every app. Even if an app has permission to run, the bouncer ensures it can only touch the exact files it was designed to touch, and nothing else. Technically, Fedora implements SELinux (Security-Enhanced Linux) by default, providing a Mandatory Access Control (MAC) system that dictates exactly what files and network resources every application is allowed to access.</div></div>
 
       <h3>3. Debian</h3>
       <p>Debian is the grandfather of many Linux distributions (including Ubuntu and Mint). It is famously stable because it heavily tests its software before releasing it. From a privacy perspective, it is flawless, as it is entirely community-run and non-profit.</p>
@@ -1365,26 +1448,65 @@ const ARTICLES = [
 
       <h3>5. Ubuntu</h3>
       <p>Ubuntu is the most popular Linux distribution, but it has the most controversial privacy history.</p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Ubuntu previously included Amazon affiliate tracking in its search, and currently pushes Snap packages which run from a centralized, proprietary backend controlled by Canonical, raising telemetry and user-autonomy concerns.<br><strong>Plain:</strong> Ubuntu is easy to use, but the company behind it has a history of adding tracking features and forcing users into their own closed-off app store. It's much better than Windows, but not the most private Linux option.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Ubuntu is easy to use, but the company behind it has a history of adding tracking features and forcing users into their own closed-off app store. Technically, Ubuntu previously included Amazon affiliate tracking in its search, and currently pushes Snap packages which run from a centralized, proprietary backend controlled by Canonical, raising telemetry and user-autonomy concerns. It's much better than Windows, but not the most private Linux option.</div></div>
 
       <h2>Verdict</h2>
       <p>For the absolute highest level of privacy and anonymity, use <strong>Tails</strong> or <strong>Whonix</strong> on a USB drive. For unbreakable security through isolation on your main computer, use <strong>Qubes OS</strong>. For everyday use that still respects your privacy infinitely more than Windows or macOS, start with <strong>Linux Mint</strong> or <strong>Fedora Workstation</strong>.</p>
+
+      <h2>Essential Privacy Tools for Any Linux Distribution</h2>
+      <p>You don't need to switch to a highly specialized distribution to achieve a fantastic level of privacy. Mainstream distributions like Linux Mint or Fedora can be hardened with standard, free tools.</p>
+      
+      <h3>🌐 Web Browsing &amp; Anonymity</h3>
+      <ul>
+        <li><strong>LibreWolf</strong>: A custom version of Firefox stripped of all telemetry and pre-configured for maximum tracking protection out of the box.</li>
+        <li><strong>Tor Browser</strong>: The gold standard for total online anonymity and hiding your true location.</li>
+      </ul>
+
+      <h3>🔒 Device &amp; File Security</h3>
+      <ul>
+        <li><strong>LUKS</strong>: Full-disk encryption that locks down your entire hard drive so no one can access your data if your computer is stolen. Usually configured during installation.</li>
+        <li><strong>VeraCrypt</strong>: Creates securely encrypted folders or USB drives for highly sensitive documents.</li>
+      </ul>
+
+      <h3>🧹 Local Data Cleaning</h3>
+      <ul>
+        <li><strong>Metadata Cleaner (MAT2)</strong>: Strips hidden tracking info (like GPS coordinates, time stamps, and camera models) from photos and PDFs before you share them.</li>
+        <li><strong>BleachBit</strong>: Deep-cleans your system by shredding temporary files, caches, and tracking cookies.</li>
+      </ul>
+
+      <h3>🔑 Credentials</h3>
+      <ul>
+        <li><strong>KeePassXC</strong>: A powerful password manager that keeps your encrypted password vault entirely offline and on your own machine.</li>
+      </ul>
+
+      <h3>🛡️ App Isolation</h3>
+      <ul>
+        <li><strong>Flatpak / Firejail</strong>: Sandboxing tools that restrict what permissions an application has. They act like bouncers, preventing apps from digging through your personal files or accessing the internet without permission.</li>
+      </ul>
+
+      <h3>🛡️ Network Security</h3>
+      <ul>
+        <li><strong>UFW (Uncomplicated Firewall)</strong>: A simple way to block unwanted incoming connections to your computer.</li>
+        <li><strong>NextDNS / DNS-over-TLS</strong>: Encrypts your DNS requests to stop your internet service provider from logging every website you visit.</li>
+      </ul>
     `
   },
   {
     id: 'bittorrent-explained',
+    index: 4,
     title: 'The Case for BitTorrent: Privacy, Legitimate Uses, and Trackerless File Sharing',
     category: 'Privacy Tools',
     date: '2026-05-20',
     readTime: '12 min read',
     excerpt: 'BitTorrent is often misunderstood. Learn how peer-to-peer file sharing offers unique privacy benefits and how to use it safely without centralized trackers.',
     tags: ['Privacy', 'BitTorrent', 'P2P', 'Decentralization'],
-    relatedReviews: [],
-    content: \`
+    platforms: ['Windows', 'macOS', 'Linux'],
+    relatedReviews: ['onionshare', 'wormhole', 'qbittorrent', 'transmission'],
+    content: `
       <h2>The Misunderstanding of BitTorrent</h2>
       <p>When most people hear the word "torrent," they immediately think of piracy. But BitTorrent is just a technology — a way of moving data from one place to another. It is a decentralized, peer-to-peer (P2P) protocol. Instead of downloading a file from one central server (like downloading a video from YouTube), you download small pieces of the file from dozens or hundreds of other people who already have it, while simultaneously sharing the pieces you have with others.</p>
       
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> The BitTorrent protocol divides files into pieces and distributes them across a "swarm" of peers. A client downloads missing pieces from multiple "seeders" (peers with the complete file) and "leechers" (peers with incomplete files) while concurrently uploading pieces it has acquired.<br><strong>Plain:</strong> Instead of getting a whole book from a single library, you get one page from Bob, one page from Alice, and one page from Charlie. While you are reading page one, you let Dave copy it from you. Everyone helps everyone else get the full book faster.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Instead of getting a whole book from a single library, you get one page from Bob, one page from Alice, and one page from Charlie. While you are reading page one, you let Dave copy it from you. Everyone helps everyone else get the full book faster. Technically, the BitTorrent protocol divides files into pieces and distributes them across a "swarm" of peers — a client downloads missing pieces from multiple "seeders" (peers with the complete file) and "leechers" (peers with incomplete files) while concurrently uploading pieces it has acquired.</div></div>
       
       <p>Because of this efficiency, torrenting has incredibly important legitimate uses. It is how large open-source operating systems (like Linux distributions) are distributed to save server costs. It is used by scientists to share massive academic datasets. The Internet Archive uses it to distribute millions of public domain books, movies, and audio files. Even game companies like Blizzard have used P2P technology to distribute game updates.</p>
 
@@ -1395,15 +1517,15 @@ const ARTICLES = [
       <h2>Trackerless Torrenting: The Ultimate Decentralization</h2>
       <p>Historically, torrents relied on "trackers."</p>
       
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> A tracker is an HTTP/HTTPS or UDP server that coordinates communication between peers. It maintains a list of IP addresses of clients in the swarm but does not host the file data itself.<br><strong>Plain:</strong> A tracker is like a telephone directory. It doesn't have the file you want, but it tells your computer the phone numbers of all the other computers that do have the file.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>A tracker is like a telephone directory. It doesn't have the file you want, but it tells your computer the phone numbers of all the other computers that do have the file. Technically, a tracker is an HTTP/HTTPS or UDP server that coordinates communication between peers — it maintains a list of IP addresses of clients in the swarm but does not host the file data itself.</div></div>
       
       <p>Trackers are a weak point. If the tracker goes offline, the swarm can't find new peers. If a malicious entity runs the tracker, they can log the IP addresses of everyone looking for a file. To solve this, the BitTorrent protocol evolved to support "trackerless" torrenting using two key technologies: DHT and PEX.</p>
 
       <h3>DHT (Distributed Hash Table)</h3>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> DHT (specifically the Mainline DHT based on Kademlia) is a decentralized distributed system that provides a lookup service similar to a hash table. Nodes store routing information, allowing peers to discover each other without relying on a centralized tracker.<br><strong>Plain:</strong> Instead of having one giant telephone directory on a server, DHT chops the directory up and gives a tiny piece to every single user. When you need to find someone, your computer asks its neighbours, who ask their neighbours, until the right person is found. The users <em>are</em> the tracker.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Instead of having one giant telephone directory on a server, DHT chops the directory up and gives a tiny piece to every single user. When you need to find someone, your computer asks its neighbours, who ask their neighbours, until the right person is found. The users <em>are</em> the tracker. Technically, DHT (specifically the Mainline DHT based on Kademlia) is a decentralized distributed system that provides a lookup service similar to a hash table — nodes store routing information, allowing peers to discover each other without relying on a centralized tracker.</div></div>
 
       <h3>PEX (Peer Exchange)</h3>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> PEX is an extension to the BitTorrent protocol that allows a client to exchange lists of known peers directly with connected peers, significantly reducing the load on trackers and DHT nodes.<br><strong>Plain:</strong> Once you connect to Alice, you ask her, "Who else do you know that has this file?" She gives you a list of her friends, and you connect to them directly.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Once you connect to Alice, you ask her, "Who else do you know that has this file?" She gives you a list of her friends, and you connect to them directly. Technically, PEX is an extension to the BitTorrent protocol that allows a client to exchange lists of known peers directly with connected peers, significantly reducing the load on trackers and DHT nodes.</div></div>
 
       <h3>Magnet Links</h3>
       <p>To use trackerless torrenting, you typically use a "magnet link" instead of downloading a <code>.torrent</code> file. A <code>.torrent</code> file is a physical file you download from a website. A magnet link is just a short line of text containing a unique fingerprint (a hash) of the file you want. When you click a magnet link, your torrent software uses DHT to shout into the decentralized network: "Does anyone have a file with this fingerprint?" The network responds, and the download begins completely independent of any central website.</p>
@@ -1415,6 +1537,140 @@ const ARTICLES = [
         <li><strong>Transmission:</strong> An excellent, lightweight, open-source alternative, particularly popular on macOS and Linux.</li>
       </ul>
       <p>In both of these programs, you can check the settings (usually under "BitTorrent" or "Privacy") to ensure that "Enable DHT (Distributed Hash Table)" and "Enable Peer Exchange (PeX)" are checked. Once they are, you are participating in a truly decentralized, censorship-resistant network.</p>
+    `
+  },
+  {
+    id: 'privacy-vs-convenience',
+    index: 2,
+    title: 'Privacy vs. Functionality: Where Do You Actually Draw the Line?',
+    category: 'Basics',
+    date: '2026-05-21',
+    readTime: '17 min read',
+    excerpt: 'Every privacy tool asks you to give something up. This is a clear-eyed look at the real trade-offs — so you can make deliberate decisions instead of reflexive ones.',
+    tags: ['privacy', 'convenience', 'analysis', 'basics'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    relatedReviews: ['signal', 'brave', 'firefox', 'librewolf', 'tor-browser', 'bitwarden', 'keepassxc', 'mullvad', 'protonmail', 'simplelogin', 'duckduckgo', 'ublock-origin', 'nextdns', 'organic-maps', 'grapheneos'],
+    content: `
+      <p>Every privacy tool has a cost. Sometimes it's time. Sometimes it's money. Sometimes it's that a website breaks and you spend ten minutes figuring out why. The privacy world is bad at admitting this — there's a tendency to present every recommendation as obviously worth doing, and to gloss over the genuine friction involved.</p>
+      <p>This article doesn't do that. We're going to go through the real trade-offs, category by category, so you can make deliberate choices instead of either doing nothing or going all-in on a hardened setup you'll abandon in a week.</p>
+      <p>The goal of good privacy isn't maximum privacy. It's the right privacy — the amount that matches your actual situation, your real risks, and your honest tolerance for friction.</p>
+
+      <h2>The Foundational Idea: Your Threat Model</h2>
+      <p>Security professionals use a term called a <strong>threat model</strong>. It sounds technical but the idea is simple: who are you protecting yourself from, and what are you trying to prevent? Your answers determine how much friction is worth accepting.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Ask yourself: who might actually want my data, and what could they do with it? A teenager worried about a parent reading their messages has a very different problem than a journalist protecting a source. Technically, a threat model is a structured analysis of potential adversaries, their capabilities, and the assets you want to protect — it allows you to identify which countermeasures are proportionate to the actual risk, and which involve costs that exceed the benefit given your specific circumstances. Matching your tools to your real situation is smarter than just using every tool available.</div></div>
+
+      <p>For most people, the adversary is not a government agency. It is advertising companies, data brokers, and the occasional hacker targeting thousands of people at once rather than you specifically. This threat profile is very real and worth defending against — but it doesn't require the same tools as a journalist working in an authoritarian state. Calibrating your defences to your actual threat model is what separates a useful privacy setup from an exhausting one.</p>
+
+      <h2>Category 1: Browsers — The Biggest Bang Per Effort</h2>
+      <p>Your browser is the most exposed surface of your digital life. It handles communication, identity, financial transactions, and more. It is also, fortunately, the category where the best privacy tools impose the least friction.</p>
+
+      <p><strong>What you give up with Brave:</strong> Almost nothing. Brave looks and behaves exactly like Chrome. The same extensions work. The same websites work. The learning curve is nearly zero. The built-in cryptocurrency features can be completely ignored. The one caveat is that Brave's strictest fingerprint protection (set to "Strict") can occasionally cause minor layout issues on some websites — you click the Brave "Shields" icon and disable it for that site, which takes five seconds.</p>
+
+      <p><strong>What you give up with hardened Firefox:</strong> About fifteen minutes to configure it, and occasional friction on websites optimised specifically for Chrome. The Firefox experience on some media-heavy or banking sites can feel slightly less polished. The trade-off is that Firefox has no advertising revenue motive and runs on a completely independent codebase that Google cannot control.</p>
+
+      <p><strong>What you give up with LibreWolf:</strong> Slightly more frequent updates (LibreWolf lags behind official Firefox by a few days), and possibly some more frequent breakage on edge-case websites because its defaults are stricter. The gain is that you get Firefox fully hardened without any configuration work at all.</p>
+
+      <p><strong>What you give up with Tor Browser:</strong> Speed, streaming, and most logged-in browsing. Tor is slow by design — traffic routes through three separate computers worldwide. Sites occasionally block it. You cannot use your personal accounts without destroying the anonymity entirely. This tool has a specific, important use case: anonymous browsing of sensitive content. It is not a daily driver.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Tor is meaningfully slower than regular browsing because your request has to travel through three computers in different countries before reaching the website. Most streaming services won't work. Technically, Tor's multi-hop routing increases latency by 200–500ms on average and reduces effective bandwidth by roughly 60–80% compared to a direct connection, with exit node IP blocking by services like Cloudflare and streaming platforms further limiting usability for authenticated browsing. It's the right tool for sensitive research — not for watching videos or checking your email.</div></div>
+
+      <p><strong>The verdict on browsers:</strong> Switching from Chrome to Brave is the highest-value, lowest-friction privacy action available. If you also install uBlock Origin, you've covered the vast majority of browser-based tracking with minimal lifestyle change. Tor is for specific use cases, not everyday browsing.</p>
+
+      <h2>Category 2: Search Engines — Smaller Trade-Off Than You Think</h2>
+      <p>Google is the most powerful data collector in the world for a reason: it has the best search results. Switching to a private alternative means asking: how often do you actually need Google's edge, and what does that edge cost you?</p>
+
+      <p>DuckDuckGo has improved dramatically over the past five years. For everyday searches — recipes, directions, product names, news — it returns excellent results. The gap narrows considerably when you're searching for something highly technical, deeply niche, or very recent, where Google's index size and ranking sophistication genuinely outperform alternatives.</p>
+
+      <p>A practical compromise used by many privacy-aware people: set DuckDuckGo as your default, and on the rare searches where results are genuinely insufficient, add <code>!g</code> to the query. DuckDuckGo's "bangs" feature forwards the search directly to Google. You use Google's results when you need them, but the baseline is private.</p>
+
+      <h2>Category 3: Messaging — The High-Stakes Category</h2>
+      <p>This is where the privacy versus convenience calculation gets most interesting, because the friction isn't technical — it's social. Signal is technically superior to WhatsApp in almost every privacy dimension. The problem is that you cannot unilaterally switch. Your contacts have to be on Signal too.</p>
+
+      <p><strong>What you give up with Signal:</strong> The convenience of a single app where all your contacts already are. You'll have two messaging apps for a while — Signal for the people you've convinced, WhatsApp or iMessage for everyone else. This is genuinely annoying. There is no technical solution to it; it's a network effect problem.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Signal encrypts everything from the start. WhatsApp says it does too — but most people's WhatsApp messages are automatically backed up to Google or Apple's servers, completely unencrypted, which defeats the encryption entirely. Technically, Signal uses the Signal Protocol (Double Ratchet + X3DH), providing forward secrecy and break-in recovery, while WhatsApp's end-to-end encryption is broken in practice for most users because chat backups to Google Drive and iCloud are not end-to-end encrypted unless explicitly enabled. Signal has no such loophole.</div></div>
+
+      <p>The pragmatic approach: use Signal for conversations where content actually matters — health issues, financial discussions, relationship problems, work conversations you'd prefer not to have permanently recorded. Use whatever works for everything else. Even partial adoption gives real protection for real conversations.</p>
+
+      <h2>Category 4: Email — The Category With the Worst Trade-Offs</h2>
+      <p>Email is, bluntly, a fundamentally broken medium for private communication. This is not a problem that any provider — not even ProtonMail — can fully solve, because of how email was designed decades ago.</p>
+
+      <p>The most important thing to understand: <strong>email metadata is always visible</strong>. Even perfectly encrypted emails show who sent them, who received them, and when. If you're exchanging sensitive information, Signal is the right tool — not email. No email provider in existence can hide the fact that you emailed a particular person at a particular time.</p>
+
+      <p><strong>What you give up with ProtonMail over Gmail:</strong> Gmail's integration with the rest of Google's ecosystem (Calendar, Drive, Meet). Some of ProtonMail's advanced features (custom domains, more storage) require a paid plan. The interface is slightly less polished than Gmail. The upside is that Proton cannot read your emails — ever — because they don't have the decryption key.</p>
+
+      <p><strong>What SimpleLogin adds:</strong> A layer of email aliases so your real address is never exposed to services you sign up for. The friction is that you have a slightly more complex email setup and you manage aliases. The gain is that you can tell which services leak or sell your email, and you can silently delete that alias without affecting anything else.</p>
+
+      <h2>Category 5: VPNs — The Most Misunderstood Category</h2>
+      <p>VPNs are widely marketed as a comprehensive privacy solution. They are not. A VPN moves the trust: instead of trusting your internet provider not to log your traffic, you trust the VPN provider. If the VPN logs your traffic, you've gained nothing. If they are legally compelled to hand over logs, your traffic is exposed.</p>
+
+      <p>What a VPN does genuinely well is specific and limited. It hides your traffic from your internet service provider. It hides your real IP address from websites. It prevents the network you're on (like public WiFi at a coffee shop) from intercepting your connections. These are real, useful protections in specific situations.</p>
+
+      <p><strong>What you give up with Mullvad:</strong> Typically 10–20% slower browsing speeds due to encryption overhead. Monthly cost (€5/month, paid with cash or cryptocurrency for full anonymity). Occasional incompatibility with streaming services that block VPN IP ranges. Some websites add CAPTCHA challenges to VPN exit addresses.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>A VPN is useful for hiding what websites you visit from your internet provider, and for protecting yourself on public WiFi. Technically, a VPN encrypts all traffic between your device and the VPN server and routes it through the provider's IP address — this protects against ISP-level monitoring and local network interception, while HTTPS already encrypts the content of your traffic, so the primary thing a VPN adds is hiding which domains you visit from your ISP and masking your IP from destination servers. It is not a magic shield — the VPN company can see everything your internet provider used to see. Choose a VPN you trust more than your internet provider.</div></div>
+
+      <h2>Category 6: Password Managers — Near-Zero Trade-Off</h2>
+      <p>This is the easiest category to assess: there is almost no meaningful downside to using a password manager. The friction is entirely front-loaded — you spend time setting it up and migrating your passwords. After that, logging in is <em>easier</em> than before because the manager fills in your credentials automatically.</p>
+
+      <p>The main concern people have is: "what if someone gets my master password?" The answer is that this one strong password is far easier to protect than fifty weak, reused ones. The alternative — reusing passwords — guarantees that a breach of any one service compromises every account you have. A password manager with a strong master password and two-factor authentication enabled is categorically safer than the alternative.</p>
+
+      <p>Bitwarden imposes almost no trade-off for most users. KeePassXC imposes a small trade-off: you manage your own backups, and syncing to your phone requires some extra setup. The benefit is that your passwords never leave your devices — no company, no server, no potential breach.</p>
+
+      <h2>Category 7: Maps and Navigation — The Trade-Off Is Real</h2>
+      <p>This is one of the honest categories. Google Maps is genuinely excellent — it has the most comprehensive transit data, the most accurate business hours, the most up-to-date traffic, and the most reliable address database in the world. Privacy alternatives exist, but they are genuinely less capable in some ways.</p>
+
+      <p>Organic Maps (based on OpenStreetMap data) has excellent walking and cycling navigation, strong offline functionality, and no tracking whatsoever. In cities with good OpenStreetMap coverage, it works well for most purposes. Where it falls short is transit routing and live traffic in places with incomplete map data.</p>
+
+      <p>OsmAnd is more powerful and more configurable, with better transit support, but has a steeper learning curve than either Google Maps or Organic Maps.</p>
+
+      <p><strong>The honest verdict:</strong> If you live in a major city and mostly walk, cycle, or drive, Organic Maps covers you well. If you heavily rely on real-time transit information or live somewhere with limited OpenStreetMap data, Google Maps remains more capable and the trade-off is real. Compartmentalisation works here: use the private option for routine routes, and accept the tracking cost for situations where you genuinely need the superior data.</p>
+
+      <h2>Category 8: Mobile Operating Systems — The Largest Trade-Off</h2>
+      <p>GrapheneOS is the most private Android experience available. It removes all Google services, runs each app in a hardened sandbox, and has a verified boot chain that detects tampering. It requires a Google Pixel phone. It requires manual installation. It means that apps requiring Google Play Services — which includes a significant number of banking apps, some corporate apps, and some government apps — will not work at all unless you specifically configure GrapheneOS's sandboxed Play compatibility layer.</p>
+
+      <p>This is a large trade-off. It is not the right choice for most people. But knowing it exists matters: if you ever need that level of phone security — for professional reasons, for travel to certain countries, for personal risk assessment — the option exists and works well.</p>
+
+      <p>For regular users, the most impactful actions are not a different operating system but the application of good settings on the phone you already have. Revoking unnecessary app permissions, disabling advertising IDs, turning off location for apps that don't need it, and using Signal for sensitive conversations collectively provide substantial protection with minimal friction.</p>
+
+      <h2>A Practical Framework for Making Decisions</h2>
+      <p>Instead of asking "should I do everything on this list?" try asking three questions for each tool:</p>
+
+      <ol>
+        <li><strong>What does this tool protect me from?</strong> Be specific. "From being tracked by ad networks" is specific. "From hackers" is not.</li>
+        <li><strong>Is that threat real for me?</strong> Most people are targeted by mass advertising surveillance, not targeted attacks. Some people have specific professional or personal circumstances that change this.</li>
+        <li><strong>What does the tool cost me in practice, not in theory?</strong> Read a review. Try it for a week. Measure the actual friction, not the imagined friction.</li>
+      </ol>
+
+      <h2>The Changes With the Best Trade-Off</h2>
+      <p>If we ranked every action on this site by the ratio of privacy gained to friction cost, a short list emerges consistently:</p>
+
+      <ul>
+        <li><strong>Install uBlock Origin</strong> — the highest impact, zero ongoing friction, works with any browser</li>
+        <li><strong>Switch to Brave</strong> — near-identical Chrome experience, immediate fingerprinting and tracker blocking</li>
+        <li><strong>Use Bitwarden</strong> — front-loaded setup cost, makes login <em>easier</em> afterwards, eliminates credential stuffing risk</li>
+        <li><strong>Switch Signal for important conversations</strong> — doesn't require abandoning WhatsApp, just adding Signal for specific use cases</li>
+        <li><strong>Enable two-factor authentication on email and banking</strong> — five minutes once, prevents a large category of account takeovers</li>
+      </ul>
+
+      <p>These five actions cover the majority of common-threat privacy risks for most people, and none of them require significant ongoing effort after the initial setup.</p>
+
+      <h2>The Changes Worth Doing If You Have Higher Stakes</h2>
+      <p>If your situation involves professional sensitivity, travel, activism, journalism, or personal circumstances that raise your risk profile, the following additions are proportionate:</p>
+
+      <ul>
+        <li><strong>Mullvad VPN</strong> — particularly useful when travelling or using public networks</li>
+        <li><strong>ProtonMail + SimpleLogin</strong> — email that Proton can't read, plus alias management to limit exposure</li>
+        <li><strong>NextDNS</strong> — blocks tracking at the DNS level for every app on your device, not just your browser</li>
+        <li><strong>LibreWolf or hardened Firefox</strong> — maximum browser privacy without switching to Tor</li>
+        <li><strong>Tor Browser for specific research</strong> — when what you're looking at is itself sensitive</li>
+      </ul>
+
+      <h2>The Honest Bottom Line</h2>
+      <p>Privacy and convenience exist on a spectrum, not as opposites. The privacy tools that impose the heaviest friction are the ones designed for the most extreme threat models — and most people don't have those threat models. The tools designed for everyday use have improved dramatically in the past decade and now impose remarkably little friction for remarkably strong protection.</p>
+
+      <p>The right approach is not to implement everything and burn out. It is to understand the trade-offs clearly, implement the high-value low-friction changes immediately, and make deliberate decisions about the rest based on your actual situation. Knowledge is the prerequisite. You now have it.</p>
     `
   }
 ];

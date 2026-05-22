@@ -145,45 +145,45 @@
 
     <div class="grid grid-auto stagger" id="tips-grid">
 
-      <div class="tip-card">
+      <a href="article.html#password-managers-guide" class="tip-card" style="text-decoration:none;color:inherit">
         <div class="tip-card__icon">🔑</div>
         <div class="tip-card__content">
           <h3 class="tip-card__title">Use a password manager</h3>
-          <p class="tip-card__text">Generate unique, strong passwords for every account. If one site is breached, the rest stay safe. Bitwarden is free and open source.</p>
+          <p class="tip-card__text">Create strong, unique passwords for every site. If one website gets hacked, the rest of your accounts stay safe. Read our guide to learn how.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="tip-card">
+      <a href="review.html#signal" class="tip-card" style="text-decoration:none;color:inherit">
         <div class="tip-card__icon">💬</div>
         <div class="tip-card__content">
           <h3 class="tip-card__title">Switch to Signal</h3>
-          <p class="tip-card__text">End-to-end encrypted messaging by default. The non-profit behind it has been compelled by courts — and had nothing to hand over.</p>
+          <p class="tip-card__text">Signal is a free messaging app that encrypts everything. This means nobody can read your messages—not even the people who built the app.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="tip-card">
+      <a href="review.html#ublock-origin" class="tip-card" style="text-decoration:none;color:inherit">
         <div class="tip-card__icon">🧱</div>
         <div class="tip-card__content">
           <h3 class="tip-card__title">Install uBlock Origin</h3>
-          <p class="tip-card__text">The most effective content blocker available. Stops ads, trackers, and fingerprinting scripts before they load. Free and open source.</p>
+          <p class="tip-card__text">The best ad blocker available. It stops ads, hidden trackers, and invisible scripts before they even have a chance to load on your screen.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="tip-card">
+      <a href="review.html#aegis-authenticator" class="tip-card" style="text-decoration:none;color:inherit">
         <div class="tip-card__icon">🔐</div>
         <div class="tip-card__content">
           <h3 class="tip-card__title">Enable 2FA everywhere</h3>
-          <p class="tip-card__text">Two-factor authentication prevents account takeovers even if your password is stolen. Use an authenticator app, not SMS.</p>
+          <p class="tip-card__text">Two-factor authentication (2FA) means that even if a hacker steals your password, they still need your physical phone to log in to your account.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="tip-card">
+      <a href="article.html#smartphone-hardening" class="tip-card" style="text-decoration:none;color:inherit">
         <div class="tip-card__icon">📱</div>
         <div class="tip-card__content">
           <h3 class="tip-card__title">Audit your app permissions</h3>
-          <p class="tip-card__text">Check which apps have access to your location, microphone, and camera. Revoke anything that doesn't need it to function.</p>
+          <p class="tip-card__text">Check which apps have access to your location, microphone, and camera. Turn off access for any app that doesn't absolutely need it to work.</p>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
@@ -300,8 +300,8 @@
   initTheme();
 
   // Dynamic stats — always reflects actual data file counts
-  document.getElementById('stat-articles').textContent = ARTICLES.length;
-  document.getElementById('stat-reviews').textContent  = REVIEWS.length;
+  document.getElementById('stat-articles').textContent = ARTICLES.filter(a => !a.draft).length;
+  document.getElementById('stat-reviews').textContent  = REVIEWS.filter(r => !r.draft).length;
 
   // Render 3 featured articles
   const articlesGrid = document.getElementById('home-articles-grid');

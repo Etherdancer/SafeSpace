@@ -7,6 +7,8 @@ const REVIEWS = [
   /* ── PASSWORD MANAGERS ───────────────────────────────────── */
   {
     id: 'bitwarden',
+    website: 'https://bitwarden.com',
+    index: 1,
     name: 'Bitwarden',
     tagline: 'The best free, open-source password manager',
     category: 'Password Managers',
@@ -16,7 +18,7 @@ const REVIEWS = [
     pricing: 'Free / $10/yr Premium',
     openSource: true,
     auditedBy: 'Cure53, Insight Risk Consulting',
-    relatedArticles: ['password-managers-guide', 'smartphone-hardening'],
+    relatedArticles: ['password-managers-guide', 'smartphone-hardening', 'privacy-vs-convenience'],
     verdict: 'Bitwarden is our top pick. It\'s free, fully open source, independently verified, and works on every device. There\'s almost no reason to use anything else.',
     pros: [
       'Completely free for unlimited passwords on unlimited devices',
@@ -35,16 +37,14 @@ const REVIEWS = [
       <p>Bitwarden is a password manager — a secure digital safe that remembers all your passwords so you don't have to. You remember one strong master password to open the safe; Bitwarden handles the rest. Every account you have gets its own unique, random password that you never need to see or type.</p>
 
       <h2>Is It Actually Safe?</h2>
-      <p>Yes — and unusually, you can verify this yourself. Bitwarden is <strong>open source</strong>, which means every line of code that makes up the app is publicly available on the internet. Security researchers around the world can — and do — read it to check for problems. There's nowhere to hide a back door.</p>
+      <p>Yes — and unusually, you can verify this yourself. Bitwarden is <strong>open source</strong>, which means every line of code is publicly available on the internet for anyone to read and check for problems. There's nowhere to hide a back door.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Bitwarden's client and server code is published on GitHub under an open source licence, enabling independent third-party code review. <br><strong>Plain:</strong> Anyone in the world can read the app's source code and look for hidden problems. The code is out in the open — nothing is secret.</div></div>
-
-      <p>Beyond that, Bitwarden has paid independent security firms to audit their code. In 2018, Cure53 reviewed it. In 2023, Insight Risk Consulting checked it again. Both found no critical issues. These reports are published publicly — you can read them.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Anyone in the world can read Bitwarden's source code — it's published on GitHub under an open source licence. Security researchers do read it and look for hidden problems. Bitwarden has also paid independent security firms to audit their code: Cure53 in 2018, Insight Risk Consulting in 2023. Both found no critical issues, and the reports are published publicly.</div></div>
 
       <h2>How Does It Protect Your Passwords?</h2>
       <p>Before your passwords ever leave your device, they are scrambled using a method called AES-256 encryption — the same standard used by governments and banks worldwide. Only your master password can unscramble them.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Bitwarden encrypts your vault client-side with AES-256-CBC before transmitting it. The server stores only ciphertext and never receives your master password or encryption key. This is called zero-knowledge encryption. <br><strong>Plain:</strong> Your passwords are scrambled on your device before they're sent anywhere. Bitwarden's servers only ever receive a jumbled mess they can't read. Even Bitwarden has no idea what your passwords are.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your passwords are scrambled on your device before they're sent anywhere — this is called client-side AES-256-CBC encryption. Bitwarden's servers only ever receive a jumbled mess they can't read. Even Bitwarden themselves have no idea what your passwords are. This is called zero-knowledge encryption.</div></div>
 
       <h2>Free vs. Premium</h2>
       <p>The free tier includes unlimited passwords, unlimited devices, and basic two-step login (using an authenticator app like Aegis). This covers everything most people need. The $10/year premium plan adds advanced two-step login methods (physical security keys), the ability to store encrypted file attachments, emergency access for trusted contacts, and a password health dashboard. For most users, free is completely sufficient.</p>
@@ -65,6 +65,8 @@ const REVIEWS = [
   },
   {
     id: 'keepassxc',
+    website: 'https://keepassxc.org',
+    index: 2,
     name: 'KeePassXC',
     tagline: 'Your passwords stay on your device, always',
     category: 'Password Managers',
@@ -74,7 +76,7 @@ const REVIEWS = [
     pricing: 'Free',
     openSource: true,
     auditedBy: 'European Commission (2016), cure53 (2023)',
-    relatedArticles: ['password-managers-guide', 'user-accounts-and-privacy'],
+    relatedArticles: ['password-managers-guide', 'user-accounts-and-privacy', 'linux-privacy-security', 'privacy-vs-convenience'],
     verdict: 'KeePassXC is the best option for people who want zero cloud involvement. Your password database lives only on your device. The tradeoff is that syncing to your phone requires extra setup.',
     pros: [
       'Completely offline — your passwords never touch the internet',
@@ -92,7 +94,7 @@ const REVIEWS = [
       <h2>What Makes KeePassXC Different</h2>
       <p>Most password managers store your encrypted passwords on their servers and sync them to your devices. KeePassXC is different: your passwords are stored in a single encrypted file on your computer, and nowhere else. There is no company, no server, no cloud — just a file on your device that only your master password can open.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> KeePassXC stores credentials in a local .kdbx database file encrypted with AES-256 or ChaCha20, derived from your master password via Argon2. No network connection is ever made. <br><strong>Plain:</strong> Your passwords live in one scrambled file on your computer. No internet. No company. No server that can be hacked. Just a file that only your master password can open.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your passwords live in one scrambled file on your computer — a local .kdbx database encrypted with AES-256 or ChaCha20, with the key derived from your master password via Argon2. KeePassXC makes no internet connection at all. No server can be hacked. No company can be compelled to hand over your data. Just a file that only your master password can open.</div></div>
 
       <p>This means there is nothing for hackers to target beyond your own device. There are no servers to be breached, no company to be legally compelled to hand over data, no service that can go offline or change its terms. Your password database is entirely yours.</p>
 
@@ -127,6 +129,8 @@ const REVIEWS = [
   /* ── MESSAGING ────────────────────────────────────────────── */
   {
     id: 'signal',
+    website: 'https://signal.org',
+    index: 3,
     name: 'Signal',
     tagline: 'The gold standard for private messaging',
     category: 'Messaging',
@@ -136,7 +140,7 @@ const REVIEWS = [
     pricing: 'Free',
     openSource: true,
     auditedBy: 'Cure53, Trail of Bits, multiple independent researchers',
-    relatedArticles: ['smartphone-hardening', 'metadata-problem', 'user-accounts-and-privacy', 'android-privacy-settings'],
+    relatedArticles: ['smartphone-hardening', 'metadata-problem', 'user-accounts-and-privacy', 'android-privacy-settings', 'privacy-vs-convenience'],
     verdict: 'Signal is the definitive answer to private messaging. Its encryption is so trusted that WhatsApp and iMessage both adopted it. Use it for anything you\'d rather keep private.',
     pros: [
       'All messages and calls are end-to-end encrypted by default — always',
@@ -155,7 +159,7 @@ const REVIEWS = [
       <h2>Why Signal?</h2>
       <p>When you send a message on Signal, it is scrambled on your device before it leaves. The scrambled message travels to Signal's servers, then to your recipient's device, where it is unscrambled. At no point can Signal, your phone company, your internet provider, or anyone intercepting the traffic read the message. Only you and your recipient can.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Signal uses the Signal Protocol — a combination of the Double Ratchet algorithm and X3DH key exchange — to provide end-to-end encryption. This means messages are encrypted on the sender's device and can only be decrypted on the recipient's device. No intermediate server ever holds a readable copy. <br><strong>Plain:</strong> Your message is scrambled on your phone before it's sent. Only your recipient's phone can unscramble it. Signal's own servers never see what you wrote.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your message is scrambled on your phone before it's sent — only your recipient's phone can unscramble it. Signal's own servers never see what you wrote. Under the hood, this uses the Signal Protocol: a combination of the Double Ratchet algorithm and X3DH key exchange for end-to-end encryption. No intermediate server ever holds a readable copy.</div></div>
 
       <p>WhatsApp uses the same underlying technology (Signal's own protocol), but layers Meta's data collection on top. Signal uses it as designed.</p>
 
@@ -192,12 +196,14 @@ const REVIEWS = [
   /* ── EMAIL ────────────────────────────────────────────────── */
   {
     id: 'protonmail',
+    website: 'https://proton.me/mail',
+    index: 4,
     name: 'ProtonMail',
     tagline: 'Encrypted email based in Switzerland',
     category: 'Email',
     rating: 4,
-    trustScore: 82,
-    platforms: ['Web', 'iOS', 'Android'],
+    trustScore: 90,
+    platforms: ['Browser', 'iOS', 'Android'],
     pricing: 'Free / from €3.99/mo',
     openSource: true,
     auditedBy: 'SEC Consult (2021)',
@@ -220,7 +226,7 @@ const REVIEWS = [
       <h2>What ProtonMail Does Differently</h2>
       <p>With Gmail, Google can read every email you send and receive. This isn't speculation — it's how their advertising business works. ProtonMail is designed so that even Proton cannot read your emails.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> ProtonMail uses zero-access encryption: emails are encrypted with your public key before being stored on Proton's servers. Proton holds the ciphertext but never your private key, making server-side decryption impossible. <br><strong>Plain:</strong> Your emails are scrambled with a key that only you have. Proton stores the locked box but not the key — so even if someone forced Proton to hand over your emails, they'd get an unreadable jumble.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your emails are scrambled with a key that only you have — Proton stores the locked box but not the key. This is called zero-access encryption: emails are encrypted with your public key before being stored on Proton's servers. Even if someone forced Proton to hand over your emails, they'd get an unreadable jumble.</div></div>
 
       <h2>When Is Email Encrypted End-to-End?</h2>
       <p>Email encryption works best when both the sender and recipient use ProtonMail. In that case, your message is scrambled on your device before it's sent, and only unscrambled on your recipient's device. Proton's servers never see the readable content.</p>
@@ -232,7 +238,7 @@ const REVIEWS = [
       <h2>The Honest Limitation: Email Metadata</h2>
       <p>Even with perfect encryption, email has an inherent weakness: metadata. Every email shows who sent it, who received it, when, from which servers, and via what route.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> SMTP email headers — including sender, recipient, timestamps, and routing hops — travel in plaintext and are visible to every mail server in the delivery chain. No encryption standard currently hides this metadata end-to-end. <br><strong>Plain:</strong> Even if the contents of your email are scrambled, every server it passes through can see who sent it, who received it, and when. Think of it like a sealed letter — no one can read inside, but the envelope shows the addresses. For truly sensitive communications, use Signal instead.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Even if the contents of your email are scrambled, every server it passes through can see who sent it, who received it, and when. Think of it like a sealed letter — no one can read inside, but the envelope shows the addresses. This is because SMTP email headers (sender, recipient, timestamps, routing hops) travel in plaintext and are visible to every mail server in the delivery chain. No encryption standard currently hides this metadata end-to-end. For truly sensitive communications, use Signal instead.</div></div>
 
       <h2>Getting Started</h2>
       <ol>
@@ -249,12 +255,14 @@ const REVIEWS = [
   },
   {
     id: 'simplelogin',
+    website: 'https://simplelogin.io',
+    index: 5,
     name: 'SimpleLogin',
     tagline: 'Protect your real email with disposable aliases',
     category: 'Email',
-    rating: 4,
+    rating: 5,
     trustScore: 88,
-    platforms: ['Web', 'iOS', 'Android', 'Browser Extension'],
+    platforms: ['Browser', 'iOS', 'Android'],
     pricing: 'Free (15 aliases) / €30/yr Premium (unlimited)',
     openSource: true,
     auditedBy: 'Community reviewed; acquired by Proton in 2022',
@@ -277,7 +285,7 @@ const REVIEWS = [
       <p>Every website you sign up for gets your email address. Over time, this means dozens of companies have your email, can sell it, can have it stolen in a breach, and can spam you. When you get spam or a suspicious email, you often can't tell which service leaked your address.</p>
       <p>SimpleLogin solves this by giving you a different email address for every service. Your real email address stays private. All emails to your aliases are forwarded to your real inbox. If a service starts spamming you or appears in a breach, you delete that specific alias — your real email is untouched.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> SimpleLogin acts as an email proxy. It generates unique alias addresses and rewrites inbound SMTP envelope headers to forward messages to your real inbox. Replies are re-routed so the original sender only ever sees the alias address. <br><strong>Plain:</strong> SimpleLogin acts like a post office box. Each website gets a different box number. All mail still ends up in your real mailbox. Nobody sees your real address. If a box starts getting junk, you delete it.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>SimpleLogin acts like a post office box. Each website gets a different box number — all mail still ends up in your real mailbox, and nobody sees your real address. Technically, it's an email proxy: it generates unique alias addresses and rewrites inbound message headers to forward them to you. When you reply, the original sender only ever sees the alias. If a box starts getting junk, you delete it.</div></div>
 
       <h2>How It Works</h2>
       <ol>
@@ -299,16 +307,18 @@ const REVIEWS = [
   /* ── BROWSERS ─────────────────────────────────────────────── */
   {
     id: 'brave',
+    website: 'https://brave.com',
+    index: 6,
     name: 'Brave Browser',
     tagline: 'Privacy by default, without any configuration',
     category: 'Browsers',
-    rating: 4,
-    trustScore: 80,
+    rating: 5,
+    trustScore: 88,
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free',
     openSource: true,
     auditedBy: 'Chromium base audited continuously; community-reviewed Brave additions',
-    relatedArticles: ['browser-fingerprinting', 'anonymous-browsing', 'user-accounts-and-privacy'],
+    relatedArticles: ['browser-fingerprinting', 'anonymous-browsing', 'user-accounts-and-privacy', 'privacy-vs-convenience'],
     verdict: 'The easiest switch from Chrome. Brave blocks ads and trackers by default and randomises your fingerprint. Ignore the built-in crypto features and you have an excellent privacy browser.',
     pros: [
       'Blocks ads, trackers, and fingerprinting scripts out of the box — no setup needed',
@@ -330,7 +340,7 @@ const REVIEWS = [
       <h2>What Is Fingerprint Randomisation?</h2>
       <p>Your browser has a kind of invisible name tag. Websites read technical details about your device — your screen size, the fonts you have installed, your graphics hardware — and combine them into a unique fingerprint that identifies you without cookies.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Brave injects small random offsets into Canvas, WebGL, AudioContext, and font enumeration APIs on a per-origin basis. This makes the fingerprint values differ across sites while remaining consistent within a single site session, preventing cross-site linkage without breaking site functionality. <br><strong>Plain:</strong> Brave shows a slightly different "face" to each website you visit. Site A and Site B each see different technical details about your device — so they can't match notes and realise it's the same person. Other browsers show the same face everywhere.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Brave shows a slightly different "face" to each website you visit — Site A and Site B each see different technical details about your device, so they can't match notes and realise it's the same person. It does this by injecting small random offsets into Canvas, WebGL, AudioContext, and font enumeration APIs on a per-origin basis. Other browsers show the same face everywhere.</div></div>
 
       <h2>The Crypto Stuff (You Can Ignore It)</h2>
       <p>Brave has a built-in system called Basic Attention Token (BAT) that lets you opt into seeing "privacy-preserving ads" and earn small amounts of cryptocurrency in return. This is entirely optional — you can ignore it completely. Brave's privacy features work exactly the same whether or not you engage with BAT. The crypto system is Brave's revenue model, and while some find it philosophically uncomfortable for a privacy tool, it doesn't undermine the privacy features themselves.</p>
@@ -350,6 +360,8 @@ const REVIEWS = [
   },
   {
     id: 'firefox',
+    website: 'https://www.mozilla.org/firefox/',
+    index: 7,
     name: 'Firefox (Privacy Hardened)',
     tagline: 'The open web\'s browser — and the most configurable',
     category: 'Browsers',
@@ -359,7 +371,7 @@ const REVIEWS = [
     pricing: 'Free',
     openSource: true,
     auditedBy: 'Mozilla internal security team; community audits',
-    relatedArticles: ['browser-fingerprinting', 'anonymous-browsing'],
+    relatedArticles: ['browser-fingerprinting', 'anonymous-browsing', 'privacy-vs-convenience'],
     verdict: 'Firefox is the only major browser not built on Google\'s Chromium. With a few settings changes and uBlock Origin installed, it\'s one of the strongest privacy browsers available.',
     pros: [
       'The only mainstream browser independent of Google\'s Chromium',
@@ -389,9 +401,9 @@ const REVIEWS = [
         <li>Set DNS over HTTPS to <strong>Max Protection</strong> and choose <strong>Mullvad</strong> as the provider.</li>
       </ol>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Enabling <code>privacy.resistFingerprinting</code> causes Firefox to spoof or suppress a range of browser APIs — including canvas rendering, timezone, locale, screen resolution, and user agent string — returning standardised values instead of your real device details. <br><strong>Plain:</strong> With this setting on, Firefox lies to websites about your device. Instead of showing your real screen size, your real fonts, and your real system details, it shows generic values shared by thousands of other Firefox users. You blend into a crowd instead of standing out.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>With <code>privacy.resistFingerprinting</code> turned on, Firefox lies to websites about your device. Instead of showing your real screen size, your real fonts, and your real system details, it shows generic values shared by thousands of other Firefox users. You blend into a crowd instead of standing out. Under the hood, Firefox spoofs or suppresses canvas rendering, timezone, locale, screen resolution, and user agent string — returning standardised values instead of your real device details.</div></div>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> DNS over HTTPS (DoH) encrypts DNS queries — the requests your browser makes to translate website names like "example.com" into IP addresses — so your internet provider cannot see or log which sites you visit based on these lookups. <br><strong>Plain:</strong> Every time you go to a website, your browser first has to "look up" the address — like checking a phone book. Normally this lookup is visible to your internet provider. With DNS over HTTPS turned on, that lookup is encrypted and your provider can't see it.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every time you go to a website, your browser first has to "look up" the address — like checking a phone book. Normally this lookup is visible to your internet provider. With DNS over HTTPS turned on, that lookup is encrypted and your provider can't see it. DNS over HTTPS (DoH) encrypts these queries so your ISP cannot see or log which sites you visit based on them.</div></div>
 
       <h2>Install uBlock Origin</h2>
       <p>Go to addons.mozilla.org and search for "uBlock Origin." Install it. In the uBlock Origin settings, enable the "EasyPrivacy" and "uBlock filters – Privacy" filter lists. This blocks thousands of tracking scripts that Firefox's built-in protections don't catch.</p>
@@ -405,6 +417,8 @@ const REVIEWS = [
   },
   {
     id: 'tor-browser',
+    website: 'https://www.torproject.org',
+    index: 8,
     name: 'Tor Browser',
     tagline: 'Strongest anonymity available for everyday browsing',
     category: 'Browsers',
@@ -414,7 +428,7 @@ const REVIEWS = [
     pricing: 'Free',
     openSource: true,
     auditedBy: 'Multiple independent security researchers; widely peer-reviewed',
-    relatedArticles: ['anonymous-browsing', 'browser-fingerprinting'],
+    relatedArticles: ['anonymous-browsing', 'browser-fingerprinting', 'privacy-vs-convenience'],
     verdict: 'The most private browser you can use. Slower than normal browsing, but provides a level of anonymity that no other consumer tool approaches. Essential for sensitive research.',
     pros: [
       'Routes traffic through three separate computers — your IP is hidden from websites',
@@ -433,12 +447,12 @@ const REVIEWS = [
       <h2>How Tor Works</h2>
       <p>Normally when you visit a website, your request goes directly from your device to that website. The website sees your IP address (your internet location), and your internet provider sees which website you visited.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Tor (The Onion Router) encrypts traffic in three nested layers and routes it through a circuit of three volunteer-operated relays. Each relay decrypts one layer and forwards the packet. The exit node connects to the destination — but only knows the previous relay, not the origin. The entry node knows your IP but not the destination. No single relay knows both ends of the connection. <br><strong>Plain:</strong> Your request is wrapped in three locked envelopes and passed through three different computers around the world. Each computer opens only its own envelope and passes the next one on. By the time your request reaches the website, it comes from the last computer — not from you. No one in the chain knows the full picture.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your request is wrapped in three locked envelopes and passed through three different computers around the world. Each computer opens only its own envelope and passes the next one on. By the time your request reaches the website, it comes from the last computer — not from you. No one in the chain knows the full picture. Technically: Tor (The Onion Router) encrypts traffic in three nested layers and routes it through a circuit of three volunteer-operated relays. Each relay decrypts one layer and forwards the packet. The entry node knows your IP but not the destination; the exit node connects to the website but only knows the previous relay.</div></div>
 
       <h2>The Fingerprint Problem — Solved</h2>
       <p>One of Tor Browser's most powerful features is that every user looks identical to websites. Tor Browser is a modified version of Firefox that reports exactly the same screen size, the same fonts, the same system details to every website — regardless of what your actual hardware is. You don't stand out; you blend into a crowd of tens of thousands of identical-looking Tor users.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Tor Browser ships with a fixed window size (1000×800 by default), disables JavaScript APIs that leak hardware details, and standardises font enumeration and canvas rendering. All users present the same fingerprint, making individual identification via browser fingerprinting infeasible. <br><strong>Plain:</strong> Every person using Tor Browser looks exactly the same to websites. Same window size. Same pretend screen. Same pretend fonts. You don't just have a disguise — you're wearing the exact same disguise as thousands of other people.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every person using Tor Browser looks exactly the same to websites — same window size, same pretend screen, same pretend fonts. You don't just have a disguise; you're wearing the exact same disguise as thousands of other people. Tor Browser achieves this by shipping with a fixed window size (1000×800 by default), disabling JavaScript APIs that leak hardware details, and standardising font enumeration and canvas rendering.</div></div>
 
       <h2>Important Rules for Tor Browser</h2>
       <ul>
@@ -465,6 +479,8 @@ const REVIEWS = [
   /* ── BROWSER EXTENSIONS ───────────────────────────────────── */
   {
     id: 'ublock-origin',
+    website: 'https://ublockorigin.com',
+    index: 9,
     name: 'uBlock Origin',
     tagline: 'The most effective content blocker ever made',
     category: 'Browser Extensions',
@@ -474,7 +490,7 @@ const REVIEWS = [
     pricing: 'Free',
     openSource: true,
     auditedBy: 'Continuous community review on GitHub',
-    relatedArticles: ['browser-fingerprinting', 'anonymous-browsing'],
+    relatedArticles: ['browser-fingerprinting', 'anonymous-browsing', 'privacy-vs-convenience'],
     verdict: 'Install this immediately. It\'s the single highest-impact privacy action available for your browser. Free, lightweight, and blocks thousands of trackers automatically.',
     pros: [
       'Blocks ads, trackers, malware sites, and fingerprinting scripts by default',
@@ -492,7 +508,7 @@ const REVIEWS = [
       <h2>What Does uBlock Origin Actually Do?</h2>
       <p>When you visit a website, the page you're reading is rarely the only thing loading. Most websites also load dozens of invisible "third-party" scripts from advertising and tracking companies — Google, Facebook, TikTok, dozens of data brokers you've never heard of. These scripts track your behaviour, build profiles about you, and follow you across every website that loads them.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> uBlock Origin intercepts outgoing network requests at the browser level and compares each request's origin domain against community-maintained blocklists (EasyList, EasyPrivacy, uBlock filters, etc.). Requests matching known tracker or ad domains are blocked before any data leaves the browser. <br><strong>Plain:</strong> Before your browser even sends a request to a tracking company, uBlock Origin steps in and says "no." The tracker never loads. It never gets the chance to watch what you do.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Before your browser even sends a request to a tracking company, uBlock Origin steps in and says "no." The tracker never loads and never gets the chance to watch what you do. It does this by intercepting outgoing network requests at the browser level and comparing each request's origin domain against community-maintained blocklists (EasyList, EasyPrivacy, uBlock filters, etc.).</div></div>
 
       <h2>Is It Actually Different From Other Ad Blockers?</h2>
       <p>Yes. Most popular ad blockers — Adblock Plus, for example — accept money from advertising companies through an "Acceptable Ads" programme, which allows certain ads through. uBlock Origin has no such arrangement. It blocks everything on its lists, period. It's developed by a single independent developer (Raymond Hill) who has no financial relationship with the advertising industry.</p>
@@ -522,7 +538,7 @@ const REVIEWS = [
       <h2>The Chrome Problem</h2>
       <p>Google is making changes to how Chrome extensions work (called "Manifest V3") that will permanently limit uBlock Origin's effectiveness in Chrome and Chromium-based browsers.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Manifest V3 replaces the <code>webRequest</code> API's blocking capability with a declarativeNetRequest API that limits the number of filterable rules and removes dynamic rule evaluation. This structurally caps what content blockers like uBlock Origin can block in Chrome. <br><strong>Plain:</strong> Google is changing the rules for Chrome extensions in a way that lets fewer tracking scripts be blocked. uBlock Origin will be weaker on Chrome. On Firefox, those restrictions don't apply — the full blocker works indefinitely. This is a strong practical reason to use Firefox.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Google is changing the rules for Chrome extensions in a way that lets fewer tracking scripts be blocked — uBlock Origin will be weaker on Chrome. On Firefox, those restrictions don't apply and the full blocker works indefinitely. This is a strong practical reason to use Firefox. The technical reason: Manifest V3 replaces the <code>webRequest</code> API's blocking capability with a declarativeNetRequest API that limits the number of filterable rules and removes dynamic rule evaluation.</div></div>
 
       <h2>Verdict</h2>
       <p>uBlock Origin is the first thing we recommend to anyone who asks about online privacy. It's free, it works immediately, and it blocks thousands of tracking scripts without you having to do anything. Install it now.</p>
@@ -532,6 +548,8 @@ const REVIEWS = [
   /* ── VPNs ─────────────────────────────────────────────────── */
   {
     id: 'mullvad',
+    website: 'https://mullvad.net',
+    index: 10,
     name: 'Mullvad VPN',
     tagline: 'The most privacy-respecting VPN on the market',
     category: 'VPNs',
@@ -541,7 +559,7 @@ const REVIEWS = [
     pricing: '€5/mo flat — no contracts',
     openSource: true,
     auditedBy: 'Cure53 (multiple published audits)',
-    relatedArticles: ['vpn-explainer', 'anonymous-browsing', 'smartphone-hardening', 'android-privacy-settings'],
+    relatedArticles: ['vpn-explainer', 'anonymous-browsing', 'smartphone-hardening', 'android-privacy-settings', 'privacy-vs-convenience'],
     verdict: 'The VPN we recommend without hesitation. No personal info required, no logs, proven by server seizures, flat pricing. This is what a VPN should be.',
     pros: [
       'No email, name, or personal information required to sign up — ever',
@@ -560,7 +578,7 @@ const REVIEWS = [
       <h2>What a VPN Does (and Doesn't Do)</h2>
       <p>A VPN (Virtual Private Network) creates an encrypted tunnel between your device and the VPN company's server. Your internet provider can see that you're connected to a VPN, but can't see what websites you visit. The websites you visit see the VPN server's address, not yours.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> A VPN encapsulates your outbound traffic inside an encrypted protocol (WireGuard or OpenVPN in Mullvad's case), terminating at the VPN server. Your ISP sees only an encrypted stream to Mullvad's IP. The destination website sees Mullvad's exit IP, not yours. <br><strong>Plain:</strong> A VPN is like a private tunnel for your internet traffic. Your internet provider can see you've entered the tunnel, but not where it leads. Websites can see the tunnel's exit point, but not that it's you.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>A VPN is like a private tunnel for your internet traffic. Your internet provider can see you've entered the tunnel, but not where it leads. Websites can see the tunnel's exit point, but not that it's you. Mullvad uses WireGuard or OpenVPN to encapsulate your traffic — your ISP sees only an encrypted stream to Mullvad's IP, and the destination website sees Mullvad's exit IP instead of yours.</div></div>
 
       <p>What a VPN does <em>not</em> do: it doesn't make you anonymous if you're logged in to Google, Facebook, or any account tied to your real identity. It doesn't protect against browser fingerprinting. It shifts trust from your internet provider to the VPN company — so choosing a trustworthy VPN company is everything.</p>
 
@@ -568,7 +586,7 @@ const REVIEWS = [
       <p>The VPN market is full of companies whose business is marketing, not privacy. They run YouTube promotions, offer "lifetime" subscriptions, and make extraordinary claims. Mullvad is the opposite: a technically rigorous company that doesn't advertise aggressively and charges a fair, flat price.</p>
       <p>In April 2023, Swedish police raided Mullvad's offices and seized servers. They found nothing — because of how Mullvad's servers are built.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Mullvad runs RAM-only servers — all operating data lives in volatile memory (RAM) rather than persistent storage like hard drives. When power is cut, all data is instantly and permanently erased. There is no disk to seize and image. <br><strong>Plain:</strong> Mullvad's servers work like a whiteboard, not a notebook. Everything written on it disappears the moment the power goes off. When Swedish police seized the servers, they got blank whiteboards. No logs. Nothing.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Mullvad's servers work like a whiteboard, not a notebook — everything written on them disappears the moment the power goes off. When Swedish police seized the servers, they got blank whiteboards. No logs. Nothing. This is because Mullvad runs RAM-only servers: all operating data lives in volatile memory (RAM) rather than persistent storage. When power is cut, all data is instantly and permanently erased. There is no disk to seize and image.</div></div>
 
       <h2>Truly Anonymous Signup</h2>
       <p>Most VPN services ask for your email address, name, and payment details. This creates a record linking you to your VPN use. Mullvad's signup works like this:</p>
@@ -594,6 +612,8 @@ const REVIEWS = [
   /* ── MAPS ─────────────────────────────────────────────────── */
   {
     id: 'organic-maps',
+    website: 'https://organicmaps.app',
+    index: 11,
     name: 'Organic Maps',
     tagline: 'Offline maps with no tracking, no account, no ads',
     category: 'Maps',
@@ -603,7 +623,7 @@ const REVIEWS = [
     pricing: 'Free',
     openSource: true,
     auditedBy: 'Community reviewed; based on OpenStreetMap',
-    relatedArticles: ['user-accounts-and-privacy', 'android-privacy-settings'],
+    relatedArticles: ['user-accounts-and-privacy', 'android-privacy-settings', 'privacy-vs-convenience'],
     verdict: 'The best privacy-respecting map app available. Works completely offline, requires no account, and tracks nothing. Navigation quality is excellent for everyday use.',
     pros: [
       'Completely offline — download maps for your region and use them anywhere',
@@ -623,7 +643,7 @@ const REVIEWS = [
       <p>Google Maps is one of the most sophisticated location data collection tools ever built. When you use Google Maps with a Google account, it builds a permanent timeline of everywhere you've been. Even without an account, it tracks your movements via your device's IP address and unique identifiers. Google has been caught collecting location data even when users explicitly disabled it.</p>
       <p>Organic Maps collects nothing. There are no servers your location data goes to. The app works entirely from maps you've downloaded to your device. When you navigate somewhere, that journey is never recorded anywhere except possibly your own phone.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Organic Maps makes zero network requests during navigation. All routing is computed on-device using downloaded vector map tiles. The app has no analytics SDK, no advertising SDK, and no telemetry. Your GPS coordinates never leave your device. <br><strong>Plain:</strong> Once you've downloaded the map for your area, the app works with no internet at all. Your phone figures out where you are and how to get there entirely by itself. Nothing is sent anywhere. No one knows where you went.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Once you've downloaded the map for your area, Organic Maps works with no internet at all. Your phone figures out where you are and how to get there entirely by itself — nothing is sent anywhere, and no one knows where you went. The app makes zero network requests during navigation: all routing is computed on-device using downloaded vector map tiles, with no analytics SDK, no advertising SDK, and no telemetry.</div></div>
 
       <h2>How Good Are the Maps?</h2>
       <p>Organic Maps is built on <strong>OpenStreetMap</strong> — a collaborative map of the world built by volunteers, similar in concept to Wikipedia. In cities and towns across Europe, North America, and most urban areas globally, OpenStreetMap data is excellent and often more detailed than Google Maps for things like footpaths, cycle routes, and local businesses. In rural areas and some developing regions, coverage is thinner.</p>
@@ -649,6 +669,8 @@ const REVIEWS = [
   /* ── VIDEO CALLING ────────────────────────────────────────── */
   {
     id: 'jitsi-meet',
+    website: 'https://jitsi.org/jitsi-meet/',
+    index: 42,
     name: 'Jitsi Meet',
     tagline: 'Private video calls with no account for anyone',
     category: 'Video Calling',
@@ -688,7 +710,7 @@ const REVIEWS = [
 
       <h2>Is It Private?</h2>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Jitsi Meet uses WebRTC with Insertable Streams to provide end-to-end encryption for calls with fewer than 8 participants (peer-to-peer or SFrame-based E2EE). For larger calls, media passes through a Selective Forwarding Unit (SFU) server — encrypted in transit with DTLS-SRTP but not end-to-end. <br><strong>Plain:</strong> For small calls (up to 8 people), the video and audio are scrambled end-to-end — even Jitsi's servers can't see them. For bigger calls, the server handles traffic (still encrypted on the wire, but Jitsi could technically see the content). No accounts means no profiles are built about participants either way.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>For small calls (up to 8 people), the video and audio are scrambled end-to-end — even Jitsi's servers can't see them. For bigger calls, the server handles traffic (still encrypted on the wire, but Jitsi could technically see the content). No accounts means no profiles are built about participants either way. Technically: Jitsi uses WebRTC with Insertable Streams for end-to-end encryption in small calls; larger calls route through a Selective Forwarding Unit (SFU) server using DTLS-SRTP.</div></div>
 
       <p>For maximum privacy with larger groups, Jitsi can be self-hosted — you run the server yourself, so no third party handles the call at all. This is an advanced option used by many organisations.</p>
 
@@ -703,6 +725,8 @@ const REVIEWS = [
   /* ── FILE SYNC ────────────────────────────────────────────── */
   {
     id: 'syncthing',
+    website: 'https://syncthing.net',
+    index: 12,
     name: 'Syncthing',
     tagline: 'Sync your files between your own devices — no cloud involved',
     category: 'File Sync',
@@ -712,7 +736,7 @@ const REVIEWS = [
     pricing: 'Free',
     openSource: true,
     auditedBy: 'Community reviewed; used in high-security environments',
-    relatedArticles: ['user-accounts-and-privacy', 'android-privacy-settings'],
+    relatedArticles: ['user-accounts-and-privacy', 'android-privacy-settings', 'privacy-vs-convenience'],
     verdict: 'The privacy-ideal solution for keeping files in sync across your own devices. Your files never touch any external server. The setup takes 20 minutes and then works automatically.',
     pros: [
       'Files sync directly between your devices — no server, no company, no third party',
@@ -732,7 +756,7 @@ const REVIEWS = [
       <p>Google Drive, Dropbox, and iCloud all work by uploading your files to a company's servers. The company can read your files (Google scans Drive files to improve AI models), law enforcement can subpoena them, and if the company is hacked, your files are exposed. You're trusting a third party with your data.</p>
       <p>Syncthing works completely differently. Instead of uploading files to a cloud server, it syncs them directly from one of your devices to another — phone to laptop, laptop to desktop, etc. Your files never leave your own hardware. There is no server, no company, no third party.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Syncthing uses the Block Exchange Protocol (BEP) over TLS 1.3 to transfer file blocks directly between paired devices. Device authentication uses public-key cryptography with self-generated certificates. No central server ever stores or relays your file contents — a discovery server only helps devices find each other's network addresses. <br><strong>Plain:</strong> Syncthing sends your files directly from one of your devices to another, encrypted the whole way. There's no cloud storage in the middle — just a secure private connection between your own machines. No company ever touches your files.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Syncthing sends your files directly from one of your devices to another, encrypted the whole way — no company ever touches your files. It uses the Block Exchange Protocol (BEP) over TLS 1.3, with device authentication via public-key cryptography. No central server ever stores or relays your file contents; a discovery server only helps devices find each other's network addresses.</div></div>
 
       <h2>How It Works</h2>
       <p>Think of Syncthing like a direct wire between your devices. When you save a photo on your phone, Syncthing notices and quietly copies it to your laptop in the background — over your home WiFi or the internet. Both devices always have the same files. If one device is off, the sync happens when it turns back on. Your files are always on your own devices, nowhere else.</p>
@@ -755,6 +779,8 @@ const REVIEWS = [
   /* ── NOTES ────────────────────────────────────────────────── */
   {
     id: 'obsidian',
+    website: 'https://obsidian.md',
+    index: 13,
     name: 'Obsidian',
     tagline: 'Your notes live on your device — not in someone\'s cloud',
     category: 'Notes',
@@ -786,7 +812,7 @@ const REVIEWS = [
       <h2>How Obsidian Is Different</h2>
       <p>Obsidian stores your notes as plain text files in a folder on your computer or phone. There is no cloud, no server, no company that can read them. The folder is called a "vault" — just a regular folder full of text files, organised however you like. You can back this folder up yourself, put it on an external drive, or sync it between devices using Syncthing.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Obsidian reads and writes standard Markdown (.md) files directly to your local filesystem. It makes no network requests during normal use. There is no proprietary file format — your data is stored in a format any text editor can open. <br><strong>Plain:</strong> Your notes are just text files sitting in a folder on your computer. Obsidian is the app you use to view and edit them — but the files are yours. You could open them in Notepad right now. No account, no server, no company holding your thoughts.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your notes are just text files sitting in a folder on your computer — Obsidian reads and writes standard Markdown (.md) files directly to your local filesystem and makes no network requests during normal use. You could open them in Notepad right now. No account, no server, no company holding your thoughts. There is no proprietary file format: your data is stored in a format any text editor can open.</div></div>
 
       <p>Because notes are plain text, they're not locked into Obsidian. You can open them in any text editor. If Obsidian ever disappears or changes, your notes are completely unaffected.</p>
 
@@ -801,7 +827,7 @@ const REVIEWS = [
       <h2>Syncing Between Devices</h2>
       <p>Obsidian offers a paid Sync service ($8/month) that syncs your vault through Obsidian's servers with end-to-end encryption. Alternatively, sync the vault folder using Syncthing (free, no third-party server) for complete privacy. Many users also simply keep notes on one primary device and don't need sync.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Obsidian Sync encrypts vault contents client-side using AES-256 before uploading, with keys derived from your account credentials. Obsidian's servers store only ciphertext. The free alternative — Syncthing — never involves any external server at all. <br><strong>Plain:</strong> If you pay for Obsidian Sync, your notes are scrambled before they leave your device — Obsidian can't read them. If you use Syncthing instead, your notes go directly from one of your devices to another with no middleman at all.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>If you pay for Obsidian Sync, your notes are scrambled before they leave your device — Obsidian can't read them (client-side AES-256 encryption, with keys derived from your account credentials, means servers store only ciphertext). If you use Syncthing instead, your notes go directly from one of your devices to another with no middleman at all.</div></div>
 
       <h2>Verdict</h2>
       <p>Obsidian is the best choice for anyone who wants a capable note-taking app without their notes being stored in someone else's cloud. Free for personal use, powerful, and your notes are genuinely yours.</p>
@@ -811,16 +837,18 @@ const REVIEWS = [
   /* ── SEARCH ENGINES ───────────────────────────────────────── */
   {
     id: 'duckduckgo',
+    website: 'https://duckduckgo.com',
+    index: 14,
     name: 'DuckDuckGo',
     tagline: 'The search engine that doesn\'t track you',
     category: 'Search Engines',
-    rating: 4,
-    trustScore: 79,
+    rating: 5,
+    trustScore: 85,
     platforms: ['Web', 'iOS', 'Android', 'Browser Extension'],
     pricing: 'Free',
     openSource: false,
     auditedBy: 'Privacy policy reviewed by EFF and others',
-    relatedArticles: ['anonymous-browsing', 'user-accounts-and-privacy'],
+    relatedArticles: ['anonymous-browsing', 'user-accounts-and-privacy', 'privacy-vs-convenience'],
     verdict: 'The easiest first step in reducing your digital footprint. No user profiles, no search history, no personalised tracking. Switch in 2 minutes.',
     pros: [
       'No tracking across sessions — searches are not tied to a profile',
@@ -837,7 +865,7 @@ const REVIEWS = [
       <h2>What Is DuckDuckGo?</h2>
       <p>DuckDuckGo is a search engine — it finds things on the internet, just like Google. The key difference: Google builds a permanent profile of every search you've ever made and uses it to target advertising. DuckDuckGo doesn't track what you search, doesn't store your search history, and doesn't build a profile about you.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> DuckDuckGo does not set persistent user identifiers or tracking cookies. Each search session is stateless — searches are not linked to each other or to any user account. Query parameters are not forwarded to result-page destinations via the referrer header. <br><strong>Plain:</strong> Every time you search on DuckDuckGo, it treats you like a stranger it's never met. It doesn't remember your last search. It doesn't know who you are. There's no record of what you've looked for over time.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every time you search on DuckDuckGo, it treats you like a stranger it's never met — it doesn't remember your last search, it doesn't know who you are, and there's no record of what you've looked for over time. It does not set persistent user identifiers or tracking cookies, and each search session is stateless. Query parameters are not forwarded to result-page destinations via the referrer header.</div></div>
 
       <h2>How to Switch</h2>
       <ol>
@@ -863,6 +891,8 @@ const REVIEWS = [
   /* ── EMAIL ANONYMITY ──────────────────────────────────────── */
   {
     id: 'aegis-authenticator',
+    website: 'https://getaegis.app',
+    index: 15,
     name: 'Aegis Authenticator',
     tagline: 'Open source 2FA app for Android — your codes, your control',
     category: 'Two-Factor Authentication',
@@ -889,14 +919,14 @@ const REVIEWS = [
       <h2>What Is Two-Factor Authentication?</h2>
       <p>Two-factor authentication (2FA) means that logging in to an account requires two things: your password and a second piece of evidence. The most common second factor is a six-digit code that changes every 30 seconds, generated by an app on your phone. Even if someone steals your password, they can't log in without also having your phone and the current code.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> Aegis generates TOTP (Time-based One-Time Password) codes as defined in RFC 6238. Each code is derived from a shared secret and the current timestamp, producing a value that changes every 30 seconds and is valid only once. HOTP (counter-based) is also supported. All secrets are stored in an AES-256-GCM encrypted vault on-device. <br><strong>Plain:</strong> Aegis generates a fresh six-digit code every 30 seconds for each of your accounts. The code is calculated from a secret key and the time — so even if someone saw a code, it would be useless 30 seconds later. All your secret keys are stored in an encrypted vault on your phone.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Aegis generates a fresh six-digit code every 30 seconds for each of your accounts. The code is calculated from a secret key and the current time — so even if someone saw a code, it would be useless 30 seconds later. All your secret keys are stored in an encrypted vault on your phone. Technically, these are TOTP (Time-based One-Time Password) codes defined in RFC 6238; HOTP (counter-based) is also supported, and the vault uses AES-256-GCM encryption.</div></div>
 
       <p>Aegis is an app that generates these codes. It's a safer, more private alternative to Google Authenticator (which syncs your codes to your Google account) or SMS codes (which can be intercepted via SIM swapping).</p>
 
       <h2>Why Aegis Over Google Authenticator?</h2>
       <p>Google Authenticator recently added a cloud sync feature — your 2FA codes are uploaded to your Google account. This means if your Google account is compromised, your two-factor codes could be too. Aegis stores everything locally on your phone, encrypted, with no cloud involvement. You export backups yourself to wherever you want to store them.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> SMS-based 2FA is vulnerable to SIM-swapping attacks, where an attacker social-engineers your mobile carrier into transferring your number to a SIM they control, intercepting all SMS messages including one-time codes. TOTP apps like Aegis are not vulnerable to this because codes are generated locally from a secret, not delivered over the phone network. <br><strong>Plain:</strong> If someone tricks your phone company into giving them your number, they can receive your text message codes. That's called SIM swapping. Aegis codes aren't sent over the phone network at all — they're generated on your device — so a SIM swapper gets nothing.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>If someone tricks your phone company into giving them your number, they can receive your text message codes — this is called SIM swapping. Aegis codes aren't sent over the phone network at all; they're generated on your device, so a SIM swapper gets nothing. SMS-based 2FA is vulnerable to this because an attacker can social-engineer your mobile carrier into transferring your number to a SIM they control, intercepting all SMS messages including one-time codes.</div></div>
 
       <h2>Getting Started</h2>
       <ol>
@@ -918,9 +948,11 @@ const REVIEWS = [
   /* ── TOOLS ────────────────────────────────────────────────── */
   {
     id: 'exifcleaner',
+    website: 'https://exifcleaner.com',
+    index: 16,
     name: 'ExifCleaner',
     tagline: 'Drag and drop to strip hidden location data from photos',
-    category: 'Privacy Tools',
+    category: 'Security Tools',
     rating: 5,
     trustScore: 92,
     platforms: ['Windows', 'macOS', 'Linux'],
@@ -944,7 +976,7 @@ const REVIEWS = [
       <h2>Why This Matters</h2>
       <p>Every photo taken with a modern smartphone contains hidden data called EXIF data.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> EXIF (Exchangeable Image File Format) metadata is embedded in JPEG and other image files by the camera or phone at the moment of capture. It can include GPS coordinates (latitude, longitude, altitude), timestamp, camera make and model, lens details, and exposure settings. This data is preserved when photos are shared unless explicitly stripped. <br><strong>Plain:</strong> Your phone hides a bunch of information inside every photo it takes. This includes the exact GPS location where you took it (accurate to a few metres), the date and time, and what kind of phone you have. When you share the photo, all of that hidden data goes with it — unless you remove it first.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Your phone hides a bunch of information inside every photo it takes — including the exact GPS location where you took it (accurate to a few metres), the date and time, and what kind of phone you have. When you share the photo, all of that hidden data goes with it unless you remove it first. This data (called EXIF — Exchangeable Image File Format metadata) is embedded in JPEG and other image files at the moment of capture, and includes GPS coordinates (latitude, longitude, altitude), timestamp, camera make and model, lens details, and exposure settings.</div></div>
 
       <p>In 2012, journalist Vice published a photo of fugitive John McAfee that still had GPS coordinates embedded in its EXIF data. He was located within hours. This happens in less dramatic ways every day — someone sharing a photo taken at home accidentally reveals their address, or a photo taken at a medical appointment reveals a health matter.</p>
 
@@ -970,6 +1002,8 @@ const REVIEWS = [
   },
   {
     id: 'freetube',
+    website: 'https://freetubeapp.io',
+    index: 17,
     name: 'FreeTube',
     tagline: 'Watch YouTube without Google watching you',
     category: 'Privacy Tools',
@@ -1000,7 +1034,7 @@ const REVIEWS = [
       <h2>How FreeTube Solves This</h2>
       <p>FreeTube is a desktop app that fetches YouTube videos through alternative methods that don't send identifying information to Google.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> FreeTube can use either the Invidious API (a privacy-respecting YouTube front-end proxy) or YouTube's internal API directly. In both modes, no authentication cookies or persistent identifiers are sent. Subscriptions, history, and preferences are stored in a local SQLite database — never on Google's servers. <br><strong>Plain:</strong> FreeTube fetches video files from YouTube without telling Google who you are. Your watch history and subscriptions are saved on your own computer, not on Google's servers. Google receives a request for the video, but it's not tied to you.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>FreeTube fetches video files from YouTube without telling Google who you are. Your watch history and subscriptions are saved on your own computer, not on Google's servers — Google receives a request for the video, but it's not tied to you. FreeTube can use either the Invidious API (a privacy-respecting YouTube front-end proxy) or YouTube's internal API directly; in both modes, no authentication cookies or persistent identifiers are sent. Subscriptions and history are stored in a local SQLite database.</div></div>
 
       <p>The result: you can watch any public YouTube video, subscribe to any channel, and search YouTube's entire catalogue — without Google logging any of it to your profile.</p>
 
@@ -1023,16 +1057,18 @@ const REVIEWS = [
   },
   {
     id: 'grapheneos',
+    website: 'https://grapheneos.org',
+    index: 18,
     name: 'GrapheneOS',
     tagline: 'Android without Google — maximum mobile privacy',
     category: 'Operating Systems',
     rating: 5,
     trustScore: 99,
-    platforms: ['Google Pixel phones'],
+    platforms: ['Google Pixel 6 and newer'],
     pricing: 'Free',
     openSource: true,
     auditedBy: 'Security researchers worldwide; used by high-risk individuals',
-    relatedArticles: ['smartphone-hardening', 'android-privacy-settings'],
+    relatedArticles: ['smartphone-hardening', 'android-privacy-settings', 'privacy-vs-convenience'],
     verdict: 'The most private and secure mobile operating system available to ordinary people. Requires a Google Pixel phone and some technical comfort. Eliminates Google\'s data collection at the source.',
     pros: [
       'Removes all Google services entirely — no data collection by Google at OS level',
@@ -1052,10 +1088,10 @@ const REVIEWS = [
       <p>Every Android phone comes with Google's software built in. This software — Google Play Services, Google Services Framework, and dozens of Google apps — communicates constantly with Google's servers, sending location data, app usage data, and device information. You cannot turn this off on a standard Android phone without removing Google's software entirely.</p>
       <p>GrapheneOS is an alternative version of Android built from the ground up without Google's software. It runs on Google Pixel phones (which have excellent hardware security features that make this possible) and gives you a fully functioning smartphone with no baseline Google data collection.</p>
 
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><strong>Technical:</strong> GrapheneOS is an Android Open Source Project (AOSP) fork with significant security hardening: it uses a hardened memory allocator (hardened_malloc), stronger verified boot enforcement, per-app network and sensor permissions, hardened WebView, and eliminates all Google Mobile Services from the base OS. It supports running sandboxed Google Play in an unprivileged compatibility layer. <br><strong>Plain:</strong> GrapheneOS takes Android — the open version without Google's additions — and makes it much more secure. Google's apps and data-collection software are gone. You get a working smartphone that doesn't report to Google by default. If you need Google apps, they run in a restricted box with very limited access to the rest of your phone.</div></div>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>GrapheneOS takes Android — the open version without Google's additions — and makes it much more secure. Google's apps and data-collection software are gone. You get a working smartphone that doesn't report to Google by default. If you need Google apps, they run in a restricted box with very limited access to the rest of your phone. Technically: GrapheneOS is an Android Open Source Project (AOSP) fork with significant security hardening — a hardened memory allocator (hardened_malloc), stronger verified boot enforcement, per-app network and sensor permissions, hardened WebView, and no Google Mobile Services in the base OS. It supports running sandboxed Google Play in an unprivileged compatibility layer.</div></div>
 
       <h2>Hardware Requirements</h2>
-      <p>GrapheneOS officially supports only <strong>Google Pixel phones</strong> (currently Pixel 5a and newer). While it may seem ironic to buy a Google phone to de-Google your life, Pixel phones contain a custom security chip (Titan M2) and allow users to lock the bootloader with custom encryption keys. Most other Android manufacturers do not allow this level of hardware security while running a custom operating system.</p>
+      <p>GrapheneOS officially supports only <strong>Google Pixel phones</strong> (currently Pixel 6 and newer). While it may seem ironic to buy a Google phone to de-Google your life, Pixel phones contain a custom security chip (Titan M2) and allow users to lock the bootloader with custom encryption keys. Most other Android manufacturers do not allow this level of hardware security while running a custom operating system.</p>
 
       <h2>Who Is GrapheneOS For?</h2>
       <p>GrapheneOS is for people who:</p>
@@ -1076,6 +1112,1068 @@ const REVIEWS = [
 
       <h2>Verdict</h2>
       <p>GrapheneOS is the gold standard for mobile privacy. If you're willing to use a Pixel phone and spend 30 minutes on installation, you'll have a smartphone that doesn't report to Google at the operating system level — something no settings change can achieve on a standard Android phone.</p>
+    `
+  },
+  {
+    id: '2fas',
+    website: 'https://2fas.com',
+    index: 19,
+    name: '2FAS',
+    tagline: 'The best offline, open-source authenticator',
+    category: 'Two-Factor Authentication',
+    rating: 5,
+    trustScore: 98,
+    platforms: ['iOS', 'Android'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Independent community audits',
+    relatedArticles: ['password-managers-guide'],
+    verdict: '2FAS is currently the most highly recommended two-factor authentication app. It works entirely offline, requires no account, and doesn\'t try to lock you into a proprietary cloud.',
+    pros: [
+      'Works completely offline with no account required',
+      'Fully open source',
+      'Supports local, encrypted backups',
+      'Can optionally sync backups via your own iCloud or Google Drive',
+      'Free with no ads or tracking'
+    ],
+    cons: [
+      'No official desktop app (browser extension requires mobile app connection)'
+    ],
+    content: `
+      <h2>What Is 2FAS?</h2>
+      <p>2FAS is a two-factor authentication app for iPhone and Android. Instead of relying on text messages for login codes — which can be intercepted — 2FAS generates a fresh six-digit code every 30 seconds for each of your accounts. Even if someone has your password, they cannot get in without the current code from your phone.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Two-factor authentication adds a second check to your login: something you know (your password) and something you have (the code on your phone). The code changes every 30 seconds and is calculated from a secret key stored on your device — it is never sent over the internet, so it cannot be intercepted the way a text message can.</div></div>
+
+      <h2>Why 2FAS Over Google Authenticator?</h2>
+      <p>Google Authenticator syncs your codes to your Google account, which means if your Google account is compromised, your two-factor codes could be too. 2FAS stores everything locally on your device, encrypted. You can optionally back up to your own iCloud or Google Drive — but that sync is your choice, not automatic.</p>
+
+      <h2>Getting Started</h2>
+      <ol>
+        <li>Search for "2FAS" in the App Store (iPhone) or Google Play Store (Android). Install the app.</li>
+        <li>Open 2FAS. You do not need to create an account.</li>
+        <li>Tap the + button to add a new account. Scan the QR code shown by whatever service you are enabling 2FA for.</li>
+        <li>2FAS will immediately show the six-digit code for that account. Enter it on the website to confirm.</li>
+        <li><strong>Back up your codes:</strong> Go to Settings &gt; Backup and export an encrypted backup. Store it somewhere safe — your computer or an external drive.</li>
+      </ol>
+
+      <h2>Verdict</h2>
+      <p>2FAS is the most recommended two-factor authentication app for both iPhone and Android. It is free, fully open source, works offline, and requires no account. If you use 2FA — and you should — this is where to keep your codes.</p>
+    `
+  },
+  {
+    id: 'nextdns',
+    website: 'https://nextdns.io',
+    index: 20,
+    name: 'NextDNS',
+    tagline: 'A firewall for your entire internet connection',
+    category: 'Networks',
+    rating: 5,
+    trustScore: 90,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Routers'],
+    pricing: 'Free (up to 300k queries) / €1.99/mo',
+    openSource: false,
+    auditedBy: 'Not formally audited',
+    relatedArticles: ['browser-fingerprinting', 'privacy-vs-convenience'],
+    verdict: 'NextDNS allows you to block tracking, ads, and malware at the DNS level. By routing your DNS queries through them, you block trackers across all your apps, not just your browser.',
+    pros: [
+      'Blocks trackers and ads at the network level',
+      'Works across all apps on your phone or computer',
+      'Highly customizable blocklists',
+      'Detailed analytics (which you can choose not to log)'
+    ],
+    cons: [
+      'Not open source',
+      'Requires trusting them with your DNS queries'
+    ]
+  },
+  {
+    id: 'searxng',
+    website: 'https://docs.searxng.org',
+    index: 21,
+    name: 'SearXNG',
+    tagline: 'A privacy-respecting metasearch engine',
+    category: 'Search Engines',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['Browser'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['anonymous-browsing'],
+    verdict: 'SearXNG pulls results from Google, Bing, and other engines, but completely hides your identity from them. You get the quality of mainstream search without the tracking.',
+    pros: [
+      'Combines results from multiple search engines',
+      'Completely open source',
+      'Does not track or profile you',
+      'Can be self-hosted for maximum privacy'
+    ],
+    cons: [
+      'Public instances can sometimes be blocked by Google (causing missing results)',
+      'Interface is less polished than DuckDuckGo'
+    ]
+  },
+  {
+    id: 'startpage',
+    website: 'https://www.startpage.com',
+    index: 22,
+    name: 'Startpage',
+    tagline: 'Google search results without the tracking',
+    category: 'Search Engines',
+    rating: 4,
+    trustScore: 85,
+    platforms: ['Browser'],
+    pricing: 'Free',
+    openSource: false,
+    auditedBy: 'Not formally audited',
+    relatedArticles: ['anonymous-browsing'],
+    verdict: 'If you want exactly Google\'s search results but refuse to let Google track you, Startpage is the solution. It pays Google for results but acts as a privacy shield between you and them.',
+    pros: [
+      'Delivers genuine Google search results',
+      'Strips all tracking and IP data before querying Google',
+      'Includes an "Anonymous View" proxy feature'
+    ],
+    cons: [
+      'Owned by an advertising company (System1), which causes some privacy purists concern',
+      'Not open source'
+    ]
+  },
+  {
+    id: 'invidious',
+    website: 'https://invidious.io',
+    index: 23,
+    name: 'Invidious',
+    tagline: 'An open-source, private front-end to YouTube',
+    category: 'Privacy Tools',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['Browser'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['smartphone-hardening'],
+    verdict: 'Invidious lets you watch YouTube videos, subscribe to channels, and create playlists without a Google account and without YouTube tracking you.',
+    pros: [
+      'Watch YouTube without a Google account',
+      'No ads or tracking scripts',
+      'Audio-only mode to save bandwidth',
+      'Can subscribe to channels without logging in'
+    ],
+    cons: [
+      'Public instances frequently go down or get blocked by YouTube',
+      'Video playback can sometimes buffer slowly depending on the instance'
+    ]
+  },
+  {
+    id: 'osmand',
+    website: 'https://osmand.net',
+    index: 24,
+    name: 'OsmAnd',
+    tagline: 'Powerful offline maps using OpenStreetMap data',
+    category: 'Mobile',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['iOS', 'Android'],
+    pricing: 'Free / €29.99/yr Pro',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['smartphone-hardening'],
+    verdict: 'OsmAnd is a feature-rich, open-source alternative to Google Maps that works completely offline. It doesn\'t track your location history or sell your movement data.',
+    pros: [
+      'Completely offline mapping and navigation',
+      'Uses detailed OpenStreetMap data',
+      'Open source and respects privacy',
+      'Incredibly detailed features for hiking and cycling'
+    ],
+    cons: [
+      'Interface is cluttered and has a steep learning curve',
+      'Search function is much worse than Google Maps',
+      'No live traffic data'
+    ]
+  },
+  {
+    id: 'joplin',
+    website: 'https://joplinapp.org',
+    index: 25,
+    name: 'Joplin',
+    tagline: 'End-to-end encrypted note taking',
+    category: 'Note-Taking',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    pricing: 'Free (bring your own sync) / Joplin Cloud from €1.99/mo',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['smartphone-hardening'],
+    verdict: 'Joplin is a superb alternative to Evernote or Google Keep. It offers end-to-end encryption and lets you sync your notes using your own cloud storage.',
+    pros: [
+      'End-to-end encryption (E2EE) built in',
+      'Open source and free',
+      'Sync via Nextcloud, Dropbox, OneDrive, or WebDAV',
+      'Excellent web clipper extension'
+    ],
+    cons: [
+      'Interface is functional but not particularly modern',
+      'Collaboration features are limited without the paid Joplin Cloud'
+    ]
+  },
+  {
+    id: 'standard-notes',
+    website: 'https://standardnotes.com',
+    index: 26,
+    name: 'Standard Notes',
+    tagline: 'Ultra-secure, private notes',
+    category: 'Note-Taking',
+    rating: 4,
+    trustScore: 98,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Browser'],
+    pricing: 'Free / Paid plans from $63/yr',
+    openSource: true,
+    auditedBy: 'Cure53',
+    relatedArticles: ['smartphone-hardening'],
+    verdict: 'Standard Notes prioritizes longevity, privacy, and encryption above all else. The free version is incredibly basic, but the paid version is a powerhouse.',
+    pros: [
+      'End-to-end encryption by default',
+      'Open source and independently audited',
+      'Focuses heavily on data longevity and stability',
+      'Works offline and syncs beautifully'
+    ],
+    cons: [
+      'Free version only supports plain text (no bold, images, or formatting)',
+      'Paid plans are relatively expensive'
+    ]
+  },
+  {
+    id: 'matrix',
+    website: 'https://matrix.org',
+    index: 27,
+    name: 'Matrix / Element',
+    tagline: 'Decentralized, encrypted messaging',
+    category: 'Networks',
+    rating: 4,
+    trustScore: 92,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Browser'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'NCC Group',
+    relatedArticles: ['user-accounts-and-privacy'],
+    verdict: 'Matrix is a decentralized communication protocol (like email, but for instant messaging). Element is the most popular app for it. It offers end-to-end encrypted chats without tying you to a central company.',
+    pros: [
+      'Decentralized: no single company owns the network',
+      'End-to-end encrypted by default in private rooms',
+      'Open source protocol and clients',
+      'You can host your own server'
+    ],
+    cons: [
+      'Key verification across devices can be confusing for new users',
+      'Metadata (who talks to who) is visible to the server operators'
+    ]
+  },
+  {
+    id: 'onionshare',
+    website: 'https://onionshare.org',
+    index: 28,
+    name: 'OnionShare',
+    tagline: 'Anonymous file sharing over Tor',
+    category: 'Networks',
+    rating: 4,
+    trustScore: 98,
+    platforms: ['Windows', 'macOS', 'Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Least Authority',
+    relatedArticles: ['file-sharing'],
+    verdict: 'OnionShare lets you securely and anonymously share files of any size directly from your computer to someone else, using the Tor network. It leaves no trace on any server.',
+    pros: [
+      'Files never touch a central server (peer-to-peer)',
+      'Uses the Tor network for total anonymity',
+      'Receiver only needs the Tor Browser to download',
+      'Open source and audited'
+    ],
+    cons: [
+      'Both sender and receiver must be online at the same time',
+      'Transfers over Tor can be very slow'
+    ]
+  },
+  {
+    id: 'wormhole',
+    website: 'https://wormhole.app',
+    index: 29,
+    name: 'Wormhole',
+    tagline: 'Fast, end-to-end encrypted file sharing',
+    category: 'Networks',
+    rating: 4,
+    trustScore: 90,
+    platforms: ['Browser'],
+    pricing: 'Free',
+    openSource: false,
+    auditedBy: 'Not formally audited',
+    relatedArticles: ['file-sharing'],
+    verdict: 'Wormhole provides incredibly fast file sharing with end-to-end encryption. It\'s much safer than Dropbox or Google Drive for sending sensitive files quickly.',
+    pros: [
+      'End-to-end encrypted (the server cannot see the files)',
+      'Extremely fast transfer speeds',
+      'Simple web interface, no account required',
+      'Peer-to-peer streaming for large files'
+    ],
+    cons: [
+      'Not fully open source',
+      'Files are deleted after 24 hours or 100 downloads'
+    ]
+  },
+  {
+    id: 'qbittorrent',
+    website: 'https://www.qbittorrent.org',
+    index: 30,
+    name: 'qBittorrent',
+    tagline: 'The best open-source torrent client',
+    category: 'Networks',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['Windows', 'macOS', 'Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['file-sharing'],
+    verdict: 'qBittorrent is the community favorite for peer-to-peer file sharing. It is completely free, open source, and contains absolutely zero advertisements or bundled software.',
+    pros: [
+      'Completely free and open source',
+      'No ads, no bundled software, no tracking',
+      'Includes a built-in search engine',
+      'Excellent support for advanced features (DHT, PEX, VPN binding)'
+    ],
+    cons: [
+      'Interface is functional but looks dated'
+    ]
+  },
+  {
+    id: 'transmission',
+    website: 'https://transmissionbt.com',
+    index: 31,
+    name: 'Transmission',
+    tagline: 'A lightweight, beautiful torrent client',
+    category: 'Networks',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['macOS', 'Linux', 'Windows'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['file-sharing'],
+    verdict: 'Transmission is heavily favoured on macOS and Linux for its simplicity and incredibly low resource usage. It does exactly what it needs to without any bloat.',
+    pros: [
+      'Extremely lightweight on system resources',
+      'Beautiful, native macOS interface',
+      'Free, open source, and ad-free',
+      'Easy remote management'
+    ],
+    cons: [
+      'Lacks some of the advanced fine-tuning features found in qBittorrent'
+    ]
+  },
+  {
+    id: 'tails',
+    website: 'https://tails.net',
+    index: 32,
+    name: 'Tails',
+    tagline: 'The amnesic incognito live system',
+    category: 'Operating Systems',
+    rating: 4,
+    trustScore: 98,
+    platforms: ['USB/DVD (PC/Mac)'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Cure53, multiple academic audits',
+    relatedArticles: ['linux-privacy-security', 'anonymous-browsing'],
+    verdict: 'Tails is a portable operating system you start from a USB stick. It routes all traffic through Tor and leaves absolutely no trace on the computer you use it on. It is the gold standard for anonymous browsing.',
+    pros: [
+      'Leaves zero trace on the host computer',
+      'Forces all internet connections through the Tor network',
+      'Includes built-in encryption tools',
+      'Can be booted on almost any computer'
+    ],
+    cons: [
+      'Not designed for daily use as a main operating system',
+      'Requires rebooting your computer to use'
+    ]
+  },
+  {
+    id: 'qubes-os',
+    website: 'https://www.qubes-os.org',
+    index: 33,
+    name: 'Qubes OS',
+    tagline: 'A reasonably secure operating system',
+    category: 'Operating Systems',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['PC'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['linux-privacy-security'],
+    verdict: 'Qubes OS isolates different tasks into completely separate virtual machines. If one part of your system gets hacked, the rest remains perfectly safe. It is highly secure, but incredibly demanding.',
+    pros: [
+      'Unparalleled security through isolation (compartmentalization)',
+      'A compromised app cannot access data from other apps',
+      'Allows running Windows and Linux apps side-by-side securely',
+      'Open source and praised by security experts'
+    ],
+    cons: [
+      'Extremely steep learning curve',
+      'Requires very powerful hardware (lots of RAM and a specific CPU)',
+      'Hardware compatibility is limited'
+    ]
+  },
+  {
+    id: 'librewolf',
+    website: 'https://librewolf.net',
+    index: 34,
+    name: 'LibreWolf',
+    tagline: 'A custom, private version of Firefox',
+    category: 'Browsers',
+    rating: 5,
+    trustScore: 97,
+    platforms: ['Windows', 'macOS', 'Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['linux-privacy-security'],
+    verdict: 'LibreWolf is Firefox without any of the tracking or telemetry. It comes pre-configured with uBlock Origin and the strictest privacy settings enabled out of the box.',
+    pros: [
+      'No telemetry, adware, or tracking by default',
+      'Forces HTTPS and includes uBlock Origin automatically',
+      'Removes the Pocket integration and sponsored shortcuts',
+      'Open source and community driven'
+    ],
+    cons: [
+      'Strict settings can occasionally break certain websites (requires adjusting)',
+      'Updates slightly slower than official Firefox'
+    ],
+    content: `
+      <h2>What Is LibreWolf?</h2>
+      <p>LibreWolf is a version of Firefox that has been stripped down to its privacy essentials. Every telemetry call, every sponsored suggestion, and every "phone home" feature that Firefox ships with has been removed. What remains is a very fast, very capable browser that starts protecting you immediately — no configuration needed.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>LibreWolf is Firefox with all the privacy settings already turned on and all the tracking already removed — think of it as "privacy hardened Firefox" that comes that way out of the box. It forks Firefox's source code and applies a curated set of about:config overrides, including disabling WebRTC IP leaks, enabling resistFingerprinting, and blocking telemetry endpoints, plus ships with uBlock Origin pre-installed.</div></div>
+
+      <h2>How Is It Different From Firefox?</h2>
+      <p>Regular Firefox collects crash reports, usage statistics, and experiment data that it sends back to Mozilla. It also ships with Pocket (Mozilla's read-it-later service) and sponsored shortcuts on the new tab page. LibreWolf removes all of this. It also comes with uBlock Origin pre-installed and the strongest privacy settings already enabled.</p>
+
+      <h2>Works on Windows Too</h2>
+      <p>Despite being very popular in the Linux community, LibreWolf also runs on Windows and macOS. If you want a Firefox that's already fully hardened on any platform, LibreWolf is the simplest path.</p>
+
+      <h2>Verdict</h2>
+      <p>LibreWolf is the easiest way to get maximum-privacy Firefox without spending any time in settings menus. If you trust Firefox but not Mozilla's data collection practices, this is your browser.</p>
+    `
+  },
+  {
+    id: 'luks',
+    website: 'https://gitlab.com/cryptsetup/cryptsetup',
+    index: 35,
+    name: 'LUKS (Full Disk Encryption)',
+    tagline: 'Lock down your entire hard drive',
+    category: 'Security Tools',
+    rating: 5,
+    trustScore: 99,
+    platforms: ['Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Multiple security audits',
+    relatedArticles: ['linux-privacy-security'],
+    verdict: 'LUKS is the standard for encrypting an entire hard drive on Linux. If someone steals your laptop, they cannot read a single file without your encryption passphrase.',
+    pros: [
+      'Encrypts everything: the operating system, swap, and personal files',
+      'Built directly into the Linux kernel for maximum performance',
+      'Industry-standard security',
+      'Almost invisible once you enter your passphrase at boot'
+    ],
+    cons: [
+      'If you lose your passphrase, your data is gone forever',
+      'Must be configured when installing the operating system'
+    ],
+    content: `
+      <h2>What Is Full Disk Encryption?</h2>
+      <p>Full disk encryption scrambles every single bit of data on your hard drive. Without the correct passphrase entered at startup, the drive looks like random garbage to anyone who examines it — even if they remove it from the laptop and plug it into another computer.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>LUKS scrambles your entire hard drive using a key derived from your passphrase — there is no back door, no company can unlock it for the police, and without your passphrase the data is mathematically unreadable. Technically: LUKS (Linux Unified Key Setup) uses AES-256 with XTS mode and derives the encryption key from your passphrase using PBKDF2 or Argon2. The key is stored in one or more key slots in the LUKS header, allowing multiple passphrases or keyfiles.</div></div>
+
+      <h2>When Does This Matter?</h2>
+      <p>If your laptop is stolen and the drive is not encrypted, the thief can simply remove the hard drive, plug it into another computer, and read every file without needing your login password. Full disk encryption makes this impossible. It's the single most important protection for a laptop.</p>
+
+      <h2>How to Enable It</h2>
+      <p>LUKS is configured at installation time, not afterwards. When installing Ubuntu, Fedora, Mint, or most other distributions, the installer will show an option like "Encrypt the installation for security" or "Use LVM with encryption." Tick that box. Choose a strong passphrase — this is the only thing protecting your data, so make it long and memorable. You will be asked for it each time the computer starts.</p>
+
+      <h2>Verdict</h2>
+      <p>LUKS full disk encryption should be enabled on every laptop running Linux. It is free, built into the system, and adds essentially zero performance impact on modern hardware. The risk of not having it — your data being read if the laptop is ever lost or stolen — is significant.</p>
+    `
+  },
+  {
+    id: 'veracrypt',
+    website: 'https://www.veracrypt.fr',
+    index: 36,
+    name: 'VeraCrypt',
+    tagline: 'Securely encrypted folders and drives',
+    category: 'Security Tools',
+    rating: 5,
+    trustScore: 98,
+    platforms: ['Windows', 'macOS', 'Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Quarkslab',
+    relatedArticles: ['linux-privacy-security'],
+    verdict: 'VeraCrypt allows you to create an encrypted "safe" (a file or a USB drive) for highly sensitive documents. It is the successor to TrueCrypt and is widely trusted by security professionals.',
+    pros: [
+      'Creates encrypted containers that look like random data',
+      'Supports hidden operating systems and plausible deniability',
+      'Independent security audits confirm its safety',
+      'Cross-platform (open a vault on Windows, Mac, or Linux)'
+    ],
+    cons: [
+      'Interface feels dated and can be intimidating for beginners'
+    ],
+    content: `
+      <h2>What Is VeraCrypt For?</h2>
+      <p>VeraCrypt creates encrypted "containers" — files that look like random data to anyone who doesn't know the password, but open up as a usable folder when you do. You can also use it to encrypt an entire USB drive or external hard disk.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>VeraCrypt creates a secret, scrambled "safe" on your computer — only your password opens it, and when it's locked it's just a file full of random gibberish. When unlocked, it works like any normal folder. Under the hood, it uses AES-256-XTS, Serpent, or Twofish (or cascades of them) for encryption, with PBKDF2, bcrypt, or Argon2 key derivation to resist brute force. Volumes can be hidden inside other volumes for plausible deniability.</div></div>
+
+      <h2>Plausible Deniability</h2>
+      <p>VeraCrypt has a powerful feature called "hidden volumes." You create one encrypted container that has two passwords: one opens innocent files, the other opens the real sensitive files. If someone forces you to reveal your password, you give them the first one — they see nothing sensitive, and there's no way to prove a hidden volume exists.</p>
+
+      <h2>Use Cases</h2>
+      <ul>
+        <li>Storing sensitive documents (tax records, medical files, passwords) in an encrypted folder on your desktop</li>
+        <li>Keeping a private encrypted USB drive to carry sensitive files between computers</li>
+        <li>Creating a hidden encrypted partition on a drive for maximum plausible deniability</li>
+      </ul>
+
+      <h2>Verdict</h2>
+      <p>VeraCrypt is the tool security professionals reach for when they need to protect a specific folder or drive. It's free, cross-platform, and extensively audited. The only downside is a dated interface — once you understand how to create and open a volume, you won't touch the interface often anyway.</p>
+    `
+  },
+  {
+    id: 'metadata-cleaner',
+    website: 'https://0xacab.org/jvoisin/mat2',
+    index: 37,
+    name: 'Metadata Cleaner (MAT2)',
+    tagline: 'Strip hidden tracking info from files',
+    category: 'Security Tools',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['linux-privacy-security', 'metadata-problem'],
+    verdict: 'Whenever you take a photo, hidden data (like GPS coordinates and camera models) is saved inside it. Metadata Cleaner removes this invisible information before you share files online.',
+    pros: [
+      'Very simple interface (drag, drop, clean)',
+      'Uses the powerful MAT2 library under the hood',
+      'Supports images, PDFs, office documents, and audio',
+      'Completely free and open source'
+    ],
+    cons: [
+      'Cleaning PDFs can sometimes break interactive forms'
+    ],
+    content: `
+      <h2>What Is Metadata?</h2>
+      <p>When you take a photo with your phone, the image file doesn't just contain the picture. It also contains hidden data called EXIF data — the time and date the photo was taken, the model of camera or phone used, and often the precise GPS coordinates of where you were standing when you took it.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Every photo you take secretly records where you were, when, and with what device. Every PDF you create can contain your name and what software you used. Metadata Cleaner removes all of this before you share the file. The technical name is EXIF (Exchangeable image file format) metadata — stored in the file header of JPEG, TIFF, and RAW images — and modern photos routinely embed GPS coordinates with metre-level accuracy, device serial numbers, and ambient light sensor data. PDF files can contain author names, creation timestamps, editing software, and document revision history.</div></div>
+
+      <h2>How to Use It</h2>
+      <p>Metadata Cleaner is available as a Flatpak (the easiest way to install it on any Linux distribution). Open it, drag your photos or documents into the window, and click "Clean." The tool removes all the hidden data and saves clean copies of the files.</p>
+
+      <h2>What It Cleans</h2>
+      <ul>
+        <li><strong>Images (JPEG, PNG, TIFF, WebP):</strong> GPS coordinates, device model, timestamps, camera settings</li>
+        <li><strong>PDFs:</strong> Author name, creation date, editing software, document history</li>
+        <li><strong>Office documents:</strong> Author, revision history, tracked changes</li>
+        <li><strong>Audio files:</strong> Recording software, ID3 tags beyond title/artist</li>
+      </ul>
+
+      <h2>Verdict</h2>
+      <p>Metadata Cleaner is a simple, essential tool for anyone who shares files. Run your photos and documents through it before sharing them publicly or sending to strangers. On Linux, pair it with the ExifCleaner cross-platform option or use it as your primary tool — it handles a wider range of file types.</p>
+    `
+  },
+  {
+    id: 'bleachbit',
+    website: 'https://www.bleachbit.org',
+    index: 38,
+    name: 'BleachBit',
+    tagline: 'Deep-clean your system caches and trackers',
+    category: 'Security Tools',
+    rating: 4,
+    trustScore: 93,
+    platforms: ['Windows', 'Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['linux-privacy-security'],
+    verdict: 'BleachBit is like CCleaner but open-source and genuinely private. It shreds temporary files, tracking cookies, and system caches to free up disk space and remove your forensic footprint.',
+    pros: [
+      'Frees disk space while removing tracking data',
+      'Can "shred" files to prevent data recovery',
+      'Wipes free disk space to hide deleted files permanently',
+      'No adware, spyware, or "premium" upsells'
+    ],
+    cons: [
+      'Overzealous cleaning (like deleting system caches) can slow down the computer initially while it rebuilds them'
+    ],
+    content: `
+      <h2>What Does BleachBit Clean?</h2>
+      <p>Every time you use your computer, it leaves behind a trail: browser caches, temporary files, application logs, recent documents lists, tracking cookies, and much more. BleachBit finds and destroys all of it, leaving your system cleaner and your activities harder to reconstruct.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>When you normally delete a file, the data is still on the disk — it's just marked as "available." Special tools can recover it. BleachBit overwrites deleted files with random gibberish so they can't be read even with recovery software. It uses multi-pass overwriting for file shredding and can wipe free disk space to prevent forensic recovery of previously deleted files.</div></div>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Clean specific apps:</strong> BleachBit knows about hundreds of applications and cleans their cache and log files specifically</li>
+        <li><strong>Shred files:</strong> Permanently destroy a specific file so it can't be recovered</li>
+        <li><strong>Wipe free space:</strong> Overwrite all the empty space on your drive to destroy previously deleted files</li>
+        <li><strong>No upsells:</strong> Free, open source, no nag screens or "premium" tiers</li>
+      </ul>
+
+      <h2>What to Be Careful About</h2>
+      <p>BleachBit is powerful, which means it's possible to clean things that slow your computer down temporarily. For example, cleaning browser caches means your browser has to re-download images and scripts for sites you've already visited. This is the right privacy trade-off but expect a slightly slower browsing experience immediately after a clean.</p>
+
+      <h2>Verdict</h2>
+      <p>BleachBit is the best free, open-source system cleaner available. Run it monthly to free disk space and reduce your digital footprint. For the most sensitive files, use the "shred" option rather than normal deletion.</p>
+    `
+  },
+  {
+    id: 'flatpak',
+    website: 'https://flatpak.org',
+    index: 39,
+    name: 'Flatpak',
+    tagline: 'Sandboxed apps for Linux',
+    category: 'Security Tools',
+    rating: 4,
+    trustScore: 92,
+    platforms: ['Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['linux-privacy-security'],
+    verdict: 'Flatpak is a way to install Linux applications where each app runs in its own "sandbox." This prevents a compromised app from spying on your personal files or other software.',
+    pros: [
+      'Apps are isolated from the core system (sandboxing)',
+      'You can use "Flatseal" to visually manage app permissions',
+      'Provides the latest software regardless of what distribution you use',
+      'Standardized across the Linux ecosystem'
+    ],
+    cons: [
+      'Apps take up more disk space because they bundle their own dependencies',
+      'Sandboxing isn\'t always perfect depending on how the app was packaged'
+    ],
+    content: `
+      <h2>Why Sandboxing Matters</h2>
+      <p>When you install a traditional Linux application, it has access to your entire home folder and can potentially read files from other applications. Flatpak changes this: each app runs in its own isolated bubble (called a sandbox) and can only access what you explicitly allow.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Each Flatpak app lives in its own locked room — it can only talk to the rest of your system through a controlled doorway. If the app is compromised or malicious, the damage is limited to what it was allowed to access. Flatpak uses Linux kernel namespaces, cgroups, and seccomp-bpf to create this isolated execution environment, with apps accessing host resources only via portal APIs that mediate requests through the user session.</div></div>
+
+      <h2>Managing Permissions with Flatseal</h2>
+      <p>By default, each Flatpak app requests certain permissions when it's packaged — access to the network, access to your Documents folder, etc. You can view and change these permissions using a free tool called <strong>Flatseal</strong>. For example, you could use Flatseal to remove network access from a painting app that has no business connecting to the internet.</p>
+
+      <h2>How to Install Apps via Flatpak</h2>
+      <ol>
+        <li>Install Flatpak by following the instructions at <strong>flatpak.org/setup</strong> for your distribution</li>
+        <li>Add the Flathub repository: <code>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</code></li>
+        <li>Browse and install apps at <strong>flathub.org</strong>, or install from the terminal: <code>flatpak install flathub app.name</code></li>
+        <li>Install Flatseal to manage permissions: <code>flatpak install flathub com.github.tchx84.Flatseal</code></li>
+      </ol>
+
+      <h2>Verdict</h2>
+      <p>Flatpak is the recommended way to install applications on Linux when you want better isolation and the latest software versions. For most users, simply getting apps from Flathub and adjusting permissions with Flatseal provides a significant security improvement with minimal effort.</p>
+    `
+  },
+  {
+    id: 'firejail',
+    website: 'https://firejail.wordpress.com',
+    index: 40,
+    name: 'Firejail',
+    tagline: 'Advanced app sandboxing for experts',
+    category: 'Security Tools',
+    rating: 4,
+    trustScore: 94,
+    platforms: ['Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['linux-privacy-security'],
+    verdict: 'Firejail acts like a strict bouncer for your existing applications. You can run any app through Firejail to heavily restrict what files or networks it is allowed to access.',
+    pros: [
+      'Incredibly powerful containment for untrusted software',
+      'Comes with hundreds of pre-configured security profiles',
+      'Prevents apps from accessing the internet or your home folder',
+      'Lightweight and doesn\'t require reinstalling apps'
+    ],
+    cons: [
+      'Requires technical knowledge to fix apps if a security profile breaks them',
+      'As a SUID binary, it theoretically increases the attack surface of the system itself'
+    ],
+    content: `
+      <h2>What Is Firejail?</h2>
+      <p>Firejail wraps around any existing application and constrains what it can do. You can run your web browser, your PDF reader, or any other app through Firejail and it will restrict what files and network resources it can access — without reinstalling anything.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Firejail puts a cage around any application — you can tell it "this app is only allowed to see its own folder" or "this app cannot access the internet" and it enforces those rules at the kernel level. It is a SUID sandbox program that uses Linux namespaces, seccomp-bpf filters, and Linux capabilities to restrict an application's access to the filesystem, network, and system calls. It ships with pre-written security profiles for hundreds of applications.</div></div>
+
+      <h2>How to Use It</h2>
+      <p>Once installed (available in most distribution repositories), you can prefix any command with <code>firejail</code>:</p>
+      <ul>
+        <li><code>firejail firefox</code> — runs Firefox in a sandbox</li>
+        <li><code>firejail vlc</code> — runs the VLC media player sandboxed</li>
+        <li><code>firejail --noprofile --net=none document-editor</code> — runs an app with no internet access</li>
+      </ul>
+      <p>Firejail ships with ready-made security profiles for over 800 applications, so for well-known software it works immediately without configuration.</p>
+
+      <h2>Verdict</h2>
+      <p>Firejail is a powerful tool for experienced Linux users who want to add an extra containment layer around applications. For most regular users, Flatpak provides adequate sandboxing with less complexity. Use Firejail when you need to sandbox applications that aren't available as Flatpaks.</p>
+    `
+  },
+  {
+    id: 'ufw',
+    website: 'https://launchpad.net/ufw',
+    index: 41,
+    name: 'UFW (Uncomplicated Firewall)',
+    tagline: 'Simple network protection',
+    category: 'Networks',
+    rating: 5,
+    trustScore: 96,
+    platforms: ['Linux'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['linux-privacy-security'],
+    verdict: 'UFW is the standard firewall tool for Linux. By turning it on, you immediately block all incoming connections, preventing malicious actors on public networks from accessing your machine.',
+    pros: [
+      'Incredibly easy to use (literally just type "ufw enable")',
+      'Denies all incoming traffic by default',
+      'Graphic interface (GUFW) available for beginners',
+      'Pre-installed on many distributions like Ubuntu and Mint'
+    ],
+    cons: [
+      'It only manages iptables/nftables under the hood (not a full replacement for advanced routing)'
+    ],
+    content: `
+      <h2>What Is a Firewall?</h2>
+      <p>A firewall is a gatekeeper for your network traffic. It sits between your computer and the internet and decides what connections are allowed through and what are blocked. By default on most Linux systems, there is no firewall enabled — which means any service running on your computer could potentially accept connections from the network.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>UFW sets up a rule that says "nobody is allowed to knock on my computer's door unless I specifically invited them." This prevents other devices on the same network (like a coffee shop's WiFi) from accessing your machine. UFW is a frontend for iptables (and nftables on newer systems) that simplifies rule management — the default deny policy for incoming traffic means all inbound connection attempts are dropped unless a specific rule explicitly allows them. Outbound traffic is permitted by default.</div></div>
+
+      <h2>How to Enable UFW</h2>
+      <p>UFW is pre-installed on Ubuntu and Linux Mint. On other distributions, install it with your package manager.</p>
+      <ol>
+        <li>Open a terminal</li>
+        <li>Run: <code>sudo ufw enable</code></li>
+        <li>That's it. UFW is now active and blocking all incoming connections by default.</li>
+      </ol>
+      <p>If you need to allow a specific service (e.g., SSH for remote access): <code>sudo ufw allow ssh</code></p>
+      <p>To check the status and see all active rules: <code>sudo ufw status verbose</code></p>
+
+      <h2>GUFW — the Graphical Interface</h2>
+      <p>If you prefer a visual interface, install GUFW (Graphical UFW) from your software centre. It lets you manage all firewall rules with clickable buttons instead of terminal commands.</p>
+
+      <h2>Verdict</h2>
+      <p>UFW is the simplest and most important security step for any Linux system, especially on laptops that connect to public WiFi. Enable it immediately after installing Linux. The two-second setup provides continuous protection with no ongoing maintenance needed.</p>
+    `
+  }
+
+  {
+    id: '1password',
+    website: 'https://1password.com',
+    index: 43,
+    name: '1Password',
+    tagline: 'Premium, polished password management',
+    category: 'Password Managers',
+    rating: 5,
+    trustScore: 90,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    pricing: 'Paid',
+    openSource: false,
+    auditedBy: 'Cure53, Securisea, and others',
+    relatedArticles: ['password-managers-guide', 'practical-privacy-stack'],
+    verdict: '1Password is the best choice if you are willing to pay for a flawless user experience, excellent family sharing, and robust security. While it is not open source, its security model is widely respected.',
+    pros: [
+      'Incredibly polished apps across all platforms',
+      'Excellent features for sharing passwords with family or teams',
+      'Strong Secret Key architecture protects against server breaches',
+      'Great built-in 2FA code generator'
+    ],
+    cons: [
+      'No free tier available',
+      'Closed-source, so you rely on their external audits'
+    ],
+    content: `
+      <h2>The Premium Experience</h2>
+      <p>1Password is often considered the gold standard for usability in the password manager space. While we often recommend open-source tools like Bitwarden, 1Password earns its place by offering an incredibly smooth experience that makes adopting good security habits easy — especially for less technical family members.</p>
+      
+      <h2>How It Keeps You Safe</h2>
+      <p>Even though 1Password is closed-source, they have a highly respected security model. When you create an account, you get a "Secret Key" — a long string of characters stored only on your devices. To access your vault on a new device, you need both your Master Password (which you memorize) and your Secret Key (which you usually scan via QR code or type from a printed document).</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>This means that even if a hacker stole your Master Password and compromised 1Password's servers, they still couldn't access your data without physically possessing one of your devices to get the Secret Key. This dual-layer encryption makes 1Password exceptionally resilient against remote attacks.</div></div>
+
+      <h2>Verdict</h2>
+      <p>If you don't mind paying an annual subscription, 1Password is fantastic. Its family plan is particularly good for helping relatives upgrade their security without overwhelming them.</p>
+    `
+  },
+  {
+    id: 'proton-pass',
+    website: 'https://proton.me/pass',
+    index: 44,
+    name: 'Proton Pass',
+    tagline: 'Password manager with built-in email aliases',
+    category: 'Password Managers',
+    rating: 4,
+    trustScore: 94,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    pricing: 'Free / Paid',
+    openSource: true,
+    auditedBy: 'Cure53',
+    relatedArticles: ['password-managers-guide', 'practical-privacy-stack'],
+    verdict: 'Proton Pass is a strong, open-source password manager that shines if you are already in the Proton ecosystem. Its killer feature is the ability to generate unique email aliases on the fly when signing up for new services.',
+    pros: [
+      'Built-in email alias generation (hide-my-email)',
+      'Open-source and independently audited',
+      'Integrates perfectly with Proton Mail and Proton VPN',
+      'Strong free tier'
+    ],
+    cons: [
+      'Newer than competitors like Bitwarden, so it lacks some niche advanced features',
+      'Web app experience is still evolving'
+    ],
+    content: `
+      <h2>More Than Just Passwords</h2>
+      <p>Proton Pass comes from the Swiss company behind Proton Mail. It does everything a good password manager should do — end-to-end encryption, cross-platform syncing, and secure password generation — but it adds one incredibly useful feature: integrated email aliases.</p>
+      
+      <h2>The Power of Email Aliases</h2>
+      <p>When you sign up for a new website, Proton Pass doesn't just generate a strong password; it can also generate a unique, random email address (like <code>word-random@pass.inbox</code>) that forwards to your real email. This means the website never gets your actual email address.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Using unique email aliases is a powerful compartmentalisation technique. If a website gets hacked, the attackers only get a useless alias. If they start sending spam to it, you can simply click a button in Proton Pass to deactivate that alias, instantly stopping the spam without affecting your other accounts.</div></div>
+
+      <h2>Verdict</h2>
+      <p>If you already use Proton Mail, Proton Pass is a natural choice. Even if you don't, the integrated alias feature makes it a compelling alternative to Bitwarden for those looking to protect their inbox from spam and tracking.</p>
+    `
+  },
+  {
+    id: 'session',
+    website: 'https://getsession.org',
+    index: 45,
+    name: 'Session',
+    tagline: 'Anonymous messenger with no phone number required',
+    category: 'Messaging',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    pricing: 'Free',
+    openSource: true,
+    auditedBy: 'Quarkslab',
+    relatedArticles: ['privacy-vs-convenience', 'practical-privacy-stack'],
+    verdict: 'Session is an incredibly private messenger that, unlike Signal or WhatsApp, does not require a phone number to sign up. It routes messages through a decentralized network to protect your metadata.',
+    pros: [
+      'No phone number or email required to sign up',
+      'Decentralized routing (onion routing) hides your IP address and metadata',
+      'End-to-end encrypted by default',
+      'Open-source'
+    ],
+    cons: [
+      'No voice or video calls',
+      'Message delivery can occasionally be delayed due to the decentralized network',
+      'Smaller user base means convincing friends to switch is harder'
+    ],
+    content: `
+      <h2>Anonymity Over Everything</h2>
+      <p>Signal is the gold standard for secure messaging, but it requires a phone number, which inherently links your account to your real-world identity. Session solves this problem. When you start Session, it generates a random "Session ID" — a long string of letters and numbers. You share this ID with people to chat. No phone number, no email, no name required.</p>
+      
+      <h2>How It Hides Your Metadata</h2>
+      <p>Session goes further than just encrypting the contents of your messages. It uses an onion-routing network (similar to Tor) consisting of thousands of community-run nodes.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>When you send a message, it bounces through three different servers before reaching the recipient. The first server knows who you are but not the destination. The middle server knows neither. The final server knows the destination but not who sent it. This protects your metadata — nobody, not even the network itself, knows who is talking to whom.</div></div>
+
+      <h2>Verdict</h2>
+      <p>Session is not a complete replacement for Signal or WhatsApp because it lacks voice and video calling, and the network can be slightly slower. However, for activists, journalists, or anyone needing true anonymity in their communications, it is one of the best tools available.</p>
+    `
+  },
+  {
+    id: 'proton-vpn',
+    website: 'https://protonvpn.com',
+    index: 46,
+    name: 'Proton VPN',
+    tagline: 'High-speed, open-source VPN from a trusted provider',
+    category: 'Networks',
+    rating: 5,
+    trustScore: 96,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    pricing: 'Free / Paid',
+    openSource: true,
+    auditedBy: 'SEC Consult',
+    relatedArticles: ['vpn-explainer', 'practical-privacy-stack'],
+    verdict: 'Proton VPN is one of the most transparent and trustworthy VPNs on the market. It offers a genuinely excellent free tier with no data limits, and a premium tier with advanced routing features.',
+    pros: [
+      'Strict no-logs policy, based in privacy-friendly Switzerland',
+      'The only trustworthy free VPN (no data limits, no ads, no selling data)',
+      'Apps are entirely open-source and audited',
+      'Secure Core feature routes traffic through privacy-friendly countries first'
+    ],
+    cons: [
+      'Free tier does not support streaming services',
+      'Paid tiers are slightly more expensive than some competitors'
+    ],
+    content: `
+      <h2>The Only Free VPN You Should Use</h2>
+      <p>Most free VPNs are dangerous. They pay for their servers by logging your traffic and selling your data to advertisers — the exact opposite of what a VPN should do. Proton VPN is the exception. Their free tier is subsidized by paying users, offering unlimited data and strong encryption, though it limits your speed and server choices.</p>
+      
+      <h2>Advanced Features</h2>
+      <p>If you upgrade to the paid tier, Proton VPN offers excellent speeds, support for streaming services, and a feature called "Secure Core."</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Secure Core routes your traffic through servers in privacy-friendly countries (like Switzerland or Iceland) before sending it on to your final destination. This defends against network attacks where an adversary might be monitoring the exit server, adding an extra layer of operational security.</div></div>
+
+      <h2>Verdict</h2>
+      <p>Proton VPN and Mullvad are the two best VPNs available. Choose Mullvad for absolute anonymity (cash payments, no accounts), and choose Proton VPN if you want a great free tier, streaming support, or integration with the rest of the Proton ecosystem.</p>
+    `
+  },
+  {
+    id: 'pia',
+    website: 'https://www.privateinternetaccess.com',
+    index: 47,
+    name: 'Private Internet Access (PIA)',
+    tagline: 'Highly configurable, proven no-logs VPN',
+    category: 'Networks',
+    rating: 4,
+    trustScore: 89,
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    pricing: 'Paid',
+    openSource: true,
+    auditedBy: 'Deloitte',
+    relatedArticles: ['vpn-explainer', 'practical-privacy-stack'],
+    verdict: 'Private Internet Access (PIA) is a veteran VPN provider with a massive server network and a no-logs policy that has been proven in court multiple times. It is highly configurable for advanced users.',
+    pros: [
+      'No-logs policy proven in multiple US court cases',
+      'Desktop apps are open-source and highly customisable',
+      'Supports port forwarding and advanced network tweaks',
+      'Very affordable on long-term plans'
+    ],
+    cons: [
+      'Based in the US (part of the Five Eyes intelligence alliance)',
+      'Owned by Kape Technologies, a conglomerate that concerns some privacy purists'
+    ],
+    content: `
+      <h2>A Proven Track Record</h2>
+      <p>PIA has something very few VPNs have: court-proven privacy. On multiple occasions, US law enforcement has subpoenaed PIA for user data, and PIA has testified under oath that they have nothing to hand over because they do not keep logs. This real-world test is far more valuable than marketing promises.</p>
+      
+      <h2>For the Tinkerers</h2>
+      <p>PIA is particularly popular with advanced users. The desktop applications expose a wealth of settings, allowing you to choose your exact encryption ciphers, handshake methods, and MTU sizes. It also supports port forwarding, which is highly useful for specific networking tasks like self-hosting or optimized P2P file sharing.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>While PIA is based in the US — which is generally a negative for privacy services due to surveillance laws — their consistent ability to prove in court that they do not log data mitigates much of this risk. However, users with extreme threat models might still prefer a provider outside the Five Eyes alliance, like Mullvad or Proton VPN.</div></div>
+
+      <h2>Verdict</h2>
+      <p>If you want a highly configurable VPN that is inexpensive and has a proven track record of fighting for user privacy in court, PIA is a solid choice, despite its corporate ownership.</p>
+    `
+  },
+  {
+    id: 'tuta-mail',
+    website: 'https://tuta.com',
+    index: 48,
+    name: 'Tuta Mail',
+    tagline: 'Privacy-maximalist encrypted email',
+    category: 'Email',
+    rating: 4,
+    trustScore: 95,
+    platforms: ['Web', 'Windows', 'macOS', 'Linux', 'iOS', 'Android'],
+    pricing: 'Free / Paid',
+    openSource: true,
+    auditedBy: 'SySS GmbH',
+    relatedArticles: ['practical-privacy-stack'],
+    verdict: 'Tuta (formerly Tutanota) is a privacy-first email service based in Germany. It encrypts more of your data than almost any competitor, including subject lines and calendar entries.',
+    pros: [
+      'Encrypts subject lines, address books, and calendars (unlike many competitors)',
+      'Does not use third-party push notification services from Google or Apple',
+      'Open-source clients across all platforms',
+      'Generous free tier with no ads'
+    ],
+    cons: [
+      'Does not support standard IMAP/SMTP (you must use their app)',
+      'Search functionality is slightly clunky because it has to search encrypted data locally'
+    ],
+    content: `
+      <h2>Going the Extra Mile for Encryption</h2>
+      <p>Tuta is one of the most uncompromising email providers when it comes to privacy. While other secure email providers encrypt the body of your message, Tuta goes further by encrypting the subject line, your entire calendar, and your address book end-to-end.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Because everything is encrypted before it reaches Tuta's servers in Germany, they cannot read your emails, hand them over to authorities, or scan them for advertising. They even built their own push notification system for Android to avoid relying on Google Play Services, which is a massive win for users of de-Googled phones like GrapheneOS.</div></div>
+
+      <h2>The IMAP Trade-Off</h2>
+      <p>The main drawback of Tuta is that you cannot use it with standard email clients like Apple Mail, Thunderbird, or Outlook. Because of their unique encryption architecture, you must use their official apps or web interface. This ensures security, but reduces flexibility.</p>
+
+      <h2>Verdict</h2>
+      <p>If you are looking for the absolute maximum level of encryption and privacy in an email provider, and are willing to use dedicated apps, Tuta is a fantastic alternative to Proton Mail.</p>
+    `
+  },
+  {
+    id: 'fastmail',
+    website: 'https://www.fastmail.com',
+    index: 49,
+    name: 'Fastmail',
+    tagline: 'Lightning-fast, independent email focusing on productivity',
+    category: 'Email',
+    rating: 4,
+    trustScore: 85,
+    platforms: ['Web', 'iOS', 'Android', 'Standard Email Clients'],
+    pricing: 'Paid',
+    openSource: false,
+    auditedBy: 'Internal audits',
+    relatedArticles: ['practical-privacy-stack'],
+    verdict: 'Fastmail is not end-to-end encrypted like Proton or Tuta, but it is vastly better than Gmail. It is a fantastic option for users who want blazing fast email, standard IMAP support, and no ad-scanning, without the friction of full encryption.',
+    pros: [
+      'Incredibly fast and reliable web interface',
+      'Excellent support for standard email apps via IMAP/SMTP',
+      'No ads, no tracking, and no scanning of emails for marketing',
+      'Great calendar and contacts integration'
+    ],
+    cons: [
+      'Not end-to-end encrypted (Fastmail can technically read your emails)',
+      'Based in Australia (Five Eyes alliance)',
+      'No free tier'
+    ],
+    content: `
+      <h2>The Middle Ground of Email Privacy</h2>
+      <p>Not everyone needs military-grade encryption. For many people, the goal is simply to stop Google or Microsoft from scanning their inbox to build advertising profiles. Fastmail is the perfect solution for this threat model. You pay them directly, so you are the customer, not the product.</p>
+      
+      <h2>Productivity Over Paranoia</h2>
+      <p>Because Fastmail doesn't use end-to-end encryption, it can offer features that secure providers struggle with. Server-side search is lightning fast. You can plug your account into any email app you like. The calendar works flawlessly. It feels just like Gmail, but without the surveillance capitalism.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Fastmail protects your data from advertisers and data brokers, but not from lawful government requests. Because they hold the encryption keys to their servers, they can be compelled by Australian law to hand over your inbox contents. If this is a concern for your threat model, use Proton Mail or Tuta instead.</div></div>
+
+      <h2>Verdict</h2>
+      <p>Fastmail is the best choice for professionals and everyday users who want a beautiful, fast, and ad-free email experience, and who are comfortable trusting an independent company with their data rather than relying on strict mathematical encryption.</p>
+    `
+  },
+  {
+    id: 'addy-io',
+    website: 'https://addy.io',
+    index: 50,
+    name: 'Addy.io',
+    tagline: 'Open-source email forwarding and aliases',
+    category: 'Email',
+    rating: 4,
+    trustScore: 92,
+    platforms: ['Web', 'Browser Extensions'],
+    pricing: 'Free / Paid',
+    openSource: true,
+    auditedBy: 'Community audited',
+    relatedArticles: ['practical-privacy-stack'],
+    verdict: 'Addy.io (formerly AnonAddy) is a powerful, open-source tool for creating unlimited email aliases. It sits between websites and your real inbox, protecting your identity and stopping spam.',
+    pros: [
+      'Creates unlimited email aliases on the fly',
+      'Open-source and can be self-hosted',
+      'Supports PGP encryption for forwarded emails',
+      'Excellent free tier'
+    ],
+    cons: [
+      'Replying from aliases requires a bit of setup',
+      'Less polished interface compared to SimpleLogin'
+    ],
+    content: `
+      <h2>Protecting Your Real Email Address</h2>
+      <p>Every time you give a website your real email address, you are giving them a unique identifier that data brokers use to track you across the internet. Addy.io solves this by providing unlimited alias addresses (like <code>shopping@yourusername.anonaddy.com</code>). You give the alias to the website, Addy.io receives the email, and forwards it to your real inbox.</p>
+      
+      <h2>Containment and Control</h2>
+      <p>If a website gets hacked or sells your address to spammers, you will know exactly who leaked it because the spam will come to that specific alias. You can then toggle a switch in Addy.io to turn that alias off, instantly stopping the spam without affecting any of your other accounts.</p>
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>For advanced users, Addy.io supports PGP encryption. Even if you use a standard provider like Gmail, Addy.io can encrypt all incoming emails with your public PGP key before forwarding them, meaning Google cannot read the contents of your forwarded mail.</div></div>
+
+      <h2>Verdict</h2>
+      <p>Addy.io is a fantastic, open-source alternative to SimpleLogin or Apple's Hide My Email. Using an alias service is one of the most effective ways to reduce spam and compartmentalize your digital life.</p>
     `
   }
 ];

@@ -7,6 +7,7 @@ const REVIEWS = [
   /* ── PASSWORD MANAGERS ───────────────────────────────────── */
   {
     id: 'bitwarden',
+    website: 'https://bitwarden.com',
     index: 1,
     name: 'Bitwarden',
     tagline: 'The best free, open-source password manager',
@@ -64,6 +65,7 @@ const REVIEWS = [
   },
   {
     id: 'keepassxc',
+    website: 'https://keepassxc.org',
     index: 2,
     name: 'KeePassXC',
     tagline: 'Your passwords stay on your device, always',
@@ -127,6 +129,7 @@ const REVIEWS = [
   /* ── MESSAGING ────────────────────────────────────────────── */
   {
     id: 'signal',
+    website: 'https://signal.org',
     index: 3,
     name: 'Signal',
     tagline: 'The gold standard for private messaging',
@@ -193,12 +196,13 @@ const REVIEWS = [
   /* ── EMAIL ────────────────────────────────────────────────── */
   {
     id: 'protonmail',
+    website: 'https://proton.me/mail',
     index: 4,
     name: 'ProtonMail',
     tagline: 'Encrypted email based in Switzerland',
     category: 'Email',
     rating: 4,
-    trustScore: 82,
+    trustScore: 90,
     platforms: ['Browser', 'iOS', 'Android'],
     pricing: 'Free / from €3.99/mo',
     openSource: true,
@@ -251,11 +255,12 @@ const REVIEWS = [
   },
   {
     id: 'simplelogin',
+    website: 'https://simplelogin.io',
     index: 5,
     name: 'SimpleLogin',
     tagline: 'Protect your real email with disposable aliases',
     category: 'Email',
-    rating: 4,
+    rating: 5,
     trustScore: 88,
     platforms: ['Browser', 'iOS', 'Android'],
     pricing: 'Free (15 aliases) / €30/yr Premium (unlimited)',
@@ -302,12 +307,13 @@ const REVIEWS = [
   /* ── BROWSERS ─────────────────────────────────────────────── */
   {
     id: 'brave',
+    website: 'https://brave.com',
     index: 6,
     name: 'Brave Browser',
     tagline: 'Privacy by default, without any configuration',
     category: 'Browsers',
-    rating: 4,
-    trustScore: 80,
+    rating: 5,
+    trustScore: 88,
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free',
     openSource: true,
@@ -354,6 +360,7 @@ const REVIEWS = [
   },
   {
     id: 'firefox',
+    website: 'https://www.mozilla.org/firefox/',
     index: 7,
     name: 'Firefox (Privacy Hardened)',
     tagline: 'The open web\'s browser — and the most configurable',
@@ -410,6 +417,7 @@ const REVIEWS = [
   },
   {
     id: 'tor-browser',
+    website: 'https://www.torproject.org',
     index: 8,
     name: 'Tor Browser',
     tagline: 'Strongest anonymity available for everyday browsing',
@@ -471,6 +479,7 @@ const REVIEWS = [
   /* ── BROWSER EXTENSIONS ───────────────────────────────────── */
   {
     id: 'ublock-origin',
+    website: 'https://ublockorigin.com',
     index: 9,
     name: 'uBlock Origin',
     tagline: 'The most effective content blocker ever made',
@@ -539,6 +548,7 @@ const REVIEWS = [
   /* ── VPNs ─────────────────────────────────────────────────── */
   {
     id: 'mullvad',
+    website: 'https://mullvad.net',
     index: 10,
     name: 'Mullvad VPN',
     tagline: 'The most privacy-respecting VPN on the market',
@@ -602,6 +612,7 @@ const REVIEWS = [
   /* ── MAPS ─────────────────────────────────────────────────── */
   {
     id: 'organic-maps',
+    website: 'https://organicmaps.app',
     index: 11,
     name: 'Organic Maps',
     tagline: 'Offline maps with no tracking, no account, no ads',
@@ -658,6 +669,7 @@ const REVIEWS = [
   /* ── VIDEO CALLING ────────────────────────────────────────── */
   {
     id: 'jitsi-meet',
+    website: 'https://jitsi.org/jitsi-meet/',
     index: 42,
     name: 'Jitsi Meet',
     tagline: 'Private video calls with no account for anyone',
@@ -713,6 +725,7 @@ const REVIEWS = [
   /* ── FILE SYNC ────────────────────────────────────────────── */
   {
     id: 'syncthing',
+    website: 'https://syncthing.net',
     index: 12,
     name: 'Syncthing',
     tagline: 'Sync your files between your own devices — no cloud involved',
@@ -766,6 +779,7 @@ const REVIEWS = [
   /* ── NOTES ────────────────────────────────────────────────── */
   {
     id: 'obsidian',
+    website: 'https://obsidian.md',
     index: 13,
     name: 'Obsidian',
     tagline: 'Your notes live on your device — not in someone\'s cloud',
@@ -823,12 +837,13 @@ const REVIEWS = [
   /* ── SEARCH ENGINES ───────────────────────────────────────── */
   {
     id: 'duckduckgo',
+    website: 'https://duckduckgo.com',
     index: 14,
     name: 'DuckDuckGo',
     tagline: 'The search engine that doesn\'t track you',
     category: 'Search Engines',
-    rating: 4,
-    trustScore: 79,
+    rating: 5,
+    trustScore: 85,
     platforms: ['Web', 'iOS', 'Android', 'Browser Extension'],
     pricing: 'Free',
     openSource: false,
@@ -876,6 +891,7 @@ const REVIEWS = [
   /* ── EMAIL ANONYMITY ──────────────────────────────────────── */
   {
     id: 'aegis-authenticator',
+    website: 'https://getaegis.app',
     index: 15,
     name: 'Aegis Authenticator',
     tagline: 'Open source 2FA app for Android — your codes, your control',
@@ -932,6 +948,7 @@ const REVIEWS = [
   /* ── TOOLS ────────────────────────────────────────────────── */
   {
     id: 'exifcleaner',
+    website: 'https://exifcleaner.com',
     index: 16,
     name: 'ExifCleaner',
     tagline: 'Drag and drop to strip hidden location data from photos',
@@ -985,6 +1002,7 @@ const REVIEWS = [
   },
   {
     id: 'freetube',
+    website: 'https://freetubeapp.io',
     index: 17,
     name: 'FreeTube',
     tagline: 'Watch YouTube without Google watching you',
@@ -1039,6 +1057,7 @@ const REVIEWS = [
   },
   {
     id: 'grapheneos',
+    website: 'https://grapheneos.org',
     index: 18,
     name: 'GrapheneOS',
     tagline: 'Android without Google — maximum mobile privacy',
@@ -1097,6 +1116,7 @@ const REVIEWS = [
   },
   {
     id: '2fas',
+    website: 'https://2fas.com',
     index: 19,
     name: '2FAS',
     tagline: 'The best offline, open-source authenticator',
@@ -1143,6 +1163,7 @@ const REVIEWS = [
   },
   {
     id: 'nextdns',
+    website: 'https://nextdns.io',
     index: 20,
     name: 'NextDNS',
     tagline: 'A firewall for your entire internet connection',
@@ -1168,6 +1189,7 @@ const REVIEWS = [
   },
   {
     id: 'searxng',
+    website: 'https://docs.searxng.org',
     index: 21,
     name: 'SearXNG',
     tagline: 'A privacy-respecting metasearch engine',
@@ -1193,6 +1215,7 @@ const REVIEWS = [
   },
   {
     id: 'startpage',
+    website: 'https://www.startpage.com',
     index: 22,
     name: 'Startpage',
     tagline: 'Google search results without the tracking',
@@ -1217,6 +1240,7 @@ const REVIEWS = [
   },
   {
     id: 'invidious',
+    website: 'https://invidious.io',
     index: 23,
     name: 'Invidious',
     tagline: 'An open-source, private front-end to YouTube',
@@ -1242,6 +1266,7 @@ const REVIEWS = [
   },
   {
     id: 'osmand',
+    website: 'https://osmand.net',
     index: 24,
     name: 'OsmAnd',
     tagline: 'Powerful offline maps using OpenStreetMap data',
@@ -1268,11 +1293,12 @@ const REVIEWS = [
   },
   {
     id: 'joplin',
+    website: 'https://joplinapp.org',
     index: 25,
     name: 'Joplin',
     tagline: 'End-to-end encrypted note taking',
     category: 'Note-Taking',
-    rating: 5,
+    rating: 4,
     trustScore: 95,
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free (bring your own sync) / Joplin Cloud from €1.99/mo',
@@ -1293,6 +1319,7 @@ const REVIEWS = [
   },
   {
     id: 'standard-notes',
+    website: 'https://standardnotes.com',
     index: 26,
     name: 'Standard Notes',
     tagline: 'Ultra-secure, private notes',
@@ -1318,6 +1345,7 @@ const REVIEWS = [
   },
   {
     id: 'matrix',
+    website: 'https://matrix.org',
     index: 27,
     name: 'Matrix / Element',
     tagline: 'Decentralized, encrypted messaging',
@@ -1343,11 +1371,12 @@ const REVIEWS = [
   },
   {
     id: 'onionshare',
+    website: 'https://onionshare.org',
     index: 28,
     name: 'OnionShare',
     tagline: 'Anonymous file sharing over Tor',
     category: 'Networks',
-    rating: 5,
+    rating: 4,
     trustScore: 98,
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',
@@ -1368,6 +1397,7 @@ const REVIEWS = [
   },
   {
     id: 'wormhole',
+    website: 'https://wormhole.app',
     index: 29,
     name: 'Wormhole',
     tagline: 'Fast, end-to-end encrypted file sharing',
@@ -1393,11 +1423,12 @@ const REVIEWS = [
   },
   {
     id: 'qbittorrent',
+    website: 'https://www.qbittorrent.org',
     index: 30,
     name: 'qBittorrent',
     tagline: 'The best open-source torrent client',
     category: 'Networks',
-    rating: 5,
+    rating: 4,
     trustScore: 95,
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',
@@ -1417,11 +1448,12 @@ const REVIEWS = [
   },
   {
     id: 'transmission',
+    website: 'https://transmissionbt.com',
     index: 31,
     name: 'Transmission',
     tagline: 'A lightweight, beautiful torrent client',
     category: 'Networks',
-    rating: 5,
+    rating: 4,
     trustScore: 95,
     platforms: ['macOS', 'Linux', 'Windows'],
     pricing: 'Free',
@@ -1441,11 +1473,12 @@ const REVIEWS = [
   },
   {
     id: 'tails',
+    website: 'https://tails.net',
     index: 32,
     name: 'Tails',
     tagline: 'The amnesic incognito live system',
     category: 'Operating Systems',
-    rating: 5,
+    rating: 4,
     trustScore: 98,
     platforms: ['USB/DVD (PC/Mac)'],
     pricing: 'Free',
@@ -1466,11 +1499,12 @@ const REVIEWS = [
   },
   {
     id: 'qubes-os',
+    website: 'https://www.qubes-os.org',
     index: 33,
     name: 'Qubes OS',
     tagline: 'A reasonably secure operating system',
     category: 'Operating Systems',
-    rating: 5,
+    rating: 4,
     trustScore: 95,
     platforms: ['PC'],
     pricing: 'Free',
@@ -1492,6 +1526,7 @@ const REVIEWS = [
   },
   {
     id: 'librewolf',
+    website: 'https://librewolf.net',
     index: 34,
     name: 'LibreWolf',
     tagline: 'A custom, private version of Firefox',
@@ -1532,6 +1567,7 @@ const REVIEWS = [
   },
   {
     id: 'luks',
+    website: 'https://gitlab.com/cryptsetup/cryptsetup',
     index: 35,
     name: 'LUKS (Full Disk Encryption)',
     tagline: 'Lock down your entire hard drive',
@@ -1572,6 +1608,7 @@ const REVIEWS = [
   },
   {
     id: 'veracrypt',
+    website: 'https://www.veracrypt.fr',
     index: 36,
     name: 'VeraCrypt',
     tagline: 'Securely encrypted folders and drives',
@@ -1615,6 +1652,7 @@ const REVIEWS = [
   },
   {
     id: 'metadata-cleaner',
+    website: 'https://0xacab.org/jvoisin/mat2',
     index: 37,
     name: 'Metadata Cleaner (MAT2)',
     tagline: 'Strip hidden tracking info from files',
@@ -1659,6 +1697,7 @@ const REVIEWS = [
   },
   {
     id: 'bleachbit',
+    website: 'https://www.bleachbit.org',
     index: 38,
     name: 'BleachBit',
     tagline: 'Deep-clean your system caches and trackers',
@@ -1703,6 +1742,7 @@ const REVIEWS = [
   },
   {
     id: 'flatpak',
+    website: 'https://flatpak.org',
     index: 39,
     name: 'Flatpak',
     tagline: 'Sandboxed apps for Linux',
@@ -1748,6 +1788,7 @@ const REVIEWS = [
   },
   {
     id: 'firejail',
+    website: 'https://firejail.wordpress.com',
     index: 40,
     name: 'Firejail',
     tagline: 'Advanced app sandboxing for experts',
@@ -1791,6 +1832,7 @@ const REVIEWS = [
   },
   {
     id: 'ufw',
+    website: 'https://launchpad.net/ufw',
     index: 41,
     name: 'UFW (Uncomplicated Firewall)',
     tagline: 'Simple network protection',
@@ -1838,6 +1880,7 @@ const REVIEWS = [
 
   {
     id: '1password',
+    website: 'https://1password.com',
     index: 43,
     name: '1Password',
     tagline: 'Premium, polished password management',
@@ -1874,6 +1917,7 @@ const REVIEWS = [
   },
   {
     id: 'proton-pass',
+    website: 'https://proton.me/pass',
     index: 44,
     name: 'Proton Pass',
     tagline: 'Password manager with built-in email aliases',
@@ -1910,6 +1954,7 @@ const REVIEWS = [
   },
   {
     id: 'session',
+    website: 'https://getsession.org',
     index: 45,
     name: 'Session',
     tagline: 'Anonymous messenger with no phone number required',
@@ -1947,6 +1992,7 @@ const REVIEWS = [
   },
   {
     id: 'proton-vpn',
+    website: 'https://protonvpn.com',
     index: 46,
     name: 'Proton VPN',
     tagline: 'High-speed, open-source VPN from a trusted provider',
@@ -1983,6 +2029,7 @@ const REVIEWS = [
   },
   {
     id: 'pia',
+    website: 'https://www.privateinternetaccess.com',
     index: 47,
     name: 'Private Internet Access (PIA)',
     tagline: 'Highly configurable, proven no-logs VPN',
@@ -2019,6 +2066,7 @@ const REVIEWS = [
   },
   {
     id: 'tuta-mail',
+    website: 'https://tuta.com',
     index: 48,
     name: 'Tuta Mail',
     tagline: 'Privacy-maximalist encrypted email',
@@ -2055,6 +2103,7 @@ const REVIEWS = [
   },
   {
     id: 'fastmail',
+    website: 'https://www.fastmail.com',
     index: 49,
     name: 'Fastmail',
     tagline: 'Lightning-fast, independent email focusing on productivity',
@@ -2092,6 +2141,7 @@ const REVIEWS = [
   },
   {
     id: 'addy-io',
+    website: 'https://addy.io',
     index: 50,
     name: 'Addy.io',
     tagline: 'Open-source email forwarding and aliases',

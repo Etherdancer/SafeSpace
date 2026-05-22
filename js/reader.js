@@ -104,6 +104,7 @@ export function initReviewReader() {
             <span class="pill">🔍 Audited by ${review.auditedBy}</span>
             ${platforms}
           </div>
+          ${review.website ? `<div style="margin-top:var(--space-4)"><a href="${review.website}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Official Website ↗</a></div>` : ''}
         </div>
         <div class="trust-badge ${badgeClass}" style="width:72px;height:72px;">
           <span class="trust-badge__score" style="font-size:var(--text-2xl)">${review.trustScore}</span>
