@@ -63,16 +63,16 @@ export function initReviews() {
     const copy = [...list];
     switch (activeSort) {
       case 'trust':
-        return copy.sort((a, b) => b.trustScore - a.trustScore);
+        return copy.sort((a, b) => b.scores.total - a.scores.total);
       case 'rating':
-        return copy.sort((a, b) => b.rating - a.rating);
+        return copy.sort((a, b) => b.scores.dataPrivacy - a.scores.dataPrivacy);
       case 'az':
         return copy.sort((a, b) => a.name.localeCompare(b.name));
       case 'za':
         return copy.sort((a, b) => b.name.localeCompare(a.name));
       case 'opensource':
         return copy.sort((a, b) => {
-          if (a.openSource === b.openSource) return b.trustScore - a.trustScore;
+          if (a.openSource === b.openSource) return b.scores.total - a.scores.total;
           return a.openSource ? -1 : 1;
         });
       default:
@@ -129,13 +129,10 @@ export function createReviewCard(review) {
       <div class="review-card__name-wrap">
         <h3 class="review-card__name">${review.name}</h3>
         <p class="review-card__tagline">${review.tagline}</p>
-        <div style="margin-top:var(--space-2)">
-          ${starsHTML(review.rating)}
-        </div>
       </div>
-      <div class="trust-badge ${badgeClass}">
-        <span class="trust-badge__score">${review.trustScore}</span>
-        <span class="trust-badge__label">Trust</span>
+      <div class="trust-badge trust-badge--high" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0;">
+        <span class="trust-badge__score" style="font-size: 1.25rem; font-weight: 700; line-height: 1;">${review.scores.total}</span>
+        <span class="trust-badge__label" style="font-size: 0.65rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.05em;">Total</span>
       </div>
     </div>
     <ul class="review-card__pros">${prosPreview}</ul>

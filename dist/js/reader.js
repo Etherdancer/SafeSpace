@@ -96,7 +96,6 @@ export function initReviewReader() {
           <h1 class="review-reader__name">${review.name}</h1>
           <p class="review-reader__tagline">${review.tagline}</p>
           <div style="margin-top:var(--space-3); display:flex; gap:var(--space-3); align-items:center; flex-wrap:wrap;">
-            ${starsHTML(review.rating)}
             ${review.openSource ? '<span class="open-source-badge">⬡ Open Source</span>' : ''}
           </div>
           <div class="review-reader__pills" style="margin-top:var(--space-3)">
@@ -106,9 +105,53 @@ export function initReviewReader() {
           </div>
           ${review.website ? `<div style="margin-top:var(--space-4)"><a href="${review.website}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Official Website ↗</a></div>` : ''}
         </div>
-        <div class="trust-badge ${badgeClass}" style="width:72px;height:72px;">
-          <span class="trust-badge__score" style="font-size:var(--text-2xl)">${review.trustScore}</span>
+        <div class="trust-badge trust-badge--high" style="width:72px;height:72px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0;">
+          <span class="trust-badge__score" style="font-size:var(--text-2xl); font-weight:700; line-height:1;">${review.scores.total}</span>
           <span class="trust-badge__label">/ 100</span>
+        </div>
+      </div>
+
+      <div class="score-breakdown" style="margin-top:var(--space-6); display:flex; flex-direction:column; gap:var(--space-3);">
+        <h3 style="font-size:var(--text-lg); margin-bottom:var(--space-2);">Privacy & Security Breakdown</h3>
+        
+        <div class="score-row" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-4);">
+          <div style="width:140px; font-weight:600; font-size:var(--text-sm);">Data Privacy</div>
+          <div style="flex:1; height:8px; background:var(--surface-3); border-radius:4px; overflow:hidden;">
+            <div style="width:${(review.scores.dataPrivacy / 30) * 100}%; height:100%; background:var(--teal);"></div>
+          </div>
+          <div style="width:40px; text-align:right; font-variant-numeric:tabular-nums;">${review.scores.dataPrivacy}/30</div>
+        </div>
+
+        <div class="score-row" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-4);">
+          <div style="width:140px; font-weight:600; font-size:var(--text-sm);">Security</div>
+          <div style="flex:1; height:8px; background:var(--surface-3); border-radius:4px; overflow:hidden;">
+            <div style="width:${(review.scores.security / 30) * 100}%; height:100%; background:var(--teal);"></div>
+          </div>
+          <div style="width:40px; text-align:right; font-variant-numeric:tabular-nums;">${review.scores.security}/30</div>
+        </div>
+
+        <div class="score-row" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-4);">
+          <div style="width:140px; font-weight:600; font-size:var(--text-sm);">Tracking Resistance</div>
+          <div style="flex:1; height:8px; background:var(--surface-3); border-radius:4px; overflow:hidden;">
+            <div style="width:${(review.scores.tracking / 20) * 100}%; height:100%; background:var(--teal);"></div>
+          </div>
+          <div style="width:40px; text-align:right; font-variant-numeric:tabular-nums;">${review.scores.tracking}/20</div>
+        </div>
+
+        <div class="score-row" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-4);">
+          <div style="width:140px; font-weight:600; font-size:var(--text-sm);">User Control</div>
+          <div style="flex:1; height:8px; background:var(--surface-3); border-radius:4px; overflow:hidden;">
+            <div style="width:${(review.scores.userControl / 10) * 100}%; height:100%; background:var(--teal);"></div>
+          </div>
+          <div style="width:40px; text-align:right; font-variant-numeric:tabular-nums;">${review.scores.userControl}/10</div>
+        </div>
+
+        <div class="score-row" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-4);">
+          <div style="width:140px; font-weight:600; font-size:var(--text-sm);">Transparency</div>
+          <div style="flex:1; height:8px; background:var(--surface-3); border-radius:4px; overflow:hidden;">
+            <div style="width:${(review.scores.transparency / 10) * 100}%; height:100%; background:var(--teal);"></div>
+          </div>
+          <div style="width:40px; text-align:right; font-variant-numeric:tabular-nums;">${review.scores.transparency}/10</div>
         </div>
       </div>
 
