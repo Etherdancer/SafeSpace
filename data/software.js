@@ -2128,7 +2128,7 @@ const REVIEWS = [
       <h2>Verdict</h2>
       <p>UFW is the simplest and most important security step for any Linux system, especially on laptops that connect to public WiFi. Enable it immediately after installing Linux. The two-second setup provides continuous protection with no ongoing maintenance needed.</p>
     `
-  }
+  },
 
   {
     id: '1password',
