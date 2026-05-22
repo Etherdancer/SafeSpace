@@ -83,6 +83,7 @@ export function initReviews() {
   // ── Render ───────────────────────────────────────────────────
   function renderGrid() {
     const filtered = REVIEWS.filter(r => {
+      if (r.draft) return false;
       const matchCat = activeFilter === 'All' || r.category === activeFilter;
       const matchOS  = activeOSFilter === 'All' || (r.platforms && r.platforms.includes(activeOSFilter));
       return matchCat && matchOS;

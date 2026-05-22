@@ -88,6 +88,7 @@ export function initArticles() {
   // ── Render ───────────────────────────────────────────────────
   function renderGrid() {
     const filtered = ARTICLES.filter(a => {
+      if (a.draft) return false;
       const matchCat = activeFilter === 'All' || a.category === activeFilter;
       const matchOS  = activeOSFilter === 'All' || (a.platforms && a.platforms.includes(activeOSFilter));
       return matchCat && matchOS;
