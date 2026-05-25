@@ -25,7 +25,7 @@ import aegis_authenticator from './aegis-authenticator.js';
 import exifcleaner from './exifcleaner.js';
 import freetube from './freetube.js';
 import grapheneos from './grapheneos.js';
-import 2fas from './2fas.js';
+import _2fas from './2fas.js';
 import nextdns from './nextdns.js';
 import searxng from './searxng.js';
 import startpage from './startpage.js';
@@ -48,7 +48,7 @@ import bleachbit from './bleachbit.js';
 import flatpak from './flatpak.js';
 import firejail from './firejail.js';
 import ufw from './ufw.js';
-import 1password from './1password.js';
+import _1password from './1password.js';
 import proton_pass from './proton-pass.js';
 import session from './session.js';
 import proton_vpn from './proton-vpn.js';
@@ -77,7 +77,7 @@ const REVIEWS = [
   exifcleaner,
   freetube,
   grapheneos,
-  2fas,
+  _2fas,
   nextdns,
   searxng,
   startpage,
@@ -100,7 +100,7 @@ const REVIEWS = [
   flatpak,
   firejail,
   ufw,
-  1password,
+  _1password,
   proton_pass,
   session,
   proton_vpn,
