@@ -3,7 +3,7 @@
    Filter, sort and render articles grid on articles.html
    ============================================================ */
 
-import ARTICLES from '../data/guides.js';
+import ARTICLES from '../data/articles/index.js';
 import { formatDate, starsHTML, initReveal } from './utils.js';
 
 export function initArticles() {

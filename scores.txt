@@ -1,0 +1,50 @@
+bitwarden | Bitwarden | Rating: 5 | Trust: 96
+keepassxc | KeePassXC | Rating: 4 | Trust: 97
+signal | Signal | Rating: 5 | Trust: 98
+protonmail | ProtonMail | Rating: 4 | Trust: 82
+simplelogin | SimpleLogin | Rating: 4 | Trust: 88
+brave | Brave Browser | Rating: 4 | Trust: 80
+firefox | Firefox (Privacy Hardened) | Rating: 4 | Trust: 86
+tor-browser | Tor Browser | Rating: 4 | Trust: 93
+ublock-origin | uBlock Origin | Rating: 5 | Trust: 99
+mullvad | Mullvad VPN | Rating: 5 | Trust: 97
+organic-maps | Organic Maps | Rating: 5 | Trust: 95
+jitsi-meet | Jitsi Meet | Rating: 4 | Trust: 84
+syncthing | Syncthing | Rating: 4 | Trust: 96
+obsidian | Obsidian | Rating: 4 | Trust: 88
+duckduckgo | DuckDuckGo | Rating: 4 | Trust: 79
+aegis-authenticator | Aegis Authenticator | Rating: 5 | Trust: 95
+exifcleaner | ExifCleaner | Rating: 5 | Trust: 92
+freetube | FreeTube | Rating: 4 | Trust: 88
+grapheneos | GrapheneOS | Rating: 5 | Trust: 99
+2fas | 2FAS | Rating: 5 | Trust: 98
+nextdns | NextDNS | Rating: 5 | Trust: 90
+searxng | SearXNG | Rating: 4 | Trust: 95
+startpage | Startpage | Rating: 4 | Trust: 85
+invidious | Invidious | Rating: 4 | Trust: 95
+osmand | OsmAnd | Rating: 4 | Trust: 95
+joplin | Joplin | Rating: 5 | Trust: 95
+standard-notes | Standard Notes | Rating: 4 | Trust: 98
+matrix | Matrix / Element | Rating: 4 | Trust: 92
+onionshare | OnionShare | Rating: 5 | Trust: 98
+wormhole | Wormhole | Rating: 4 | Trust: 90
+qbittorrent | qBittorrent | Rating: 5 | Trust: 95
+transmission | Transmission | Rating: 5 | Trust: 95
+tails | Tails | Rating: 5 | Trust: 98
+qubes-os | Qubes OS | Rating: 5 | Trust: 95
+librewolf | LibreWolf | Rating: 5 | Trust: 97
+luks | LUKS (Full Disk Encryption) | Rating: 5 | Trust: 99
+veracrypt | VeraCrypt | Rating: 5 | Trust: 98
+metadata-cleaner | Metadata Cleaner (MAT2) | Rating: 4 | Trust: 95
+bleachbit | BleachBit | Rating: 4 | Trust: 93
+flatpak | Flatpak | Rating: 4 | Trust: 92
+firejail | Firejail | Rating: 4 | Trust: 94
+ufw | UFW (Uncomplicated Firewall) | Rating: 5 | Trust: 96
+1password | 1Password | Rating: 5 | Trust: 90
+proton-pass | Proton Pass | Rating: 4 | Trust: 94
+session | Session | Rating: 4 | Trust: 95
+proton-vpn | Proton VPN | Rating: 5 | Trust: 96
+pia | Private Internet Access (PIA) | Rating: 4 | Trust: 89
+tuta-mail | Tuta Mail | Rating: 4 | Trust: 95
+fastmail | Fastmail | Rating: 4 | Trust: 85
+addy-io | Addy.io | Rating: 4 | Trust: 92

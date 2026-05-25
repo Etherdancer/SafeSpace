@@ -3,7 +3,7 @@
    Filter, sort and render reviews grid on reviews.html
    ============================================================ */
 
-import REVIEWS from '../data/software.js';
+import REVIEWS from '../data/reviews/index.js';
 import { starsHTML, trustBadgeClass, initReveal } from './utils.js';
 
 export function initReviews() {
