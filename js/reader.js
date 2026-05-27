@@ -3,8 +3,8 @@
    Hash-based single article / review loader
    ============================================================ */
 
-import ARTICLES from '../data/guides.js';
-import REVIEWS  from '../data/software.js';
+import ARTICLES from '../data/articles/index.js';
+import REVIEWS  from '../data/reviews/index.js';
 import { formatDate, starsHTML, trustBadgeClass } from './utils.js';
 
 /* ── Article reader ────────────────────────────────────────── */
