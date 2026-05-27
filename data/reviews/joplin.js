@@ -30,5 +30,5 @@ export default {
       'Collaboration features are limited without the paid Joplin Cloud'
     ]
   ,
-    content: \'\'
+    content: ''
   };

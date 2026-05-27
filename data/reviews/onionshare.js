@@ -30,5 +30,5 @@ export default {
       'Transfers over Tor can be very slow'
     ]
   ,
-    content: \'\'
+    content: ''
   };

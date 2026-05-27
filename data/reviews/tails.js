@@ -30,5 +30,5 @@ export default {
       'Requires rebooting your computer to use'
     ]
   ,
-    content: \'\'
+    content: ''
   };

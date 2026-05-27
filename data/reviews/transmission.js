@@ -29,5 +29,5 @@ export default {
       'Lacks some of the advanced fine-tuning features found in qBittorrent'
     ]
   ,
-    content: \'\'
+    content: ''
   };

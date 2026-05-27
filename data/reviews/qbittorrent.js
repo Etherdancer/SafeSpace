@@ -29,5 +29,5 @@ export default {
       'Interface is functional but looks dated'
     ]
   ,
-    content: \'\'
+    content: ''
   };

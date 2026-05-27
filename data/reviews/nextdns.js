@@ -30,5 +30,5 @@ export default {
       'Requires trusting them with your DNS queries'
     ]
   ,
-    content: \'\'
+    content: ''
   };

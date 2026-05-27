@@ -30,5 +30,5 @@ export default {
       'Interface is less polished than DuckDuckGo'
     ]
   ,
-    content: \'\'
+    content: ''
   };

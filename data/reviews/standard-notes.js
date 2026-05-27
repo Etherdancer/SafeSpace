@@ -30,5 +30,5 @@ export default {
       'Paid plans are relatively expensive'
     ]
   ,
-    content: \'\'
+    content: ''
   };

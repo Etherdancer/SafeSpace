@@ -31,5 +31,5 @@ export default {
       'No live traffic data'
     ]
   ,
-    content: \'\'
+    content: ''
   };

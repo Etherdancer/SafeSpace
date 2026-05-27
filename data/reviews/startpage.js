@@ -29,5 +29,5 @@ export default {
       'Not open source'
     ]
   ,
-    content: \'\'
+    content: ''
   };

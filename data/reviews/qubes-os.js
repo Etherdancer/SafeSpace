@@ -31,5 +31,5 @@ export default {
       'Hardware compatibility is limited'
     ]
   ,
-    content: \'\'
+    content: ''
   };

@@ -30,5 +30,5 @@ export default {
       'Metadata (who talks to who) is visible to the server operators'
     ]
   ,
-    content: \'\'
+    content: ''
   };

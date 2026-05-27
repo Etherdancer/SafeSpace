@@ -30,5 +30,5 @@ export default {
       'Video playback can sometimes buffer slowly depending on the instance'
     ]
   ,
-    content: \'\'
+    content: ''
   };
