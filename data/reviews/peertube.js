@@ -3,7 +3,7 @@ export default {
     website: 'https://joinpeertube.org',
     index: 284,
     name: 'PeerTube',
-    tagline: 'Video hosting without YouTube's surveillance.',
+    tagline: 'Video hosting without YouTube surveillance.',
     category: 'Social Media',
     scores: {
       dataPrivacy: 23,

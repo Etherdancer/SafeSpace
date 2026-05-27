@@ -29,4 +29,6 @@ export default {
       'Not fully open source',
       'Files are deleted after 24 hours or 100 downloads'
     ]
+  ,
+    content: \'\'
   };

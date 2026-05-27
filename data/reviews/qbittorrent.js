@@ -28,4 +28,6 @@ export default {
     cons: [
       'Interface is functional but looks dated'
     ]
+  ,
+    content: \'\'
   };

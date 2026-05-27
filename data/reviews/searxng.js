@@ -29,4 +29,6 @@ export default {
       'Public instances can sometimes be blocked by Google (causing missing results)',
       'Interface is less polished than DuckDuckGo'
     ]
+  ,
+    content: \'\'
   };

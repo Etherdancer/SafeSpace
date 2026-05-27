@@ -29,4 +29,6 @@ export default {
       'Not designed for daily use as a main operating system',
       'Requires rebooting your computer to use'
     ]
+  ,
+    content: \'\'
   };

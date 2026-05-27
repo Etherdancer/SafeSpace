@@ -28,4 +28,6 @@ export default {
       'Owned by an advertising company (System1), which causes some privacy purists concern',
       'Not open source'
     ]
+  ,
+    content: \'\'
   };

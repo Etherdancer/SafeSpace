@@ -30,4 +30,6 @@ export default {
       'Requires very powerful hardware (lots of RAM and a specific CPU)',
       'Hardware compatibility is limited'
     ]
+  ,
+    content: \'\'
   };

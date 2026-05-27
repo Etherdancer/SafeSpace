@@ -29,4 +29,6 @@ export default {
       'Free version only supports plain text (no bold, images, or formatting)',
       'Paid plans are relatively expensive'
     ]
+  ,
+    content: \'\'
   };

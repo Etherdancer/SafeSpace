@@ -29,4 +29,6 @@ export default {
       'Public instances frequently go down or get blocked by YouTube',
       'Video playback can sometimes buffer slowly depending on the instance'
     ]
+  ,
+    content: \'\'
   };

@@ -30,4 +30,6 @@ export default {
       'Search function is much worse than Google Maps',
       'No live traffic data'
     ]
+  ,
+    content: \'\'
   };

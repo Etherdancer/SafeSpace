@@ -29,4 +29,6 @@ export default {
       'Key verification across devices can be confusing for new users',
       'Metadata (who talks to who) is visible to the server operators'
     ]
+  ,
+    content: \'\'
   };

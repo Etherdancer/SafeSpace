@@ -29,4 +29,6 @@ export default {
       'Both sender and receiver must be online at the same time',
       'Transfers over Tor can be very slow'
     ]
+  ,
+    content: \'\'
   };

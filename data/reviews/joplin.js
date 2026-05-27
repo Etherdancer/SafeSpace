@@ -29,4 +29,6 @@ export default {
       'Interface is functional but not particularly modern',
       'Collaboration features are limited without the paid Joplin Cloud'
     ]
+  ,
+    content: \'\'
   };

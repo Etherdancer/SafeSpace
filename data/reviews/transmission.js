@@ -28,4 +28,6 @@ export default {
     cons: [
       'Lacks some of the advanced fine-tuning features found in qBittorrent'
     ]
+  ,
+    content: \'\'
   };

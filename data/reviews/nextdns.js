@@ -29,4 +29,6 @@ export default {
       'Not open source',
       'Requires trusting them with your DNS queries'
     ]
+  ,
+    content: \'\'
   };
