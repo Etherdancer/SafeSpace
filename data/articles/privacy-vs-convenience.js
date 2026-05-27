@@ -8,7 +8,7 @@ export default {
     excerpt: 'Every privacy tool asks you to give something up. This is a clear-eyed look at the real trade-offs — so you can make deliberate decisions instead of reflexive ones.',
     tags: ['privacy', 'convenience', 'analysis', 'basics'],
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
-    relatedReviews: ['signal', 'brave', 'firefox', 'librewolf', 'tor-browser', 'bitwarden', 'keepassxc', 'mullvad', 'protonmail', 'simplelogin', 'duckduckgo', 'ublock-origin', 'nextdns', 'organic-maps', 'grapheneos'],
+    relatedReviews: ['signal', 'brave', 'firefox', 'librewolf', 'tor-browser', 'bitwarden', 'keepassxc', 'mullvad', 'protonmail', 'simplelogin', 'duckduckgo', 'ublock-origin', 'nextdns', 'organic-maps', 'grapheneos', 'winutil', 'optimizer', 'bulk-crap-uninstaller', 'shredos', 'eraser'],
     content: `
       <p>Every privacy tool has a cost. Sometimes it's time. Sometimes it's money. Sometimes it's that a website breaks and you spend ten minutes figuring out why. The privacy world is bad at admitting this — there's a tendency to present every recommendation as obviously worth doing, and to gloss over the genuine friction involved.</p>
       <p>This article doesn't do that. We're going to go through the real trade-offs, category by category, so you can make deliberate choices instead of either doing nothing or going all-in on a hardened setup you'll abandon in a week.</p>
@@ -85,6 +85,10 @@ export default {
       <p>OsmAnd is more powerful and more configurable, with better transit support, but has a steeper learning curve than either Google Maps or Organic Maps.</p>
 
       <p><strong>The honest verdict:</strong> If you live in a major city and mostly walk, cycle, or drive, Organic Maps covers you well. If you heavily rely on real-time transit information or live somewhere with limited OpenStreetMap data, Google Maps remains more capable and the trade-off is real. Compartmentalisation works here: use the private option for routine routes, and accept the tracking cost for situations where you genuinely need the superior data.</p>
+
+      <h2>Category 7.5: Windows Telemetry and Maintenance — A Surprising Middle Ground</h2>
+      <p>Windows 10 and 11 collect a massive amount of telemetry by default. Disabling it manually through the settings menus is tedious and sometimes ineffective. However, free tools like <strong>WinUtil</strong> and <strong>Optimizer</strong> allow you to block this telemetry with just a few clicks. This offers huge privacy gains for very little friction — your PC will likely even run faster.</p>
+      <p>Similarly, cleaning up your system with <strong>Bulk Crap Uninstaller</strong> removes bloatware deeply and thoroughly. And when it's time to sell or dispose of a computer, wiping the drive is a non-negotiable privacy step. Using <strong>ShredOS</strong> (for wiping entire drives) or <strong>Eraser</strong> (for securely deleting individual files on traditional HDDs) takes time, but it guarantees that your personal data cannot be recovered.</p>
 
       <h2>Category 8: Mobile Operating Systems — The Largest Trade-Off</h2>
       <p>GrapheneOS is the most private Android experience available. It removes all Google services, runs each app in a hardened sandbox, and has a verified boot chain that detects tampering. It requires a Google Pixel phone. It requires manual installation. It means that apps requiring Google Play Services — which includes a significant number of banking apps, some corporate apps, and some government apps — will not work at all unless you specifically configure GrapheneOS's sandboxed Play compatibility layer.</p>

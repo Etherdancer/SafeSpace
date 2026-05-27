@@ -8,7 +8,7 @@ export default {
     excerpt: 'Even without cookies, websites can identify you with startling precision through a technique called browser fingerprinting. Here\'s how it works — and exactly how to stop it.',
     tags: ['fingerprinting', 'tracking', 'browser'],
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
-    relatedReviews: ['brave', 'firefox', 'tor-browser', 'ublock-origin', 'nextdns'],
+    relatedReviews: ['brave', 'firefox', 'tor-browser', 'ublock-origin', 'nextdns', 'cover-your-tracks'],
     content: `
       <h2>The Invisible Name Tag You Don't Know You're Wearing</h2>
       <p>Imagine walking into a shop where the staff can't see your face or know your name — but they can tell it's you because of the exact combination of your height, your accent, the brand of your shoes, the watch on your wrist, and the way you hold your bag. Nobody else in the world has that exact combination. So every time you walk in, they know it's you.</p>
@@ -44,7 +44,7 @@ export default {
       <p>Private mode is useful for things like using someone else's computer without leaving your history behind, or stopping your partner from seeing what birthday present you Googled. It is not a privacy tool in any meaningful sense.</p>
 
       <h2>Test Your Own Fingerprint Right Now</h2>
-      <p>You can see how unique your browser fingerprint is by visiting the Electronic Frontier Foundation's free tool: <strong>coveryourtracks.eff.org</strong>. Click "Test Your Browser" and it will show you a report of your fingerprint and whether you are protected, partially protected, or fully trackable. Most people are shocked by the result.</p>
+      <p>You can see how unique your browser fingerprint is by visiting the Electronic Frontier Foundation's free tool: <strong>Cover Your Tracks</strong> (coveryourtracks.eff.org). Click "Test Your Browser" and it will show you a report of your fingerprint and whether you are protected, partially protected, or fully trackable. Most people are shocked by the result.</p>
       <p>If the tool says your fingerprint is "unique among the browsers it has seen," that means any website using fingerprinting can identify you with complete certainty — no cookies needed.</p>
 
       <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div>Websites can tell it's you by reading dozens of tiny technical details about your device — like a doctor identifying a patient from an X-ray rather than a name tag. Technically, this works by building a stable cross-session identifier by collecting browser attributes without setting any cookies or using any client-side storage. Clearing your cookies or going incognito does nothing about this because none of those details change.</div></div>

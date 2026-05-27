@@ -8,7 +8,7 @@ export default {
     excerpt: 'Every Android setting that touches your privacy — what it does, what you give up by changing it, and a clear verdict for each. Includes the full functionality vs. privacy comparison table.',
     tags: ['android', 'mobile', 'settings', 'hardening'],
     platforms: ['Android'],
-    relatedReviews: ['mullvad', 'organic-maps', 'syncthing', 'grapheneos', 'signal'],
+    relatedReviews: ['mullvad', 'organic-maps', 'syncthing', 'grapheneos', 'signal', 'shelter', 'invizible-pro'],
     content: `
       <h2>How to Read This Guide</h2>
       <p>Android is the most widely used mobile operating system in the world, and it comes with an enormous number of settings that affect your privacy. Some of them are switched on by default in ways that most people would object to if they understood them. Others are entirely reasonable defaults that you shouldn't change.</p>
@@ -111,6 +111,9 @@ export default {
       <p>Android 12 separated Bluetooth permissions from location. Some apps use Bluetooth scanning to infer your location even without the location permission. Check which apps have this permission and revoke it from any that don't need to connect to physical devices.</p>
       <p><strong>Verdict:</strong> Keep only for apps that genuinely connect to Bluetooth hardware (speakers, headphones, smartwatches).</p>
 
+      <h2>Category 3.5: App Isolation (Advanced)</h2>
+      <p>Even with revoked permissions, apps on the same phone can sometimes see each other or share data via internal storage. Android has a built-in feature called the "Work Profile" which completely isolates a set of apps from the rest of your phone. You can use an open-source tool like <strong>Shelter</strong> to easily create this isolated profile. Put intrusive apps (like Facebook or TikTok) inside the Shelter profile, and they won't be able to access your main contacts, files, or see what other apps you have installed.</p>
+      
       <h2>Category 4: Lock Screen and Device Security</h2>
 
       <h3>Screen Lock Type</h3>
@@ -145,7 +148,7 @@ export default {
 
       <p>Set to "Private DNS provider hostname" and enter <code>dns.mullvad.net</code>. This routes your DNS queries through Mullvad's no-log DNS resolver, encrypted.</p>
       <p>What you lose: nothing. DNS resolution still works; it's just encrypted and handled by a privacy-respecting server.</p>
-      <p><strong>Verdict: Enable.</strong> Enter <code>dns.mullvad.net</code> or <code>dns.quad9.net</code> as the hostname. Zero downside.</p>
+      <p><strong>Verdict: Enable.</strong> Enter <code>dns.mullvad.net</code> or <code>dns.quad9.net</code> as the hostname. Zero downside. For truly advanced users who want to route DNS, Tor, and I2P traffic all at once, an app like <strong>InviZible Pro</strong> is extremely powerful, but Private DNS is the easiest 1-minute fix.</p>
 
       <h3>WiFi Auto-Connect and Remembered Networks</h3>
       <p><strong>Where:</strong> <span class="setting-path">Settings &gt; Network &amp; Internet &gt; Internet</span> (tap the three dots or gear icon on saved networks)</p>

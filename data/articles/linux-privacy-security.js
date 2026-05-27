@@ -8,7 +8,7 @@ export default {
     excerpt: 'A comprehensive guide to the most secure and private Linux operating systems available today, and how the mainstream options compare.',
     tags: ['Linux', 'Privacy', 'Security', 'Operating Systems'],
     platforms: ['Linux'],
-    relatedReviews: ['grapheneos', 'tails', 'qubes-os', 'librewolf', 'tor-browser', 'luks', 'veracrypt', 'metadata-cleaner', 'bleachbit', 'keepassxc', 'flatpak', 'firejail', 'ufw', 'nextdns'],
+    relatedReviews: ['grapheneos', 'tails', 'qubes-os', 'librewolf', 'tor-browser', 'luks', 'veracrypt', 'metadata-cleaner', 'bleachbit', 'keepassxc', 'flatpak', 'firejail', 'ufw', 'nextdns', 'whonix', 'kodachi', 'pureos', 'apparmor', 'selinux', 'bubblewrap', 'lynis'],
     content: `
       <h2>Why Linux for Privacy and Security?</h2>
       <p>Windows and macOS are built by massive corporations whose business models often involve collecting data or locking you into their ecosystems. Linux is different. It is an open-source operating system kernel, meaning its code is public and can be inspected by anyone. Because of this, it has spawned hundreds of "distributions" (different versions of Linux), many of which are designed specifically to protect your privacy and security.</p>
@@ -99,15 +99,17 @@ export default {
         <li><strong>KeePassXC</strong>: A powerful password manager that keeps your encrypted password vault entirely offline and on your own machine.</li>
       </ul>
 
-      <h3>🛡️ App Isolation</h3>
+      <h3>🛡️ App Isolation & Hardening</h3>
       <ul>
-        <li><strong>Flatpak / Firejail</strong>: Sandboxing tools that restrict what permissions an application has. They act like bouncers, preventing apps from digging through your personal files or accessing the internet without permission.</li>
+        <li><strong>Flatpak / Firejail / Bubblewrap</strong>: Sandboxing tools that restrict what permissions an application has. They act like bouncers, preventing apps from digging through your personal files or accessing the internet without permission. <strong>Bubblewrap</strong> provides the core underlying isolation for Flatpak.</li>
+        <li><strong>AppArmor / SELinux</strong>: Mandatory Access Control (MAC) systems built into the Linux kernel. They strictly define what files and network resources applications can access, providing a strong baseline defense against exploits.</li>
       </ul>
 
-      <h3>🛡️ Network Security</h3>
+      <h3>🛡️ Network Security & Auditing</h3>
       <ul>
         <li><strong>UFW (Uncomplicated Firewall)</strong>: A simple way to block unwanted incoming connections to your computer.</li>
         <li><strong>NextDNS / DNS-over-TLS</strong>: Encrypts your DNS requests to stop your internet service provider from logging every website you visit.</li>
+        <li><strong>Lynis</strong>: A powerful, free tool to audit your system's security. It scans your configuration and suggests concrete hardening steps.</li>
       </ul>
     `
   };

@@ -8,7 +8,7 @@ export default {
     excerpt: 'BitTorrent is often misunderstood. Learn how peer-to-peer file sharing offers unique privacy benefits and how to use it safely without centralized trackers.',
     tags: ['Privacy', 'BitTorrent', 'P2P', 'Decentralization'],
     platforms: ['Windows', 'macOS', 'Linux'],
-    relatedReviews: ['onionshare', 'wormhole', 'qbittorrent', 'transmission'],
+    relatedReviews: ['onionshare', 'wormhole', 'qbittorrent', 'transmission', 'mullvad', 'ivpn'],
     content: `
       <h2>The Misunderstanding of BitTorrent</h2>
       <p>When most people hear the word "torrent," they immediately think of piracy. But BitTorrent is just a technology — a way of moving data from one place to another. It is a decentralized, peer-to-peer (P2P) protocol. Instead of downloading a file from one central server (like downloading a video from YouTube), you download small pieces of the file from dozens or hundreds of other people who already have it, while simultaneously sharing the pieces you have with others.</p>
@@ -44,5 +44,8 @@ export default {
         <li><strong>Transmission:</strong> An excellent, lightweight, open-source alternative, particularly popular on macOS and Linux.</li>
       </ul>
       <p>In both of these programs, you can check the settings (usually under "BitTorrent" or "Privacy") to ensure that "Enable DHT (Distributed Hash Table)" and "Enable Peer Exchange (PeX)" are checked. Once they are, you are participating in a truly decentralized, censorship-resistant network.</p>
+
+      <h2>Torrenting and VPNs</h2>
+      <p>Because BitTorrent is peer-to-peer, your IP address is visible to every other person in the swarm downloading the same file. To keep your network activity private from both your ISP and the other peers, you should run a VPN while torrenting. A trusted, no-logs VPN like <strong>Mullvad</strong> or <strong>IVPN</strong> will mask your IP address, ensuring your downloads remain completely private.</p>
     `
   };

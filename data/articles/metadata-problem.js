@@ -8,7 +8,7 @@ export default {
     excerpt: 'Metadata is often more revealing than the content it describes — and most people have no idea it exists.',
     tags: ['metadata', 'surveillance', 'basics'],
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
-    relatedReviews: ['signal', 'exifcleaner', 'metadata-cleaner'],
+    relatedReviews: ['signal', 'exifcleaner', 'metadata-cleaner', 'mat2'],
     content: `
       <p>Most people, when they think about privacy, think about content: keeping the text of their messages private, encrypting their emails. This is reasonable but incomplete. Metadata often reveals more than content — and it's far harder to protect.</p>
 
@@ -74,6 +74,8 @@ export default {
         <li>Drag and drop any photos onto the window. ExifCleaner will immediately strip all EXIF data from the files. No settings to configure, no accounts to create.</li>
         <li>The original file is modified in place (or you can choose to create clean copies). Done.</li>
       </ol>
+      <p><strong>For Advanced Linux Users (MAT2):</strong></p>
+      <p>If you use Linux and want a thorough, command-line tool, <strong>MAT2</strong> is an excellent choice. It strips metadata from photos, PDFs, and Office documents, completely destroying all embedded tracking data.</p>
       <p><strong>On iPhone:</strong></p>
       <ol>
         <li>Open the photo in the Photos app.</li>

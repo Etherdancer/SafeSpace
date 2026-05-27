@@ -8,7 +8,7 @@ export default {
     excerpt: 'True anonymity online is genuinely difficult. But meaningful, practical privacy is available to everyone. This guide walks through a realistic, layered approach — starting with the simplest steps.',
     tags: ['anonymity', 'tor', 'browser', 'privacy'],
     platforms: ['Windows', 'macOS', 'Linux'],
-    relatedReviews: ['brave', 'firefox', 'tor-browser', 'ublock-origin', 'mullvad', 'duckduckgo', 'searxng', 'startpage', 'tails'],
+    relatedReviews: ['brave', 'firefox', 'tor-browser', 'ublock-origin', 'mullvad', 'duckduckgo', 'searxng', 'startpage', 'tails', 'onion-browser', 'privacy-badger', 'noscript'],
     content: `
       <h2>Let's Be Honest About What "Anonymous" Actually Means</h2>
       <p>The word "anonymous" gets thrown around in privacy discussions as if it's a simple binary state you're either in or out of. The reality is more nuanced, and understanding that nuance is the first step to actually protecting yourself.</p>
@@ -43,7 +43,7 @@ export default {
         <li><strong>Brave</strong> is the easiest choice — it blocks trackers, ads, and fingerprinting by default, requires no configuration, and works identically to Chrome. Recommended for most people.</li>
         <li><strong>Firefox</strong> with the settings adjustments in our fingerprinting guide is slightly more work but gives you more transparency and control. It's also the only mainstream browser that isn't built on Google's Chromium engine, which matters for browser diversity.</li>
       </ul>
-      <p>Whichever you choose, install <strong>uBlock Origin</strong> as an extension (instructions in the fingerprinting article). This is non-negotiable — it blocks thousands of tracking scripts that browsers alone don't catch.</p>
+      <p>Whichever you choose, install <strong>uBlock Origin</strong> as an extension (instructions in the fingerprinting article). This is non-negotiable — it blocks thousands of tracking scripts that browsers alone don't catch. If you want further control, you can also add <strong>Privacy Badger</strong> (which learns to block invisible trackers automatically) or <strong>NoScript</strong> (a powerful but advanced tool that blocks all active scripts by default).</p>
 
       <h2>Layer 2: Your Search Engine</h2>
       <p>Google Search is one of the most detailed records of what any person thinks, worries about, researches, and intends to do. Every search query is tied to your Google account (if signed in) or your IP address and browser fingerprint (if not). Google retains this data for extended periods and uses it for advertising targeting.</p>
@@ -88,6 +88,7 @@ export default {
       <p>Tor (The Onion Router) is a network that routes your internet traffic through three separate volunteer-run servers (called "relays" — volunteer-run computers that pass your traffic along) around the world before it reaches its destination. Each relay only knows the step before it and the step after it — no single relay knows both where the traffic came from and where it's going. This makes it extraordinarily difficult to trace traffic back to you.</p>
       <p>The Tor Browser is a hardened version of Firefox that automatically uses the Tor network. Every user of Tor Browser has an identical fingerprint by design, preventing fingerprinting. It is the tool of choice for journalists, activists, whistleblowers, and anyone who genuinely needs to hide their browsing from a serious adversary.</p>
       <p>The tradeoff: Tor is significantly slower than normal browsing, because your traffic is bouncing through three servers around the world. Streaming video and downloads are impractical. Some websites block Tor exit nodes. For ordinary browsing of text-based content, it works well.</p>
+      <p><strong>Note for iPhone Users:</strong> Apple's rules prevent the official Tor Browser from existing on iOS. If you are on an iPhone or iPad, use <strong>Onion Browser</strong>, which is open-source and officially endorsed by the Tor Project.</p>
       <p><strong>Installing and using Tor Browser:</strong></p>
       <ol>
         <li>Go to <strong>torproject.org</strong> and click "Download Tor Browser." Choose your operating system.</li>

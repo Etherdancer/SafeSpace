@@ -8,7 +8,7 @@ export default {
     excerpt: 'Your phone knows where you\'ve been, who you talk to, what you buy, and what you search for. These 10 practical steps — with exact instructions for iPhone and Android — dramatically reduce what gets collected.',
     tags: ['mobile', 'android', 'ios', 'hardening'],
     platforms: ['iOS', 'Android'],
-    relatedReviews: ['signal', 'bitwarden', 'grapheneos', 'mullvad', 'osmand', 'invidious', 'standard-notes', 'joplin'],
+    relatedReviews: ['signal', 'bitwarden', 'grapheneos', 'mullvad', 'osmand', 'invidious', 'standard-notes', 'joplin', 'calyxos', 'lineageos', 'f-droid', 'aurora-store', 'trackercontrol', 'blokada', 'dnscloak', 'rethinkdns', 'netguard', 'openboard'],
     content: `
       <h2>Your Phone Knows More About You Than You Think</h2>
       <p>Your smartphone has a GPS that tracks everywhere you go. It has a microphone that's always available. It has a camera, an accelerometer, a gyroscope, a Bluetooth radio, and a WiFi radio — all of which can reveal information about your location and habits even when you think they're off. It runs dozens of apps, many of which are recording your behaviour and sending it to servers you've never heard of.</p>
@@ -31,6 +31,7 @@ export default {
         <li>Tap on any permission type (Location, Microphone, Camera, etc.) to see all apps that have access to it.</li>
         <li>For any app that seems like it shouldn't need a particular permission, tap the app and choose <strong>"Don't allow"</strong> or, for location, <strong>"Only while using the app"</strong>.</li>
       </ol>
+      <p><strong>Advanced blocking:</strong> If you want to stop apps from connecting to the internet entirely, or block hidden trackers inside apps, you can use a local firewall. On Android, tools like <strong>NetGuard</strong>, <strong>TrackerControl</strong>, or <strong>Blokada</strong> run locally on your phone to physically block tracking connections.</p>
 
       <h2>Step 2: Disable Your Advertising ID</h2>
 
@@ -89,6 +90,9 @@ export default {
         <li>Go to Firefox's Settings and set the search engine to <strong>DuckDuckGo</strong>.</li>
       </ol>
       <p><strong>Alternatively, install Brave on mobile:</strong> Search for "Brave Browser" in the App Store or Play Store. Brave blocks ads and trackers by default with no configuration needed.</p>
+      
+      <h2>Step 6.5: Ditch the Google Play Store (Android Only)</h2>
+      <p>If you use Android, you don't have to get your apps directly from Google. You can use <strong>F-Droid</strong>, a completely free, open-source app store that guarantees every app it hosts is tracker-free and open-source. For apps that aren't on F-Droid, you can use the <strong>Aurora Store</strong>, which lets you download apps from the Google Play Store anonymously without needing a Google account.</p>
 
       <h2>Step 7: Switch to Signal for Messaging</h2>
       <p>Regular text messages (SMS) are not encrypted. Your mobile carrier can read every SMS you send. iMessage is encrypted only between Apple devices — messages to Android users fall back to unencrypted SMS. WhatsApp uses encryption but is owned by Meta (Facebook's parent company) and collects extensive metadata about who you talk to and when.</p>
@@ -115,13 +119,14 @@ export default {
       <ol>
         <li>Go to <strong>Settings &gt; General &gt; VPN &amp; Device Management</strong>.</li>
         <li>Tap <strong>DNS</strong>. If you see this option, select "Configure DNS" and choose "Manual." Add <code>9.9.9.9</code> (Quad9, a non-profit DNS that doesn't log your queries and blocks known malicious domains).</li>
-        <li>Alternatively, install the free <strong>Mullvad DNS</strong> app from the App Store. Open it and tap Enable. This sets up an encrypted DNS resolver automatically, with optional tracking domain blocking.</li>
+        <li>Alternatively, install the free <strong>Mullvad DNS</strong> app or <strong>DNSCloak</strong> from the App Store to easily route your queries through an encrypted resolver.</li>
       </ol>
       <p><strong>On Android:</strong></p>
       <ol>
         <li>Go to <strong>Settings &gt; Network &amp; Internet &gt; Private DNS</strong>.</li>
         <li>Select <strong>"Private DNS provider hostname"</strong>.</li>
         <li>Enter <code>dns.mullvad.net</code> and tap Save. Your DNS queries are now encrypted and handled by Mullvad's no-log DNS resolver.</li>
+        <li>For more advanced control, you can install <strong>RethinkDNS</strong>, which acts as both an encrypted DNS resolver and an app firewall.</li>
       </ol>
 
       <h2>Step 9: Disable Bluetooth and WiFi When Not in Use</h2>
@@ -145,6 +150,10 @@ export default {
       </ol>
 
       <h2>Beyond the Ten Steps</h2>
-      <p>These steps cover what's practical for most people. If you want to go further, the most significant action you can take is switching to <strong>GrapheneOS</strong> — a version of Android stripped of all Google services, built specifically for privacy and security. It runs on Google Pixel phones (which have excellent hardware security) and installs like any other operating system. This is an advanced option, but it's worth knowing about. GrapheneOS has a clear installation guide at <strong>grapheneos.org</strong>.</p>
+      <p>These steps cover what's practical for most people. If you want to go further, there are three major actions you can take:</p>
+      <ul>
+        <li><strong>Change your keyboard:</strong> Your keyboard app sees everything you type. Replacing Google's Gboard with an open-source, internet-free keyboard like <strong>HeliBoard (OpenBoard)</strong> stops your keystrokes from being analyzed.</li>
+        <li><strong>Use an alternative OS:</strong> The most significant action you can take on Android is switching to a custom ROM. <strong>GrapheneOS</strong> is the gold standard (for Pixel devices), completely stripped of Google services. <strong>CalyxOS</strong> is a slightly more user-friendly alternative that also de-Googles your phone. For older phones, <strong>LineageOS</strong> provides a clean, open-source experience without the built-in tracking of stock Android.</li>
+      </ul>
     `
   };

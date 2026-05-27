@@ -8,7 +8,7 @@ export default {
     excerpt: 'Creating an account ties everything you do to a permanent, detailed profile. Here\'s what that really means for your privacy — and a practical guide to account-free alternatives for every major category of app.',
     tags: ['accounts', 'alternatives', 'tracking', 'basics'],
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
-    relatedReviews: ['duckduckgo', 'organic-maps', 'jitsi-meet', 'syncthing', 'obsidian', 'protonmail', 'simplelogin', 'signal', 'freetube', 'keepassxc', 'invidious', 'searxng', 'startpage', 'matrix'],
+    relatedReviews: ['duckduckgo', 'organic-maps', 'jitsi-meet', 'syncthing', 'obsidian', 'protonmail', 'simplelogin', 'signal', 'freetube', 'keepassxc', 'invidious', 'searxng', 'startpage', 'matrix', 'nextcloud', 'sync-com', 'cryptpad', 'proton-calendar', 'notesnook', 'etesync'],
     content: `
       <h2>Why Creating an Account Is a Privacy Event</h2>
       <p>Every time you create an account with a service — signing up for a new app, registering on a website, creating a profile — something specific and consequential happens from a privacy perspective: you give that company a permanent, stable identifier that links everything you ever do on their platform into a single, coherent profile tied to your real identity.</p>
@@ -97,6 +97,8 @@ export default {
         <li><strong>OnionShare (onionshare.org)</strong> — For sharing individual files with someone else without uploading to any server. Creates a temporary link via Tor that the recipient uses to download the file directly from your computer. No account, no third-party server. Best for one-off file sharing.</li>
         <li><strong>Wormhole (wormhole.app)</strong> — Web-based, no account. Drag a file onto the page, get a link, send it to someone. The file is encrypted and automatically deleted after the recipient downloads it or after 24 hours. Simple and fast.</li>
       </ul>
+      <p>If you absolutely need traditional cloud storage (where your files live on a server so you can access them anywhere without your main computer being on), look at <strong>Nextcloud</strong> (which you can self-host or rent from a privacy provider) or <strong>Sync.com</strong> (which offers zero-knowledge encryption so they cannot read your files).</p>
+      <p>For collaborative document editing (like Google Docs), <strong>CryptPad</strong> offers an end-to-end encrypted alternative that requires no account to use basic features.</p>
       <p><strong>Setting up Syncthing for phone-to-laptop sync:</strong></p>
       <ol>
         <li>Download Syncthing for your computer from <strong>syncthing.net</strong>. Install it and open it — it runs as a small app in your system tray and opens a control panel in your browser.</li>
@@ -111,6 +113,7 @@ export default {
       <ul>
         <li><strong>Obsidian (obsidian.md)</strong> — Free, no account required for local use. Stores notes as plain text files on your own device. Fast, powerful, and extensible. Sync between devices is available as a paid add-on, but you can also sync for free using Syncthing (above).</li>
         <li><strong>Joplin (joplinapp.org)</strong> — Free, open source, no mandatory account. Stores notes locally. Optionally syncs via Nextcloud (self-hosted) or an encrypted Dropbox — your choice. Available on Windows, Mac, Linux, iPhone, and Android.</li>
+        <li><strong>Notesnook</strong> — A great alternative with zero-knowledge encryption out of the box, offering a very similar experience to Evernote but fully private.</li>
         <li><strong>Standard Notes (standardnotes.com)</strong> — Free tier available, no account required to try it locally, end-to-end encrypted sync. Even the company cannot read your notes.</li>
       </ul>
       <p><strong>Getting started with Obsidian (no account needed):</strong></p>
@@ -120,6 +123,14 @@ export default {
         <li>You're in. Click the page icon on the left sidebar to create a new note. Type your note. It saves automatically as a plain text file in your vault folder.</li>
         <li>On mobile: search for "Obsidian" in the App Store or Play Store. Install it. Tap "Create new vault" and name it. Your notes are stored on your phone's storage, not in the cloud.</li>
       </ol>
+
+      <h2>Calendars & Contacts: Replace Google Calendar/Contacts</h2>
+      <p><strong>The problem:</strong> Storing your schedule and address book with Google gives them a map of who you know and where you'll be at any given time.</p>
+      <p><strong>Privacy-friendly alternatives:</strong></p>
+      <ul>
+        <li><strong>Proton Calendar</strong> — End-to-end encrypted calendar that integrates well with Proton Mail. The company cannot read your schedule.</li>
+        <li><strong>EteSync</strong> — Specifically designed to securely sync your contacts, calendars, and tasks across Android, iOS, and desktop using end-to-end encryption.</li>
+      </ul>
 
       <h2>YouTube: Watch Without an Account</h2>
       <p><strong>The problem:</strong> YouTube is owned by Google. If you watch YouTube while logged in, Google builds a detailed profile of your interests, political views, and behaviour. Even logged out, YouTube tracks you via cookies and fingerprinting.</p>
