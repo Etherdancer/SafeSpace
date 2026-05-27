@@ -1,36 +1,43 @@
 export default {
     id: 'arkenfox-user-js',
-    website: 'https://example.com',
-    index: 213,
-    name: 'Arkenfox user.js',
-    tagline: 'Privacy-focused browser hardening',
+    website: 'https://github.com/arkenfox/user.js',
+    index: 252,
+    name: 'Arkenfox',
+    tagline: 'The ultimate privacy shield for Firefox',
     category: 'Browser Hardening',
     scores: {
-      dataPrivacy: 28,
-      security: 27,
-      tracking: 18,
-      userControl: 9,
-      transparency: 9,
-      total: 91
+      dataPrivacy: 30,
+      security: 29,
+      tracking: 20,
+      userControl: 10,
+      transparency: 10,
+      total: 99
     },
-    platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
+    platforms: ['Linux', 'macOS', 'Windows'],
     pricing: 'Free',
-    openSource: false,
+    openSource: true,
     auditedBy: 'Community review',
     relatedArticles: [],
-    verdict: '✅',
+    verdict: 'For advanced users who want maximum privacy, Arkenfox transforms Firefox into a fortress.',
     pros: [
-      'Protects your privacy',
-      'Easy to use'
+      'Drastically reduces browser fingerprinting',
+      'Disables all hidden Mozilla telemetry and data collection',
+      'Maintained by a dedicated community of privacy experts'
     ],
     cons: [
-      'May require some setup'
+      'Strict settings can break some websites',
+      'Requires reading instructions to install properly (no "install" button)'
     ],
     content: `
-      <h2>Why Arkenfox user.js?</h2>
-      <p>✅</p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> This tool limits data collection and external connections. <br><b>Plain English:</b> It stops companies from tracking what you do, so your personal stuff stays personal.</div></div>
+      <h2>Why Arkenfox?</h2>
+      <p>Firefox is a great privacy browser, but out of the box, it still collects some usage data and leaves a few doors open for convenience. Firefox has hundreds of hidden privacy settings that you can't see in the normal menus. Arkenfox is a pre-made configuration file that flips all those hidden switches to "maximum privacy."</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> Arkenfox is a heavily curated <code>user.js</code> file that overwrites Firefox's default <code>about:config</code> preferences to mitigate tracking, fingerprinting, and telemetry. <br><b>Plain English:</b> It's a master blueprint. When you place this file inside Firefox's folder, Firefox reads it and instantly hardens its own internal security systems.</div></div>
+
       <h2>How it works</h2>
-      <p>By keeping your data on your device and not sending it to big tech companies, it ensures you remain in control.</p>
+      <p>You don't install Arkenfox like a normal extension. Instead, you download a file and place it in your Firefox profile folder. Once you restart the browser, it applies hundreds of tweaks: it blocks fingerprinting, stops websites from reading your battery level, isolates website cookies from each other, and turns off Mozilla's own tracking.</p>
+      
+      <h2>A Warning</h2>
+      <p>Because Arkenfox is so strict, it can occasionally break interactive features on complex websites (like online banking). It is designed for users who are willing to occasionally tweak a setting or use a secondary browser for broken sites in exchange for maximum privacy.</p>
     `
   };

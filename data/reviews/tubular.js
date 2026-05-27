@@ -1,36 +1,43 @@
 export default {
     id: 'tubular',
-    website: 'https://example.com',
-    index: 203,
+    website: 'https://github.com/polymorphicshade/Tubular',
+    index: 219,
     name: 'Tubular',
-    tagline: 'Privacy-focused youtube client',
-    category: 'YouTube Client',
+    tagline: 'NewPipe, but with SponsorBlock included',
+    category: 'Media Player',
     scores: {
       dataPrivacy: 28,
-      security: 27,
-      tracking: 18,
-      userControl: 9,
-      transparency: 9,
-      total: 91
+      security: 26,
+      tracking: 20,
+      userControl: 10,
+      transparency: 10,
+      total: 94
     },
-    platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
+    platforms: ['Android'],
     pricing: 'Free',
-    openSource: false,
+    openSource: true,
     auditedBy: 'Community review',
     relatedArticles: [],
-    verdict: '',
+    verdict: 'If you love NewPipe but hate in-video sponsor reads, Tubular is the perfect combination.',
     pros: [
-      'Protects your privacy',
-      'Easy to use'
+      'Automatically skips sponsored segments in videos',
+      'Brings back the YouTube Dislike button',
+      'All the same privacy benefits and background play of NewPipe'
     ],
     cons: [
-      'May require some setup'
+      'Updates slightly slower than the main NewPipe app',
+      'Requires installation via F-Droid or GitHub'
     ],
     content: `
       <h2>Why Tubular?</h2>
-      <p></p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> This tool limits data collection and external connections. <br><b>Plain English:</b> It stops companies from tracking what you do, so your personal stuff stays personal.</div></div>
+      <p>NewPipe is fantastic for privacy and blocking traditional YouTube ads. But what about when a creator embeds a sponsored ad read directly into their video? Tubular is a customized version (a "fork") of NewPipe that solves this problem.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> Tubular integrates the SponsorBlock API and the Return YouTube Dislike API directly into the NewPipe codebase. <br><b>Plain English:</b> It connects to community databases to figure out exactly when a sponsored segment starts and ends, and skips it automatically. It also shows you the true dislike count.</div></div>
+
       <h2>How it works</h2>
-      <p>By keeping your data on your device and not sending it to big tech companies, it ensures you remain in control.</p>
+      <p>Tubular looks and feels exactly like NewPipe. It functions exactly the same way: it grabs videos directly from YouTube anonymously without logging you in. The only difference is that when you watch a video, colored bars appear on the timeline indicating where the sponsor reads are, and the app gracefully skips over them.</p>
+      
+      <h2>A Great Alternative</h2>
+      <p>If you want the stability and direct-connection speed of NewPipe, but the sponsor-skipping abilities of LibreTube, Tubular sits perfectly in the middle.</p>
     `
   };

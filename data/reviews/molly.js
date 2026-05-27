@@ -1,36 +1,44 @@
 export default {
     id: 'molly',
-    website: 'https://example.com',
-    index: 200,
+    website: 'https://molly.im',
+    index: 216,
     name: 'Molly',
-    tagline: 'Privacy-focused secure messenger',
-    category: 'Secure Messenger',
+    tagline: 'A hardened fork of Signal for Android',
+    category: 'Messaging',
     scores: {
-      dataPrivacy: 28,
-      security: 27,
-      tracking: 18,
-      userControl: 9,
-      transparency: 9,
-      total: 91
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 20,
+      userControl: 10,
+      transparency: 10,
+      total: 99
     },
-    platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
+    platforms: ['Android'],
     pricing: 'Free',
-    openSource: false,
+    openSource: true,
     auditedBy: 'Community review',
     relatedArticles: [],
-    verdict: '',
+    verdict: 'Molly takes the already excellent security of Signal and adds extra physical protection for your device data.',
     pros: [
-      'Protects your privacy',
-      'Easy to use'
+      'Same excellent end-to-end encryption as Signal',
+      'Protects your message database with a separate passphrase',
+      'Shreds RAM to prevent memory extraction attacks',
+      'Can connect through Tor for anonymous routing'
     ],
     cons: [
-      'May require some setup'
+      'Only available on Android',
+      'Slightly more complex to set up than standard Signal'
     ],
     content: `
       <h2>Why Molly?</h2>
-      <p></p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> This tool limits data collection and external connections. <br><b>Plain English:</b> It stops companies from tracking what you do, so your personal stuff stays personal.</div></div>
+      <p>Signal is already the gold standard for private messaging, protecting your texts from interception over the internet. But what happens if someone physically takes your phone while it's unlocked? Molly is an unofficial, open-source version of Signal designed specifically to protect your data from physical access.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> Molly implements database encryption at rest with a custom passphrase and uses RAM shredding to wipe memory when locked. <br><b>Plain English:</b> It adds a special lock specifically for your messages, and deletes its own tracks in your phone's memory so no one can extract your chats if your phone is stolen.</div></div>
+
       <h2>How it works</h2>
-      <p>By keeping your data on your device and not sending it to big tech companies, it ensures you remain in control.</p>
+      <p>Molly connects to the exact same servers as Signal. You can chat with all your regular Signal contacts without them ever knowing you're using a different app. The differences are entirely on your own phone.</p>
+      
+      <h2>Extra Security Features</h2>
+      <p>Molly allows you to lock the app with a completely different password than your phone's lock screen. It also has a feature to route all your messages through the Tor network, hiding your IP address from Signal's servers.</p>
     `
   };

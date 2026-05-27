@@ -1,36 +1,44 @@
 export default {
     id: 'libretube',
-    website: 'https://example.com',
-    index: 202,
+    website: 'https://libre-tube.github.io',
+    index: 218,
     name: 'LibreTube',
-    tagline: 'Privacy-focused youtube client',
-    category: 'YouTube Client',
+    tagline: 'YouTube without connecting to Google',
+    category: 'Media Player',
     scores: {
-      dataPrivacy: 28,
-      security: 27,
-      tracking: 18,
+      dataPrivacy: 29,
+      security: 26,
+      tracking: 20,
       userControl: 9,
-      transparency: 9,
-      total: 91
+      transparency: 10,
+      total: 94
     },
-    platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
+    platforms: ['Android'],
     pricing: 'Free',
-    openSource: false,
+    openSource: true,
     auditedBy: 'Community review',
     relatedArticles: [],
-    verdict: '',
+    verdict: 'An excellent, modern-looking YouTube alternative that physically sits between you and Google\'s servers.',
     pros: [
-      'Protects your privacy',
-      'Easy to use'
+      'Your phone never connects directly to Google',
+      'Built-in SponsorBlock to skip sponsored segments',
+      'Modern, slick user interface',
+      'No ads or tracking'
     ],
     cons: [
-      'May require some setup'
+      'Piped instances can occasionally go down or be slow',
+      'Requires downloading outside the Google Play Store'
     ],
     content: `
       <h2>Why LibreTube?</h2>
-      <p></p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> This tool limits data collection and external connections. <br><b>Plain English:</b> It stops companies from tracking what you do, so your personal stuff stays personal.</div></div>
+      <p>While tools like NewPipe connect to YouTube anonymously, your phone is still technically talking directly to Google's servers. LibreTube takes privacy a step further by using intermediate servers called "Piped instances."</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> LibreTube routes your video requests through decentralized Piped proxy servers, preventing Google from seeing your IP address. <br><b>Plain English:</b> Instead of your phone asking Google for a video, your phone asks a proxy server, and the proxy server asks Google. Google never knows you exist.</div></div>
+
       <h2>How it works</h2>
-      <p>By keeping your data on your device and not sending it to big tech companies, it ensures you remain in control.</p>
+      <p>LibreTube has a beautiful, modern design that feels very similar to the official YouTube app. Because it relies on Piped, you can actually create an account on a Piped server to sync your subscriptions across different devices, all without giving Google any of your data.</p>
+      
+      <h2>Built-in Sponsor Skipping</h2>
+      <p>LibreTube integrates a community-driven tool called SponsorBlock. When a YouTuber stops the video to read an ad for a VPN or meal kit, LibreTube will automatically skip past that segment so you can get right back to the content.</p>
     `
   };

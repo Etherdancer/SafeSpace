@@ -1,36 +1,43 @@
 export default {
     id: 'o-o-shutup10',
-    website: 'https://example.com',
-    index: 212,
+    website: 'https://www.oo-software.com/en/shutup10',
+    index: 240,
     name: 'O&O ShutUp10++',
-    tagline: 'Privacy-focused telemetry blocker',
+    tagline: 'Easily turn off Windows telemetry and tracking',
     category: 'Telemetry Blocker',
     scores: {
-      dataPrivacy: 28,
-      security: 27,
-      tracking: 18,
+      dataPrivacy: 25,
+      security: 22,
+      tracking: 20,
       userControl: 9,
-      transparency: 9,
-      total: 91
+      transparency: 6,
+      total: 82
     },
-    platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
+    platforms: ['Windows'],
     pricing: 'Free',
     openSource: false,
-    auditedBy: 'Community review',
+    auditedBy: 'Not independently audited',
     relatedArticles: [],
-    verdict: '',
+    verdict: 'The easiest, most user-friendly way to stop Windows 10 and 11 from sending your data to Microsoft.',
     pros: [
-      'Protects your privacy',
-      'Easy to use'
+      'Incredibly easy to use — just click "Apply recommended settings"',
+      'Portable app (no installation required)',
+      'Explains exactly what every setting does before you change it'
     ],
     cons: [
-      'May require some setup'
+      'Not open-source',
+      'Microsoft updates can sometimes reset these settings, so you must run it periodically'
     ],
     content: `
       <h2>Why O&O ShutUp10++?</h2>
-      <p></p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> This tool limits data collection and external connections. <br><b>Plain English:</b> It stops companies from tracking what you do, so your personal stuff stays personal.</div></div>
+      <p>Windows 10 and 11 act like giant data vacuums. Out of the box, they record what you type, how you use your computer, your location, and more, sending it all back to Microsoft. Finding all these hidden off-switches in the Windows menus is nearly impossible. This tool puts all the switches in one simple list.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> The tool edits the Windows Registry and Group Policy configurations to forcefully disable telemetry services, Cortana, and background tracking APIs. <br><b>Plain English:</b> It goes deep into the computer's hidden settings files and manually cuts the wires connecting your data to Microsoft's servers.</div></div>
+
       <h2>How it works</h2>
-      <p>By keeping your data on your device and not sending it to big tech companies, it ensures you remain in control.</p>
+      <p>When you open the app, you'll see a long list of privacy settings. The best feature is the "Actions" menu at the top. You can simply click "Apply only recommended settings," and the app will instantly turn off the worst tracking features without breaking anything important on your computer.</p>
+      
+      <h2>Safe and Reversible</h2>
+      <p>Before it makes any changes, it asks you to create a "System Restore Point." If turning off a setting accidentally breaks a feature you actually wanted to use, you can easily click a button to put everything back to exactly how it was.</p>
     `
   };

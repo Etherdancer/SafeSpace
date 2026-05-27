@@ -1,36 +1,44 @@
 export default {
     id: 'openboard',
-    website: 'https://example.com',
-    index: 204,
-    name: 'OpenBoard',
-    tagline: 'Privacy-focused privacy keyboard',
-    category: 'Privacy Keyboard',
+    website: 'https://github.com/Helium314/HeliBoard',
+    index: 220,
+    name: 'HeliBoard',
+    tagline: 'A keyboard that actually keeps your typing private',
+    category: 'Keyboard',
     scores: {
-      dataPrivacy: 28,
-      security: 27,
-      tracking: 18,
-      userControl: 9,
-      transparency: 9,
-      total: 91
+      dataPrivacy: 30,
+      security: 28,
+      tracking: 20,
+      userControl: 10,
+      transparency: 10,
+      total: 98
     },
-    platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
+    platforms: ['Android'],
     pricing: 'Free',
-    openSource: false,
+    openSource: true,
     auditedBy: 'Community review',
     relatedArticles: [],
-    verdict: '',
+    verdict: 'A fantastic, customizable keyboard that structurally cannot steal your data.',
     pros: [
-      'Protects your privacy',
-      'Easy to use'
+      'Zero internet permissions — it physically cannot connect to the web',
+      'Highly customizable themes and layouts',
+      'Supports multiple languages and dictionaries',
+      'Open-source and fully auditable'
     ],
     cons: [
-      'May require some setup'
+      'Does not have built-in GIF search or cloud sync',
+      'Swipe-typing requires downloading an extra library file manually'
     ],
     content: `
-      <h2>Why OpenBoard?</h2>
-      <p></p>
-      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> This tool limits data collection and external connections. <br><b>Plain English:</b> It stops companies from tracking what you do, so your personal stuff stays personal.</div></div>
+      <h2>Why HeliBoard?</h2>
+      <p>Your keyboard is the most sensitive app on your phone. It sees every password, every text message, and every search query you type. Popular keyboards like Gboard and SwiftKey constantly send typing data back to Google and Microsoft. HeliBoard (the modern successor to OpenBoard) is designed to keep your typing strictly on your device.</p>
+
+      <div class="callout callout--tip"><span class="callout__icon">&#128161;</span><div><b>Technical:</b> HeliBoard is compiled without the <code>android.permission.INTERNET</code> manifest declaration. <br><b>Plain English:</b> The keyboard is mathematically locked out of the internet. Even if it wanted to steal your data, the Android operating system physically prevents it from talking to any servers.</div></div>
+
       <h2>How it works</h2>
-      <p>By keeping your data on your device and not sending it to big tech companies, it ensures you remain in control.</p>
+      <p>Because HeliBoard has no internet access, everything it does happens locally. Autocorrect is handled by dictionary files downloaded to your phone. It learns your typing style and saves your personal dictionary directly on your device storage.</p>
+      
+      <h2>Customization</h2>
+      <p>Despite being a privacy tool, it doesn't sacrifice looks. You can customize the theme, the height of the keys, whether to show a number row, and how the autocorrect behaves. It is a drop-in replacement that feels just as fast as the stock keyboard.</p>
     `
   };
