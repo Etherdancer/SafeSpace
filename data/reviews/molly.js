@@ -7,11 +7,14 @@ export default {
     category: 'Messaging',
     scores: {
       dataPrivacy: 29,
-      security: 30,
-      tracking: 20,
-      userControl: 10,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 99
+      total: 96
+    },
+    externalScores: {
+      appStore: 5,
     },
     platforms: ['Android'],
     pricing: 'Free',

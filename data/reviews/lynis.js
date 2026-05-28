@@ -6,13 +6,13 @@ export default {
   tagline: 'Scan your Linux system for security weaknesses.',
   category: 'Security Audit',
   scores: {
-    dataPrivacy: 22,
-    security: 26,
-    tracking: 18,
-    userControl: 9,
-    transparency: 9,
-    total: 84
-  },
+      dataPrivacy: 25,
+      security: 26,
+      tracking: 18,
+      userControl: 9,
+      transparency: 10,
+      total: 88
+    },
   platforms: ['Linux', 'macOS'],
   pricing: 'Free',
   openSource: true,

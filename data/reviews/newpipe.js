@@ -6,12 +6,16 @@ export default {
     tagline: 'A private, ad-free YouTube experience',
     category: 'Media Player',
     scores: {
-      dataPrivacy: 28,
-      security: 26,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 94
+      total: 96
+    },
+    externalScores: {
+      appStore: 2.7,
+      playStore: 4.7,
     },
     platforms: ['Android'],
     pricing: 'Free',

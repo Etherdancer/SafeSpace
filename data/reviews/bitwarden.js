@@ -7,11 +7,14 @@ export default {
     category: 'Password Managers',
     scores: {
       dataPrivacy: 29,
-      security: 29,
+      security: 30,
       tracking: 20,
       userControl: 10,
       transparency: 10,
-      total: 98
+      total: 99
+    },
+    externalScores: {
+      appStore: 4.7,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Browser'],
     pricing: 'Free / $10/yr Premium',

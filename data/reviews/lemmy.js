@@ -6,12 +6,16 @@ export default {
     tagline: 'Reddit-style communities, no corporate owner.',
     category: 'Social Media',
     scores: {
-      dataPrivacy: 21,
-      security: 19,
-      tracking: 18,
-      userControl: 9,
+      dataPrivacy: 30,
+      security: 30,
+      tracking: 19,
+      userControl: 10,
       transparency: 10,
-      total: 77
+      total: 99
+    },
+    externalScores: {
+      appStore: 4.8,
+      playStore: 4.5,
     },
     platforms: ['Web', 'iOS', 'Android'],
     pricing: 'Free',

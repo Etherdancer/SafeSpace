@@ -6,12 +6,15 @@ export default {
     tagline: 'Peer-to-peer messages over Tor — no server needed.',
     category: 'Messaging',
     scores: {
-      dataPrivacy: 29,
-      security: 27,
+      dataPrivacy: 30,
+      security: 30,
       tracking: 20,
-      userControl: 10,
-      transparency: 9,
-      total: 95
+      userControl: 9,
+      transparency: 10,
+      total: 99
+    },
+    externalScores: {
+      appStore: 4.5,
     },
     platforms: ['Android', 'Linux'],
     pricing: 'Free',

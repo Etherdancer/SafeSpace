@@ -6,12 +6,15 @@ export default {
     tagline: 'Test how well your browser protects you',
     category: 'Privacy Tools',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 25,
       security: 26,
-      tracking: 20,
-      userControl: 10,
+      tracking: 18,
+      userControl: 9,
       transparency: 10,
-      total: 96
+      total: 88
+    },
+    externalScores: {
+      appStore: 4.4,
     },
     platforms: ['Web'],
     pricing: 'Free',

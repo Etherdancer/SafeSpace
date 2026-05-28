@@ -6,12 +6,16 @@ export default {
     tagline: 'A lightweight, beautiful torrent client',
     category: 'Networks',
     scores: {
-      dataPrivacy: 28,
-      security: 25,
-      tracking: 18,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 90
+      total: 96
+    },
+    externalScores: {
+      appStore: 4,
+      playStore: 4.3,
     },
     platforms: ['macOS', 'Linux', 'Windows'],
     pricing: 'Free',

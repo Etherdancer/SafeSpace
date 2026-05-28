@@ -6,12 +6,15 @@ export default {
     tagline: 'Your notes live on your device — not in someone\'s cloud',
     category: 'Notes',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 27,
       security: 26,
       tracking: 19,
-      userControl: 10,
-      transparency: 7,
-      total: 92
+      userControl: 9,
+      transparency: 6,
+      total: 87
+    },
+    externalScores: {
+      appStore: 4.5,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free for personal use / $8/mo Sync add-on (optional)',

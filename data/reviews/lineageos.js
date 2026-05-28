@@ -6,13 +6,17 @@ export default {
   tagline: 'Open-source Android for hundreds of devices.',
   category: 'Custom ROM',
   scores: {
-    dataPrivacy: 25,
-    security: 23,
-    tracking: 19,
-    userControl: 10,
-    transparency: 9,
-    total: 86
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.6,
+      playStore: 4.1,
+    },
   platforms: ['Android'],
   pricing: 'Free',
   openSource: true,

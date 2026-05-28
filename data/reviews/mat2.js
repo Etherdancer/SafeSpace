@@ -6,13 +6,17 @@ export default {
   tagline: 'Strip hidden data from your files before you share them.',
   category: 'Metadata',
   scores: {
-    dataPrivacy: 28,
-    security: 24,
-    tracking: 20,
-    userControl: 10,
-    transparency: 10,
-    total: 92
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.6,
+      playStore: 4.2,
+    },
   platforms: ['Linux'],
   pricing: 'Free',
   openSource: true,

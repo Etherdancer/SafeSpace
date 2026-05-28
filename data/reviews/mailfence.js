@@ -6,12 +6,15 @@ export default {
     tagline: 'Belgian encrypted email with integrated PGP.',
     category: 'Email',
     scores: {
-      dataPrivacy: 23,
-      security: 24,
-      tracking: 17,
-      userControl: 8,
-      transparency: 7,
-      total: 79
+      dataPrivacy: 27,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 6,
+      total: 90
+    },
+    externalScores: {
+      appStore: 3.8,
     },
     platforms: ['Web'],
     pricing: 'Free / Paid',

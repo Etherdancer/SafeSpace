@@ -6,12 +6,16 @@ export default {
     tagline: 'Your passwords stay on your device, always',
     category: 'Password Managers',
     scores: {
-      dataPrivacy: 30,
-      security: 29,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 20,
-      userControl: 10,
+      userControl: 9,
       transparency: 10,
-      total: 99
+      total: 98
+    },
+    externalScores: {
+      appStore: 4.7,
+      playStore: 4.1,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

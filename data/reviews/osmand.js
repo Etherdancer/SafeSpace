@@ -7,11 +7,14 @@ export default {
     category: 'Mobile',
     scores: {
       dataPrivacy: 29,
-      security: 25,
+      security: 29,
       tracking: 19,
-      userControl: 10,
+      userControl: 9,
       transparency: 10,
-      total: 93
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['iOS', 'Android'],
     pricing: 'Free / €29.99/yr Pro',

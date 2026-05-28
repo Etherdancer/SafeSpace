@@ -6,12 +6,15 @@ export default {
     tagline: 'Premium, polished password management',
     category: 'Password Managers',
     scores: {
-      dataPrivacy: 27,
-      security: 28,
-      tracking: 18,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
       userControl: 9,
-      transparency: 8,
-      total: 90
+      transparency: 9,
+      total: 95
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Paid',

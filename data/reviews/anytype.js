@@ -6,12 +6,15 @@ export default {
     tagline: 'A private, offline-first alternative to Notion',
     category: 'Note-Taking',
     scores: {
-      dataPrivacy: 28,
-      security: 26,
+      dataPrivacy: 30,
+      security: 28,
       tracking: 20,
       userControl: 9,
-      transparency: 8,
-      total: 91
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.5,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux'],
     pricing: 'Free (Paid options for extra sync storage)',

@@ -6,12 +6,15 @@ export default {
     tagline: 'A free music player that streams from everywhere',
     category: 'Media Player',
     scores: {
-      dataPrivacy: 28,
+      dataPrivacy: 27,
       security: 26,
       tracking: 20,
       userControl: 9,
       transparency: 10,
-      total: 93
+      total: 92
+    },
+    externalScores: {
+      appStore: 4.5,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

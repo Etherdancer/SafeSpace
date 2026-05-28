@@ -6,12 +6,15 @@ export default {
     tagline: 'Self-hostable office suite that speaks MS Office',
     category: 'Productivity',
     scores: {
-      dataPrivacy: 25,
-      security: 22,
-      tracking: 17,
-      userControl: 8,
-      transparency: 7,
-      total: 79
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
+      userControl: 10,
+      transparency: 10,
+      total: 98
+    },
+    externalScores: {
+      appStore: 3.6,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'Web'],
     pricing: 'Free / Paid',

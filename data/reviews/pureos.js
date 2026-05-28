@@ -6,13 +6,17 @@ export default {
   tagline: 'A Linux built entirely on free software.',
   category: 'Operating Systems',
   scores: {
-    dataPrivacy: 26,
-    security: 24,
-    tracking: 19,
-    userControl: 9,
-    transparency: 9,
-    total: 87
-  },
+      dataPrivacy: 27,
+      security: 30,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 95
+    },
+    externalScores: {
+      appStore: 5,
+      playStore: 4.7,
+    },
   platforms: ['Linux'],
   pricing: 'Free',
   openSource: true,

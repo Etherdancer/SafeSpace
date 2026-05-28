@@ -6,12 +6,16 @@ export default {
     tagline: 'Securely encrypted folders and drives',
     category: 'Security Tools',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 29,
       security: 30,
-      tracking: 20,
-      userControl: 10,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 100
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.5,
+      playStore: 3.3,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

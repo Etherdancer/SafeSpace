@@ -6,12 +6,16 @@ export default {
     tagline: 'A custom, private version of Firefox',
     category: 'Browsers',
     scores: {
-      dataPrivacy: 29,
-      security: 28,
-      tracking: 20,
+      dataPrivacy: 27,
+      security: 26,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 96
+      total: 91
+    },
+    externalScores: {
+      appStore: 4.8,
+      playStore: 4.7,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

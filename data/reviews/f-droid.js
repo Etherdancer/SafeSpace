@@ -6,13 +6,17 @@ export default {
   tagline: 'App store for open-source Android apps only.',
   category: 'App Store',
   scores: {
-    dataPrivacy: 28,
-    security: 24,
-    tracking: 20,
-    userControl: 9,
-    transparency: 10,
-    total: 91
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.7,
+      playStore: 4.5,
+    },
   platforms: ['Android'],
   pricing: 'Free',
   openSource: true,

@@ -6,12 +6,15 @@ export default {
     tagline: 'Per-app firewall and DNS privacy rolled into one.',
     category: 'Firewall',
     scores: {
-      dataPrivacy: 24,
-      security: 25,
-      tracking: 19,
-      userControl: 10,
-      transparency: 9,
-      total: 87
+      dataPrivacy: 25,
+      security: 30,
+      tracking: 18,
+      userControl: 9,
+      transparency: 10,
+      total: 92
+    },
+    externalScores: {
+      appStore: 4.3,
     },
     platforms: ['Windows', 'Linux'],
     pricing: 'Free',

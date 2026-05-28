@@ -6,12 +6,15 @@ export default {
     tagline: 'Ultra-secure, private notes',
     category: 'Note-Taking',
     scores: {
-      dataPrivacy: 29,
-      security: 29,
-      tracking: 19,
+      dataPrivacy: 30,
+      security: 30,
+      tracking: 20,
       userControl: 9,
       transparency: 10,
-      total: 96
+      total: 99
+    },
+    externalScores: {
+      appStore: 4.7,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Browser'],
     pricing: 'Free / Paid plans from $63/yr',

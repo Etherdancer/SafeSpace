@@ -6,13 +6,17 @@ export default {
   tagline: 'Mandatory access control. No exceptions.',
   category: 'Security Audit',
   scores: {
-    dataPrivacy: 24,
-    security: 29,
-    tracking: 18,
-    userControl: 8,
-    transparency: 10,
-    total: 89
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.6,
+      playStore: 4.6,
+    },
   platforms: ['Linux'],
   pricing: 'Free',
   openSource: true,

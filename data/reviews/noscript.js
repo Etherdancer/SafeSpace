@@ -6,12 +6,16 @@ export default {
     tagline: 'Block all scripts until you decide what to trust.',
     category: 'Browser Extension',
     scores: {
-      dataPrivacy: 25,
-      security: 27,
+      dataPrivacy: 29,
+      security: 29,
       tracking: 19,
-      userControl: 10,
-      transparency: 9,
-      total: 90
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.4,
+      playStore: 4.6,
     },
     platforms: ['Web'],
     pricing: 'Free',

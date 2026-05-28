@@ -7,11 +7,15 @@ export default {
     category: 'Browser Extension',
     scores: {
       dataPrivacy: 22,
-      security: 19,
-      tracking: 18,
-      userControl: 8,
+      security: 26,
+      tracking: 16,
+      userControl: 9,
       transparency: 10,
-      total: 77
+      total: 83
+    },
+    externalScores: {
+      appStore: 4.8,
+      playStore: 4.7,
     },
     platforms: ['Web'],
     pricing: 'Free',

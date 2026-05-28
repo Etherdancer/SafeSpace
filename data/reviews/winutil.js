@@ -6,12 +6,15 @@ export default {
     tagline: 'One PowerShell command to debloat and harden Windows.',
     category: 'Telemetry Blocker',
     scores: {
-      dataPrivacy: 21,
-      security: 18,
-      tracking: 17,
+      dataPrivacy: 22,
+      security: 26,
+      tracking: 18,
       userControl: 9,
-      transparency: 9,
-      total: 74
+      transparency: 10,
+      total: 85
+    },
+    externalScores: {
+      playStore: 3.9,
     },
     platforms: ['Windows'],
     pricing: 'Free',

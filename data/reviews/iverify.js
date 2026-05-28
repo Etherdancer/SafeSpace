@@ -6,13 +6,16 @@ export default {
   tagline: 'Detect spyware and Pegasus on your iPhone.',
   category: 'Privacy Tools',
   scores: {
-    dataPrivacy: 22,
-    security: 25,
-    tracking: 15,
-    userControl: 7,
-    transparency: 5,
-    total: 74
-  },
+      dataPrivacy: 23,
+      security: 27,
+      tracking: 18,
+      userControl: 9,
+      transparency: 6,
+      total: 83
+    },
+    externalScores: {
+      appStore: 4.7,
+    },
   platforms: ['iOS'],
   pricing: 'Paid',
   openSource: false,

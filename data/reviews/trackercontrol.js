@@ -6,13 +6,16 @@ export default {
   tagline: 'See and block trackers hiding inside your Android apps.',
   category: 'Privacy Tools',
   scores: {
-    dataPrivacy: 26,
-    security: 23,
-    tracking: 19,
-    userControl: 9,
-    transparency: 9,
-    total: 86
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.7,
+    },
   platforms: ['Android'],
   pricing: 'Free',
   openSource: true,

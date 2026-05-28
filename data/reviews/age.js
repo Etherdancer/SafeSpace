@@ -6,12 +6,16 @@ export default {
     tagline: 'Simple, modern file encryption done right',
     category: 'Encryption',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 29,
       security: 29,
-      tracking: 20,
-      userControl: 10,
-      transparency: 9,
-      total: 98
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.3,
+      playStore: 2.9,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

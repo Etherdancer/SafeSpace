@@ -6,12 +6,15 @@ export default {
     tagline: 'End-to-end encrypted cloud storage from Switzerland',
     category: 'Cloud Storage',
     scores: {
-      dataPrivacy: 30,
-      security: 29,
-      tracking: 20,
-      userControl: 8,
-      transparency: 9,
-      total: 96
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.1,
     },
     platforms: ['Web', 'iOS', 'Android', 'Windows', 'macOS'],
     pricing: 'Free tier / Paid',

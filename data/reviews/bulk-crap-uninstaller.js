@@ -6,12 +6,15 @@ export default {
     tagline: 'Rip out Windows bloatware, roots and all.',
     category: 'Privacy Tools',
     scores: {
-      dataPrivacy: 18,
-      security: 17,
-      tracking: 15,
-      userControl: 10,
-      transparency: 9,
-      total: 69
+      dataPrivacy: 22,
+      security: 30,
+      tracking: 16,
+      userControl: 9,
+      transparency: 10,
+      total: 87
+    },
+    externalScores: {
+      appStore: 4.5,
     },
     platforms: ['Windows'],
     pricing: 'Free',

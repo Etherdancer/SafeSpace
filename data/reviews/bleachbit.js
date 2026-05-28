@@ -6,12 +6,16 @@ export default {
     tagline: 'Deep-clean your system caches and trackers',
     category: 'Security Tools',
     scores: {
-      dataPrivacy: 30,
-      security: 25,
-      tracking: 20,
-      userControl: 10,
-      transparency: 9,
-      total: 94
+      dataPrivacy: 25,
+      security: 26,
+      tracking: 18,
+      userControl: 9,
+      transparency: 10,
+      total: 88
+    },
+    externalScores: {
+      appStore: 4.4,
+      playStore: 4.5,
     },
     platforms: ['Windows', 'Linux'],
     pricing: 'Free',

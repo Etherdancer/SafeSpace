@@ -6,12 +6,15 @@ export default {
     tagline: 'Professional-grade firewall and network monitor for macOS',
     category: 'Firewall',
     scores: {
-      dataPrivacy: 29,
-      security: 29,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 23,
+      security: 27,
+      tracking: 18,
+      userControl: 9,
       transparency: 6,
-      total: 94
+      total: 83
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['macOS'],
     pricing: 'Paid',

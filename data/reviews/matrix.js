@@ -6,12 +6,16 @@ export default {
     tagline: 'Decentralized, encrypted messaging',
     category: 'Networks',
     scores: {
-      dataPrivacy: 28,
-      security: 28,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 94
+      total: 97
+    },
+    externalScores: {
+      appStore: 3.4,
+      playStore: 3.5,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Browser'],
     pricing: 'Free',

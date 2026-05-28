@@ -6,12 +6,15 @@ export default {
     tagline: 'Anonymous messenger with no phone number required',
     category: 'Messaging',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 29,
       security: 29,
-      tracking: 20,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 98
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.3,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free',

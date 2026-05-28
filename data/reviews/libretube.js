@@ -7,11 +7,15 @@ export default {
     category: 'Media Player',
     scores: {
       dataPrivacy: 29,
-      security: 26,
-      tracking: 20,
+      security: 29,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 94
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.6,
+      playStore: 3.4,
     },
     platforms: ['Android'],
     pricing: 'Free',

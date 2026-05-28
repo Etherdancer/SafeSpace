@@ -6,12 +6,15 @@ export default {
     tagline: 'Open-source email forwarding and aliases',
     category: 'Email',
     scores: {
-      dataPrivacy: 28,
-      security: 28,
-      tracking: 20,
-      userControl: 9,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 10,
       transparency: 10,
-      total: 95
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Web', 'Browser Extensions'],
     pricing: 'Free / Paid',

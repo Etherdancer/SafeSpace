@@ -6,12 +6,15 @@ export default {
     tagline: 'Android without Google — maximum mobile privacy',
     category: 'Operating Systems',
     scores: {
-      dataPrivacy: 30,
-      security: 30,
+      dataPrivacy: 29,
+      security: 29,
       tracking: 20,
-      userControl: 10,
+      userControl: 9,
       transparency: 10,
-      total: 100
+      total: 97
+    },
+    externalScores: {
+      playStore: 4.4,
     },
     platforms: ['Google Pixel 6 and newer'],
     pricing: 'Free',

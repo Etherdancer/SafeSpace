@@ -6,12 +6,15 @@ export default {
     tagline: 'Your own cloud — no one else involved',
     category: 'Cloud Storage',
     scores: {
-      dataPrivacy: 28,
-      security: 26,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 19,
       userControl: 10,
-      transparency: 9,
-      total: 92
+      transparency: 10,
+      total: 98
+    },
+    externalScores: {
+      appStore: 4.7,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
     pricing: 'Free / Paid hosting',

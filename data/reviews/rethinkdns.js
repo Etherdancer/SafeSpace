@@ -6,13 +6,16 @@ export default {
   tagline: 'Android firewall and encrypted DNS in one open app.',
   category: 'Firewall',
   scores: {
-    dataPrivacy: 28,
-    security: 26,
-    tracking: 19,
-    userControl: 10,
-    transparency: 9,
-    total: 92
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 20,
+      userControl: 9,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.5,
+    },
   platforms: ['Android'],
   pricing: 'Free',
   openSource: true,

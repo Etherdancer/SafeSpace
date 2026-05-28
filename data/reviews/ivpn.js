@@ -7,11 +7,14 @@ export default {
     category: 'VPN',
     scores: {
       dataPrivacy: 29,
-      security: 28,
+      security: 30,
       tracking: 19,
       userControl: 9,
-      transparency: 9,
-      total: 94
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.0,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux'],
     pricing: 'Paid',

@@ -6,13 +6,16 @@ export default {
   tagline: 'Tor, I2P, and DNSCrypt together on Android.',
   category: 'Privacy Tools',
   scores: {
-    dataPrivacy: 28,
-    security: 27,
-    tracking: 19,
-    userControl: 9,
-    transparency: 8,
-    total: 91
-  },
+      dataPrivacy: 25,
+      security: 30,
+      tracking: 18,
+      userControl: 9,
+      transparency: 10,
+      total: 92
+    },
+    externalScores: {
+      appStore: 4.5,
+    },
   platforms: ['Android'],
   pricing: 'Free',
   openSource: true,

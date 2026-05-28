@@ -6,12 +6,15 @@ export default {
     tagline: 'The search engine that doesn\'t track you',
     category: 'Search Engines',
     scores: {
-      dataPrivacy: 26,
-      security: 27,
-      tracking: 18,
-      userControl: 8,
-      transparency: 8,
-      total: 87
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 9,
+      total: 95
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Web', 'iOS', 'Android', 'Browser Extension'],
     pricing: 'Free',

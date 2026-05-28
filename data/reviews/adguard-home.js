@@ -6,12 +6,15 @@ export default {
     tagline: 'Self-hosted DNS blocker with built-in DoH and DoT.',
     category: 'DNS',
     scores: {
-      dataPrivacy: 27,
-      security: 26,
-      tracking: 19,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 20,
       userControl: 10,
-      transparency: 9,
-      total: 91
+      transparency: 10,
+      total: 98
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Linux', 'Windows', 'macOS'],
     pricing: 'Free',

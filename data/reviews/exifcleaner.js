@@ -6,12 +6,15 @@ export default {
     tagline: 'Drag and drop to strip hidden location data from photos',
     category: 'Security Tools',
     scores: {
-      dataPrivacy: 30,
-      security: 28,
-      tracking: 20,
-      userControl: 10,
-      transparency: 9,
-      total: 97
+      dataPrivacy: 26,
+      security: 26,
+      tracking: 18,
+      userControl: 9,
+      transparency: 10,
+      total: 89
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

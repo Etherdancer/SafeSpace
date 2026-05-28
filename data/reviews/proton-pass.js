@@ -6,12 +6,15 @@ export default {
     tagline: 'Password manager with built-in email aliases',
     category: 'Password Managers',
     scores: {
-      dataPrivacy: 28,
-      security: 29,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 95
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free / Paid',

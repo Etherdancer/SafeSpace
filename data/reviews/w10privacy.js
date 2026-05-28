@@ -6,12 +6,16 @@ export default {
     tagline: 'Deep Windows privacy control for power users.',
     category: 'Telemetry Blocker',
     scores: {
-      dataPrivacy: 20,
-      security: 13,
-      tracking: 16,
+      dataPrivacy: 27,
+      security: 27,
+      tracking: 19,
       userControl: 9,
-      transparency: 4,
-      total: 62
+      transparency: 6,
+      total: 88
+    },
+    externalScores: {
+      appStore: 4.5,
+      playStore: 4.6,
     },
     platforms: ['Windows'],
     pricing: 'Free',

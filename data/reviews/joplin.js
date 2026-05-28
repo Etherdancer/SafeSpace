@@ -6,12 +6,15 @@ export default {
     tagline: 'End-to-end encrypted note taking',
     category: 'Note-Taking',
     scores: {
-      dataPrivacy: 28,
-      security: 27,
+      dataPrivacy: 29,
+      security: 29,
       tracking: 19,
       userControl: 9,
-      transparency: 9,
-      total: 92
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.2,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free (bring your own sync) / Joplin Cloud from €1.99/mo',

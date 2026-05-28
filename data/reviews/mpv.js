@@ -6,12 +6,15 @@ export default {
     tagline: 'No-frills media player for people who know what they want',
     category: 'Media Player',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 20,
       security: 26,
-      tracking: 20,
-      userControl: 10,
-      transparency: 9,
-      total: 95
+      tracking: 14,
+      userControl: 9,
+      transparency: 10,
+      total: 79
+    },
+    externalScores: {
+      appStore: 3.9,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

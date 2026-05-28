@@ -6,12 +6,15 @@ export default {
     tagline: 'Privacy by default, without any configuration',
     category: 'Browsers',
     scores: {
-      dataPrivacy: 27,
-      security: 28,
+      dataPrivacy: 29,
+      security: 29,
       tracking: 19,
       userControl: 9,
-      transparency: 9,
-      total: 92
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free',

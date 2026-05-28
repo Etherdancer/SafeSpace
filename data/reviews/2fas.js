@@ -6,12 +6,15 @@ export default {
     tagline: 'The best offline, open-source authenticator',
     category: 'Two-Factor Authentication',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 26,
       security: 30,
-      tracking: 20,
-      userControl: 10,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 100
+      total: 94
+    },
+    externalScores: {
+      appStore: 4.7,
     },
     platforms: ['iOS', 'Android'],
     pricing: 'Free',

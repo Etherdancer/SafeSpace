@@ -6,12 +6,15 @@ export default {
     tagline: 'Video hosting without YouTube surveillance.',
     category: 'Social Media',
     scores: {
-      dataPrivacy: 23,
-      security: 19,
-      tracking: 18,
-      userControl: 9,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 10,
       transparency: 10,
-      total: 79
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.1,
     },
     platforms: ['Web'],
     pricing: 'Free',

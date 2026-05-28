@@ -6,12 +6,15 @@ export default {
     tagline: 'Swiss-grade zero-knowledge file sharing for teams',
     category: 'Cloud Storage',
     scores: {
-      dataPrivacy: 27,
-      security: 27,
-      tracking: 16,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
       userControl: 9,
-      transparency: 6,
-      total: 85
+      transparency: 9,
+      total: 95
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
     pricing: 'Paid',

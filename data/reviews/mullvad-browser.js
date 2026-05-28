@@ -6,12 +6,16 @@ export default {
     tagline: 'The anti-fingerprinting browser built to disappear.',
     category: 'Browser',
     scores: {
-      dataPrivacy: 28,
-      security: 27,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 93
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.1,
+      playStore: 4.2,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

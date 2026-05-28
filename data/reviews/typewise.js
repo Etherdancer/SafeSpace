@@ -6,13 +6,16 @@ export default {
   tagline: 'On-device AI keyboard with a privacy-first promise.',
   category: 'Keyboard',
   scores: {
-    dataPrivacy: 21,
-    security: 18,
-    tracking: 14,
-    userControl: 7,
-    transparency: 5,
-    total: 65
-  },
+      dataPrivacy: 24,
+      security: 27,
+      tracking: 18,
+      userControl: 9,
+      transparency: 6,
+      total: 84
+    },
+    externalScores: {
+      appStore: 3.8,
+    },
   platforms: ['iOS', 'Android'],
   pricing: 'Freemium',
   openSource: false,

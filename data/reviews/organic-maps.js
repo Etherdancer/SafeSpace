@@ -6,12 +6,15 @@ export default {
     tagline: 'Offline maps with no tracking, no account, no ads',
     category: 'Maps',
     scores: {
-      dataPrivacy: 30,
-      security: 25,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 95
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['iOS', 'Android'],
     pricing: 'Free',

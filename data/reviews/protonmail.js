@@ -6,12 +6,15 @@ export default {
     tagline: 'Encrypted email based in Switzerland',
     category: 'Email',
     scores: {
-      dataPrivacy: 28,
+      dataPrivacy: 29,
       security: 29,
       tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 95
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.7,
     },
     platforms: ['Browser', 'iOS', 'Android'],
     pricing: 'Free / from €3.99/mo',

@@ -6,13 +6,17 @@ export default {
   tagline: 'Sandbox untrusted apps in a separate Android profile.',
   category: 'Privacy Tools',
   scores: {
-    dataPrivacy: 26,
-    security: 27,
-    tracking: 18,
-    userControl: 9,
-    transparency: 9,
-    total: 89
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 3.4,
+      playStore: 4.6,
+    },
   platforms: ['Android'],
   pricing: 'Free',
   openSource: true,

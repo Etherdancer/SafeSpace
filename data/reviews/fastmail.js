@@ -6,12 +6,15 @@ export default {
     tagline: 'Lightning-fast, independent email focusing on productivity',
     category: 'Email',
     scores: {
-      dataPrivacy: 22,
-      security: 25,
-      tracking: 18,
-      userControl: 8,
-      transparency: 8,
-      total: 81
+      dataPrivacy: 30,
+      security: 29,
+      tracking: 17,
+      userControl: 9,
+      transparency: 6,
+      total: 91
+    },
+    externalScores: {
+      appStore: 3.8,
     },
     platforms: ['Web', 'iOS', 'Android', 'Standard Email Clients'],
     pricing: 'Paid',

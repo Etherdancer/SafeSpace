@@ -6,12 +6,15 @@ export default {
     tagline: 'The most privacy-respecting VPN on the market',
     category: 'VPNs',
     scores: {
-      dataPrivacy: 30,
-      security: 29,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 20,
       userControl: 9,
       transparency: 10,
       total: 98
+    },
+    externalScores: {
+      appStore: 4.1,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: '€5/mo flat — no contracts',

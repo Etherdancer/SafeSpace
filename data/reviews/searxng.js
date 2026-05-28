@@ -6,12 +6,16 @@ export default {
     tagline: 'A privacy-respecting metasearch engine',
     category: 'Search Engines',
     scores: {
-      dataPrivacy: 29,
+      dataPrivacy: 25,
       security: 26,
-      tracking: 20,
-      userControl: 9,
+      tracking: 17,
+      userControl: 10,
       transparency: 10,
-      total: 94
+      total: 88
+    },
+    externalScores: {
+      appStore: 4.8,
+      playStore: 4.7,
     },
     platforms: ['Browser'],
     pricing: 'Free',

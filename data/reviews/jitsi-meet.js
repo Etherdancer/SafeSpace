@@ -6,12 +6,15 @@ export default {
     tagline: 'Private video calls with no account for anyone',
     category: 'Video Calling',
     scores: {
-      dataPrivacy: 27,
-      security: 26,
-      tracking: 18,
-      userControl: 8,
-      transparency: 9,
-      total: 88
+      dataPrivacy: 30,
+      security: 28,
+      tracking: 19,
+      userControl: 10,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 3.5,
     },
     platforms: ['Web (any browser)', 'iOS', 'Android'],
     pricing: 'Free',

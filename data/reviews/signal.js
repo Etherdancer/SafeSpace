@@ -10,8 +10,11 @@ export default {
       security: 30,
       tracking: 20,
       userControl: 9,
-      transparency: 9,
-      total: 97
+      transparency: 10,
+      total: 98
+    },
+    externalScores: {
+      appStore: 4.7,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux'],
     pricing: 'Free',

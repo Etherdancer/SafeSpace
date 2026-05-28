@@ -6,12 +6,15 @@ export default {
     tagline: 'Lock down your entire hard drive',
     category: 'Security Tools',
     scores: {
-      dataPrivacy: 30,
-      security: 30,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 100
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.5,
     },
     platforms: ['Linux'],
     pricing: 'Free',

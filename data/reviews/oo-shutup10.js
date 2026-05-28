@@ -7,11 +7,15 @@ export default {
     category: 'Telemetry Blocker',
     scores: {
       dataPrivacy: 20,
-      security: 14,
+      security: 27,
       tracking: 16,
       userControl: 9,
-      transparency: 5,
-      total: 64
+      transparency: 6,
+      total: 78
+    },
+    externalScores: {
+      appStore: 4.2,
+      playStore: 3.8,
     },
     platforms: ['Windows'],
     pricing: 'Free',

@@ -6,12 +6,16 @@ export default {
     tagline: 'Non-profit DNS that blocks malware — no personal data kept.',
     category: 'DNS',
     scores: {
-      dataPrivacy: 25,
-      security: 26,
-      tracking: 17,
-      userControl: 7,
-      transparency: 8,
-      total: 83
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 9,
+      total: 95
+    },
+    externalScores: {
+      appStore: 4.4,
+      playStore: 4.0,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Web'],
     pricing: 'Free',

@@ -6,12 +6,15 @@ export default {
     tagline: 'Google search results without the tracking',
     category: 'Search Engines',
     scores: {
-      dataPrivacy: 26,
-      security: 26,
-      tracking: 18,
-      userControl: 8,
-      transparency: 8,
-      total: 86
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 9,
+      total: 95
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Browser'],
     pricing: 'Free',

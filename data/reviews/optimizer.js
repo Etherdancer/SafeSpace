@@ -6,12 +6,16 @@ export default {
     tagline: 'Strip Windows bloat and lock down privacy in minutes.',
     category: 'Privacy Tools',
     scores: {
-      dataPrivacy: 20,
-      security: 17,
-      tracking: 16,
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
       userControl: 9,
-      transparency: 9,
-      total: 71
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.7,
+      playStore: 4.5,
     },
     platforms: ['Windows'],
     pricing: 'Free',

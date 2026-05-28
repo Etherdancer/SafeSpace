@@ -13,6 +13,9 @@ export default {
       transparency: 10,
       total: 96
     },
+    externalScores: {
+      appStore: 4.7,
+    },
     platforms: ['Web', 'Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free / Paid',
     openSource: true,

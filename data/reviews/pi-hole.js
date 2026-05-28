@@ -6,12 +6,15 @@ export default {
     tagline: 'Block ads and trackers for your whole network.',
     category: 'DNS',
     scores: {
-      dataPrivacy: 27,
-      security: 24,
-      tracking: 19,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 20,
       userControl: 10,
-      transparency: 9,
-      total: 89
+      transparency: 10,
+      total: 98
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Linux'],
     pricing: 'Free',

@@ -6,13 +6,16 @@ export default {
   tagline: 'Resolve DNS yourself. Trust no one else.',
   category: 'DNS',
   scores: {
-    dataPrivacy: 26,
-    security: 27,
-    tracking: 19,
-    userControl: 9,
-    transparency: 10,
-    total: 91
-  },
+      dataPrivacy: 25,
+      security: 28,
+      tracking: 16,
+      userControl: 10,
+      transparency: 10,
+      total: 89
+    },
+    externalScores: {
+      appStore: 4.9,
+    },
   platforms: ['Linux'],
   pricing: 'Free',
   openSource: true,

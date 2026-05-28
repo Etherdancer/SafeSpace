@@ -6,12 +6,16 @@ export default {
     tagline: 'The open web\'s browser — and the most configurable',
     category: 'Browsers',
     scores: {
-      dataPrivacy: 26,
-      security: 27,
-      tracking: 17,
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 89
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.6,
+      playStore: 4.6,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Free',

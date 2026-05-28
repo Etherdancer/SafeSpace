@@ -6,12 +6,16 @@ export default {
     tagline: 'A keyboard that actually keeps your typing private',
     category: 'Keyboard',
     scores: {
-      dataPrivacy: 30,
-      security: 28,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 27,
+      security: 26,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 98
+      total: 91
+    },
+    externalScores: {
+      appStore: 5,
+      playStore: 3.9,
     },
     platforms: ['Android'],
     pricing: 'Free',

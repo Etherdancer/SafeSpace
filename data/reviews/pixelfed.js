@@ -6,12 +6,15 @@ export default {
     tagline: 'Photo sharing without the surveillance.',
     category: 'Social Media',
     scores: {
-      dataPrivacy: 22,
-      security: 19,
-      tracking: 18,
-      userControl: 9,
+      dataPrivacy: 30,
+      security: 30,
+      tracking: 19,
+      userControl: 10,
       transparency: 10,
-      total: 78
+      total: 99
+    },
+    externalScores: {
+      appStore: 4.2,
     },
     platforms: ['Web', 'iOS', 'Android'],
     pricing: 'Free',

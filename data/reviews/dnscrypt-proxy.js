@@ -6,13 +6,17 @@ export default {
   tagline: 'Encrypt your DNS queries on any platform.',
   category: 'DNS',
   scores: {
-    dataPrivacy: 25,
-    security: 26,
-    tracking: 18,
-    userControl: 9,
-    transparency: 9,
-    total: 87
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 20,
+      userControl: 9,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.5,
+      playStore: 4.5,
+    },
   platforms: ['Windows', 'macOS', 'Linux'],
   pricing: 'Free',
   openSource: true,

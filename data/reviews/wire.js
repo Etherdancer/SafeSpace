@@ -6,12 +6,15 @@ export default {
     tagline: 'End-to-end encrypted team messaging with no phone number.',
     category: 'Messaging',
     scores: {
-      dataPrivacy: 23,
-      security: 26,
-      tracking: 16,
-      userControl: 8,
-      transparency: 8,
-      total: 81
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
+      userControl: 10,
+      transparency: 10,
+      total: 98
+    },
+    externalScores: {
+      appStore: 3.1,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
     pricing: 'Free / Paid',

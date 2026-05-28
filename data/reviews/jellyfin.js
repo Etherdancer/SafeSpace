@@ -6,12 +6,15 @@ export default {
     tagline: 'Your own private Netflix',
     category: 'Media Player',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 27,
       security: 26,
-      tracking: 20,
+      tracking: 19,
       userControl: 10,
       transparency: 10,
-      total: 96
+      total: 92
+    },
+    externalScores: {
+      appStore: 4.1,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'Android', 'iOS'],
     pricing: 'Free',

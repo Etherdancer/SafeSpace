@@ -6,12 +6,15 @@ export default {
     tagline: 'Secure cloud storage with huge free space',
     category: 'Cloud Storage',
     scores: {
-      dataPrivacy: 25,
-      security: 26,
-      tracking: 18,
-      userControl: 8,
-      transparency: 7,
-      total: 84
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['Web', 'iOS', 'Android', 'Windows', 'macOS', 'Linux'],
     pricing: 'Generous Free tier / Paid',

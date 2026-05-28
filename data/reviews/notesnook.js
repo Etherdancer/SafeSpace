@@ -6,12 +6,15 @@ export default {
     tagline: 'End-to-end encrypted alternative to Evernote',
     category: 'Note-Taking',
     scores: {
-      dataPrivacy: 29,
-      security: 28,
-      tracking: 20,
+      dataPrivacy: 30,
+      security: 30,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 96
+      total: 98
+    },
+    externalScores: {
+      appStore: 4.7,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Web'],
     pricing: 'Freemium',

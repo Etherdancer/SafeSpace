@@ -6,12 +6,16 @@ export default {
     tagline: 'Secure email with unlimited aliases',
     category: 'Email',
     scores: {
-      dataPrivacy: 27,
-      security: 26,
-      tracking: 18,
+      dataPrivacy: 21,
+      security: 29,
+      tracking: 16,
       userControl: 9,
-      transparency: 7,
-      total: 87
+      transparency: 6,
+      total: 81
+    },
+    externalScores: {
+      appStore: 4.7,
+      playStore: 4.4,
     },
     platforms: ['Web', 'IMAP/SMTP'],
     pricing: 'Paid',

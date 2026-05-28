@@ -6,12 +6,15 @@ export default {
     tagline: 'Open-source zero-knowledge cloud storage',
     category: 'Cloud Storage',
     scores: {
-      dataPrivacy: 27,
-      security: 26,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 18,
-      userControl: 9,
-      transparency: 8,
-      total: 88
+      userControl: 10,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 2.8,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
     pricing: 'Free / Paid',

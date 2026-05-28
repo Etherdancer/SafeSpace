@@ -6,13 +6,16 @@ export default {
   tagline: 'Block any app from the internet — no root needed.',
   category: 'Firewall',
   scores: {
-    dataPrivacy: 27,
-    security: 25,
-    tracking: 19,
-    userControl: 10,
-    transparency: 9,
-    total: 90
-  },
+      dataPrivacy: 27,
+      security: 28,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 93
+    },
+    externalScores: {
+      appStore: 3.1,
+    },
   platforms: ['Android'],
   pricing: 'Freemium',
   openSource: true,

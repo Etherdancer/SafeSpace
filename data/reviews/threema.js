@@ -6,12 +6,15 @@ export default {
     tagline: 'Swiss privacy with no phone number needed',
     category: 'Messaging',
     scores: {
-      dataPrivacy: 28,
-      security: 29,
-      tracking: 20,
-      userControl: 8,
-      transparency: 8,
-      total: 93
+      dataPrivacy: 27,
+      security: 30,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 95
+    },
+    externalScores: {
+      appStore: 4.3,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux', 'Web'],
     pricing: 'Paid',

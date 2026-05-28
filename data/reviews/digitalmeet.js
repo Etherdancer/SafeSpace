@@ -7,11 +7,14 @@ export default {
     category: 'Video Conferencing',
     scores: {
       dataPrivacy: 27,
-      security: 28,
+      security: 29,
       tracking: 18,
-      userControl: 7,
-      transparency: 7,
-      total: 87
+      userControl: 9,
+      transparency: 6,
+      total: 89
+    },
+    externalScores: {
+      appStore: 4.4,
     },
     platforms: ['Web', 'iOS', 'Android', 'Windows', 'macOS'],
     pricing: 'Paid (Enterprise focus)',

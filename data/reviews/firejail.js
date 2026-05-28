@@ -6,12 +6,16 @@ export default {
     tagline: 'Advanced app sandboxing for experts',
     category: 'Security Tools',
     scores: {
-      dataPrivacy: 30,
-      security: 28,
-      tracking: 20,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 97
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.9,
+      playStore: 4.6,
     },
     platforms: ['Linux'],
     pricing: 'Free',

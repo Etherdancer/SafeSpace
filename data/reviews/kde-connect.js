@@ -6,12 +6,15 @@ export default {
     tagline: 'Sync your phone and computer without the cloud',
     category: 'Device Sync',
     scores: {
-      dataPrivacy: 30,
-      security: 26,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 27,
+      security: 28,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 96
+      total: 93
+    },
+    externalScores: {
+      appStore: 4.2,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'Android'],
     pricing: 'Free',

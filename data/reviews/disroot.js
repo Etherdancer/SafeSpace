@@ -6,12 +6,15 @@ export default {
     tagline: 'Community-run privacy services — email included, free.',
     category: 'Email',
     scores: {
-      dataPrivacy: 24,
-      security: 22,
+      dataPrivacy: 26,
+      security: 28,
       tracking: 18,
-      userControl: 8,
-      transparency: 8,
-      total: 80
+      userControl: 9,
+      transparency: 10,
+      total: 91
+    },
+    externalScores: {
+      playStore: 3.6,
     },
     platforms: ['Web'],
     pricing: 'Free / Donation',

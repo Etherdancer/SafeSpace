@@ -6,12 +6,15 @@ export default {
     tagline: 'An open-source, private front-end to YouTube',
     category: 'Privacy Tools',
     scores: {
-      dataPrivacy: 30,
-      security: 25,
-      tracking: 20,
-      userControl: 10,
-      transparency: 9,
-      total: 94
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Browser'],
     pricing: 'Free',

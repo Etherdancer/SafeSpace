@@ -6,13 +6,17 @@ export default {
   tagline: 'Fast on-device keyboard that keeps typing local.',
   category: 'Keyboard',
   scores: {
-    dataPrivacy: 20,
-    security: 18,
-    tracking: 14,
-    userControl: 6,
-    transparency: 5,
-    total: 63
-  },
+      dataPrivacy: 24,
+      security: 27,
+      tracking: 17,
+      userControl: 9,
+      transparency: 6,
+      total: 83
+    },
+    externalScores: {
+      appStore: 4.6,
+      playStore: 4.4,
+    },
   platforms: ['iOS', 'Android'],
   pricing: 'Freemium',
   openSource: false,

@@ -6,12 +6,16 @@ export default {
     tagline: 'A familiar, private alternative to Windows',
     category: 'Operating Systems',
     scores: {
-      dataPrivacy: 28,
+      dataPrivacy: 22,
       security: 26,
-      tracking: 20,
+      tracking: 16,
       userControl: 9,
-      transparency: 9,
-      total: 92
+      transparency: 10,
+      total: 83
+    },
+    externalScores: {
+      appStore: 4.4,
+      playStore: 3.7,
     },
     platforms: ['Desktop'],
     pricing: 'Free',

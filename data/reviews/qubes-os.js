@@ -6,12 +6,15 @@ export default {
     tagline: 'A reasonably secure operating system',
     category: 'Operating Systems',
     scores: {
-      dataPrivacy: 30,
-      security: 30,
+      dataPrivacy: 29,
+      security: 29,
       tracking: 20,
-      userControl: 10,
+      userControl: 9,
       transparency: 10,
-      total: 100
+      total: 97
+    },
+    externalScores: {
+      appStore: 3.4,
     },
     platforms: ['PC'],
     pricing: 'Free',

@@ -6,13 +6,16 @@ export default {
   tagline: 'Block ads and trackers everywhere, not just your browser.',
   category: 'Browser Extension',
   scores: {
-    dataPrivacy: 24,
-    security: 23,
-    tracking: 17,
-    userControl: 8,
-    transparency: 7,
-    total: 79
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 20,
+      userControl: 9,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.3,
+    },
   platforms: ['iOS', 'Android', 'Windows', 'macOS'],
   pricing: 'Freemium',
   openSource: true,

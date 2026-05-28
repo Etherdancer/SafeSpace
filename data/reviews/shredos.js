@@ -6,12 +6,12 @@ export default {
     tagline: 'Boot from USB. Wipe every last bit. Done.',
     category: 'Disk Wiping',
     scores: {
-      dataPrivacy: 30,
-      security: 28,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 23,
+      security: 30,
+      tracking: 18,
+      userControl: 9,
       transparency: 10,
-      total: 98
+      total: 90
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

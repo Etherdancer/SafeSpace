@@ -6,12 +6,15 @@ export default {
     tagline: 'Social media you control, not a corporation.',
     category: 'Social Media',
     scores: {
-      dataPrivacy: 22,
-      security: 20,
-      tracking: 18,
-      userControl: 9,
+      dataPrivacy: 30,
+      security: 30,
+      tracking: 19,
+      userControl: 10,
       transparency: 10,
-      total: 79
+      total: 99
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['Web', 'iOS', 'Android'],
     pricing: 'Free',

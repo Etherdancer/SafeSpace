@@ -6,12 +6,15 @@ export default {
     tagline: 'The only messenger with no user IDs whatsoever.',
     category: 'Messaging',
     scores: {
-      dataPrivacy: 30,
-      security: 28,
-      tracking: 20,
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
       userControl: 10,
-      transparency: 9,
-      total: 97
+      transparency: 10,
+      total: 98
+    },
+    externalScores: {
+      appStore: 4.3,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux'],
     pricing: 'Free',

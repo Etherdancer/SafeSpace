@@ -6,12 +6,12 @@ export default {
     tagline: 'Collaborate on documents without exposing them',
     category: 'Productivity',
     scores: {
-      dataPrivacy: 28,
-      security: 27,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 19,
-      userControl: 9,
-      transparency: 9,
-      total: 92
+      userControl: 10,
+      transparency: 10,
+      total: 98
     },
     platforms: ['Web'],
     pricing: 'Free / Paid',

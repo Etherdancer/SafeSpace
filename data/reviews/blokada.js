@@ -6,12 +6,15 @@ export default {
     tagline: 'System-wide ad and tracker blocker',
     category: 'Privacy Tools',
     scores: {
-      dataPrivacy: 25,
-      security: 24,
-      tracking: 18,
-      userControl: 8,
-      transparency: 8,
-      total: 83
+      dataPrivacy: 23,
+      security: 26,
+      tracking: 20,
+      userControl: 9,
+      transparency: 10,
+      total: 88
+    },
+    externalScores: {
+      appStore: 3.9,
     },
     platforms: ['Android', 'iOS'],
     pricing: 'Free (v5) / Paid (v6)',

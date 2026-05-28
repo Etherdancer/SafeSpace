@@ -6,13 +6,16 @@ export default {
   tagline: 'Privacy Android for Pixel — Google-free by default.',
   category: 'Custom ROM',
   scores: {
-    dataPrivacy: 29,
-    security: 28,
-    tracking: 20,
-    userControl: 10,
-    transparency: 9,
-    total: 96
-  },
+      dataPrivacy: 27,
+      security: 28,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 93
+    },
+    externalScores: {
+      playStore: 4.5,
+    },
   platforms: ['Android'],
   pricing: 'Free',
   openSource: true,

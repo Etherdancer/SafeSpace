@@ -6,12 +6,16 @@ export default {
     tagline: 'Drag-and-drop file encryption with serious crypto',
     category: 'Encryption',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 28,
       security: 28,
-      tracking: 20,
-      userControl: 10,
-      transparency: 9,
-      total: 97
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 94
+    },
+    externalScores: {
+      appStore: 4.2,
+      playStore: 4.0,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

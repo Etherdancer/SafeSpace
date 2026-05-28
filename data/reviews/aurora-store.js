@@ -6,13 +6,13 @@ export default {
   tagline: 'Download Google Play apps without a Google account.',
   category: 'App Store',
   scores: {
-    dataPrivacy: 24,
-    security: 21,
-    tracking: 17,
-    userControl: 8,
-    transparency: 8,
-    total: 78
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
   platforms: ['Android'],
   pricing: 'Free',
   openSource: true,

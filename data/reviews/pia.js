@@ -7,11 +7,14 @@ export default {
     category: 'Networks',
     scores: {
       dataPrivacy: 25,
-      security: 27,
+      security: 28,
       tracking: 18,
-      userControl: 8,
-      transparency: 8,
-      total: 86
+      userControl: 10,
+      transparency: 10,
+      total: 91
+    },
+    externalScores: {
+      appStore: 4.7,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
     pricing: 'Paid',

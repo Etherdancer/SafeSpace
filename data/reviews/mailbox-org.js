@@ -6,12 +6,15 @@ export default {
     tagline: 'German privacy email with a full office suite included.',
     category: 'Email',
     scores: {
-      dataPrivacy: 25,
-      security: 25,
-      tracking: 18,
-      userControl: 8,
-      transparency: 8,
-      total: 84
+      dataPrivacy: 30,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 9,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['Web'],
     pricing: 'Paid',

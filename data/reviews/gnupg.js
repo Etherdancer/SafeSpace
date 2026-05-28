@@ -6,13 +6,17 @@ export default {
   tagline: 'Encrypt and sign anything with open standards.',
   category: 'Encryption',
   scores: {
-    dataPrivacy: 28,
-    security: 28,
-    tracking: 20,
-    userControl: 10,
-    transparency: 10,
-    total: 96
-  },
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 3.5,
+      playStore: 4.0,
+    },
   platforms: ['Windows', 'macOS', 'Linux'],
   pricing: 'Free',
   openSource: true,

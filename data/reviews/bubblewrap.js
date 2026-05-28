@@ -6,13 +6,17 @@ export default {
   tagline: 'Run any program in a private bubble.',
   category: 'Privacy Tools',
   scores: {
-    dataPrivacy: 23,
-    security: 26,
-    tracking: 17,
-    userControl: 9,
-    transparency: 10,
-    total: 85
-  },
+      dataPrivacy: 25,
+      security: 26,
+      tracking: 18,
+      userControl: 9,
+      transparency: 10,
+      total: 88
+    },
+    externalScores: {
+      appStore: 5,
+      playStore: 4.8,
+    },
   platforms: ['Linux'],
   pricing: 'Free',
   openSource: true,

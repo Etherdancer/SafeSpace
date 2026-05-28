@@ -8,10 +8,13 @@ export default {
     scores: {
       dataPrivacy: 29,
       security: 28,
-      tracking: 20,
+      tracking: 15,
       userControl: 10,
-      transparency: 9,
-      total: 96
+      transparency: 10,
+      total: 92
+    },
+    externalScores: {
+      appStore: 2.9,
     },
     platforms: ['Web', 'iOS', 'Android', 'Windows', 'macOS', 'Linux'],
     pricing: 'Free / Paid',

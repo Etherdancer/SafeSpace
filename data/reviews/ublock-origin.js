@@ -6,12 +6,16 @@ export default {
     tagline: 'The most effective content blocker ever made',
     category: 'Browser Extensions',
     scores: {
-      dataPrivacy: 30,
-      security: 28,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 98
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.7,
+      playStore: 4.7,
     },
     platforms: ['Firefox', 'Chrome', 'Edge', 'Opera'],
     pricing: 'Free',

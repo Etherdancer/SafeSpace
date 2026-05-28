@@ -6,12 +6,15 @@ export default {
     tagline: 'NewPipe, but with SponsorBlock included',
     category: 'Media Player',
     scores: {
-      dataPrivacy: 28,
+      dataPrivacy: 27,
       security: 26,
-      tracking: 20,
-      userControl: 10,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 94
+      total: 91
+    },
+    externalScores: {
+      appStore: 4.2,
     },
     platforms: ['Android'],
     pricing: 'Free',

@@ -6,12 +6,16 @@ export default {
     tagline: 'Easily turn off Windows telemetry and tracking',
     category: 'Telemetry Blocker',
     scores: {
-      dataPrivacy: 25,
-      security: 22,
-      tracking: 20,
+      dataPrivacy: 20,
+      security: 27,
+      tracking: 16,
       userControl: 9,
       transparency: 6,
-      total: 82
+      total: 78
+    },
+    externalScores: {
+      appStore: 4.2,
+      playStore: 3.8,
     },
     platforms: ['Windows'],
     pricing: 'Free',

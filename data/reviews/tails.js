@@ -6,12 +6,16 @@ export default {
     tagline: 'The amnesic incognito live system',
     category: 'Operating Systems',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 29,
       security: 30,
       tracking: 20,
-      userControl: 10,
+      userControl: 9,
       transparency: 10,
-      total: 100
+      total: 98
+    },
+    externalScores: {
+      appStore: 4.9,
+      playStore: 3.8,
     },
     platforms: ['USB/DVD (PC/Mac)'],
     pricing: 'Free',

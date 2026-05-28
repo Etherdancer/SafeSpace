@@ -7,11 +7,14 @@ export default {
     category: 'Productivity',
     scores: {
       dataPrivacy: 29,
-      security: 24,
-      tracking: 20,
+      security: 29,
+      tracking: 19,
       userControl: 10,
-      transparency: 9,
-      total: 92
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.8,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

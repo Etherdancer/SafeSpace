@@ -6,12 +6,15 @@ export default {
     tagline: 'Sandboxed apps for Linux',
     category: 'Security Tools',
     scores: {
-      dataPrivacy: 30,
-      security: 26,
-      tracking: 20,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
-      total: 95
+      total: 96
+    },
+    externalScores: {
+      appStore: 3,
     },
     platforms: ['Linux'],
     pricing: 'Free',

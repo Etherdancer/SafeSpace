@@ -6,12 +6,15 @@ export default {
     tagline: 'A firewall for your entire internet connection',
     category: 'Networks',
     scores: {
-      dataPrivacy: 27,
-      security: 28,
+      dataPrivacy: 29,
+      security: 29,
       tracking: 20,
       userControl: 9,
-      transparency: 8,
-      total: 92
+      transparency: 9,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.4,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Routers'],
     pricing: 'Free (up to 300k queries) / €1.99/mo',

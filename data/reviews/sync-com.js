@@ -7,11 +7,14 @@ export default {
     category: 'Cloud Storage',
     scores: {
       dataPrivacy: 27,
-      security: 26,
+      security: 29,
       tracking: 17,
       userControl: 9,
       transparency: 6,
-      total: 85
+      total: 88
+    },
+    externalScores: {
+      appStore: 4.1,
     },
     platforms: ['Windows', 'macOS', 'iOS', 'Android', 'Web'],
     pricing: 'Free / Paid',

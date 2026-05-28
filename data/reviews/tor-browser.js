@@ -6,12 +6,15 @@ export default {
     tagline: 'Strongest anonymity available for everyday browsing',
     category: 'Browsers',
     scores: {
-      dataPrivacy: 30,
-      security: 29,
+      dataPrivacy: 29,
+      security: 30,
       tracking: 20,
       userControl: 9,
       transparency: 10,
       total: 98
+    },
+    externalScores: {
+      appStore: 4.6,
     },
     platforms: ['Windows', 'macOS', 'Linux', 'Android'],
     pricing: 'Free',

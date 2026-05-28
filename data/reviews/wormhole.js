@@ -6,12 +6,15 @@ export default {
     tagline: 'Fast, end-to-end encrypted file sharing',
     category: 'Networks',
     scores: {
-      dataPrivacy: 29,
-      security: 28,
+      dataPrivacy: 27,
+      security: 26,
       tracking: 19,
-      userControl: 8,
-      transparency: 8,
-      total: 92
+      userControl: 9,
+      transparency: 6,
+      total: 87
+    },
+    externalScores: {
+      appStore: 4,
     },
     platforms: ['Browser'],
     pricing: 'Free',

@@ -6,13 +6,16 @@ export default {
   tagline: 'Block trackers at the network level on iOS.',
   category: 'Firewall',
   scores: {
-    dataPrivacy: 28,
-    security: 26,
-    tracking: 19,
-    userControl: 9,
-    transparency: 9,
-    total: 91
-  },
+      dataPrivacy: 25,
+      security: 30,
+      tracking: 20,
+      userControl: 9,
+      transparency: 10,
+      total: 94
+    },
+    externalScores: {
+      appStore: 4.3,
+    },
   platforms: ['iOS'],
   pricing: 'Free',
   openSource: true,

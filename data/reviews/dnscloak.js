@@ -6,13 +6,16 @@ export default {
   tagline: 'Encrypted DNS on iOS, no server middleman.',
   category: 'DNS',
   scores: {
-    dataPrivacy: 26,
-    security: 27,
-    tracking: 18,
-    userControl: 9,
-    transparency: 9,
-    total: 89
-  },
+      dataPrivacy: 25,
+      security: 28,
+      tracking: 20,
+      userControl: 9,
+      transparency: 10,
+      total: 92
+    },
+    externalScores: {
+      appStore: 4.6,
+    },
   platforms: ['iOS'],
   pricing: 'Free',
   openSource: true,

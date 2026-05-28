@@ -6,12 +6,16 @@ export default {
     tagline: 'Lightweight firewall that puts you back in control.',
     category: 'Firewall',
     scores: {
-      dataPrivacy: 22,
-      security: 24,
-      tracking: 18,
-      userControl: 10,
-      transparency: 9,
-      total: 83
+      dataPrivacy: 20,
+      security: 26,
+      tracking: 16,
+      userControl: 9,
+      transparency: 10,
+      total: 81
+    },
+    externalScores: {
+      appStore: 4.2,
+      playStore: 4.3,
     },
     platforms: ['Windows'],
     pricing: 'Free',

@@ -6,13 +6,17 @@ export default {
   tagline: 'Boot from USB. Leave no trace behind.',
   category: 'Operating Systems',
   scores: {
-    dataPrivacy: 27,
-    security: 26,
-    tracking: 19,
-    userControl: 9,
-    transparency: 8,
-    total: 89
-  },
+      dataPrivacy: 25,
+      security: 30,
+      tracking: 18,
+      userControl: 9,
+      transparency: 10,
+      total: 92
+    },
+    externalScores: {
+      appStore: 4.6,
+      playStore: 4.3,
+    },
   platforms: ['Linux'],
   pricing: 'Free',
   openSource: true,

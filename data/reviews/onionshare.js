@@ -6,12 +6,15 @@ export default {
     tagline: 'Anonymous file sharing over Tor',
     category: 'Networks',
     scores: {
-      dataPrivacy: 30,
+      dataPrivacy: 29,
       security: 29,
-      tracking: 20,
-      userControl: 10,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 99
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.2,
     },
     platforms: ['Windows', 'macOS', 'Linux'],
     pricing: 'Free',

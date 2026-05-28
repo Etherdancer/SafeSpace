@@ -6,13 +6,16 @@ export default {
   tagline: 'Tor browsing on iOS — free and open source.',
   category: 'Browser',
   scores: {
-    dataPrivacy: 27,
-    security: 25,
-    tracking: 19,
-    userControl: 8,
-    transparency: 9,
-    total: 88
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.6,
+    },
   platforms: ['iOS'],
   pricing: 'Free',
   openSource: true,

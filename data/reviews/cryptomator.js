@@ -6,13 +6,16 @@ export default {
   tagline: 'Your cloud files encrypted before they leave your device.',
   category: 'Encryption',
   scores: {
-    dataPrivacy: 29,
-    security: 28,
-    tracking: 20,
-    userControl: 10,
-    transparency: 10,
-    total: 97
-  },
+      dataPrivacy: 29,
+      security: 30,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 97
+    },
+    externalScores: {
+      appStore: 4.4,
+    },
   platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
   pricing: 'Free',
   openSource: true,

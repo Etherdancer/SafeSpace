@@ -7,11 +7,14 @@ export default {
     category: 'Email',
     scores: {
       dataPrivacy: 29,
-      security: 28,
-      tracking: 20,
+      security: 29,
+      tracking: 19,
       userControl: 9,
       transparency: 10,
       total: 96
+    },
+    externalScores: {
+      appStore: 4.9,
     },
     platforms: ['Browser', 'iOS', 'Android'],
     pricing: 'Free (15 aliases) / €30/yr Premium (unlimited)',

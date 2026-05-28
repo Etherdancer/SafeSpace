@@ -6,13 +6,17 @@ export default {
   tagline: 'Tell every app exactly what it is allowed to do.',
   category: 'Security Audit',
   scores: {
-    dataPrivacy: 24,
-    security: 28,
-    tracking: 18,
-    userControl: 9,
-    transparency: 10,
-    total: 89
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 3.5,
+      playStore: 4,
+    },
   platforms: ['Linux'],
   pricing: 'Free',
   openSource: true,

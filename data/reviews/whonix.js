@@ -6,13 +6,17 @@ export default {
   tagline: 'Two virtual machines. One iron curtain.',
   category: 'Operating Systems',
   scores: {
-    dataPrivacy: 29,
-    security: 29,
-    tracking: 20,
-    userControl: 9,
-    transparency: 10,
-    total: 97
-  },
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
+      transparency: 10,
+      total: 96
+    },
+    externalScores: {
+      appStore: 4.7,
+      playStore: 4.0,
+    },
   platforms: ['Linux', 'Windows', 'macOS'],
   pricing: 'Free',
   openSource: true,

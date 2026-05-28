@@ -6,12 +6,16 @@ export default {
     tagline: 'Detects hidden keyloggers on your Mac',
     category: 'Privacy Tools',
     scores: {
-      dataPrivacy: 30,
-      security: 28,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 25,
+      security: 26,
+      tracking: 18,
+      userControl: 9,
       transparency: 10,
-      total: 98
+      total: 88
+    },
+    externalScores: {
+      appStore: 4.6,
+      playStore: 3.3,
     },
     platforms: ['macOS'],
     pricing: 'Free',

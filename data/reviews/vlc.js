@@ -6,12 +6,15 @@ export default {
     tagline: 'Plays everything, tracks nothing, costs nothing',
     category: 'Media Player',
     scores: {
-      dataPrivacy: 29,
-      security: 25,
-      tracking: 20,
-      userControl: 10,
-      transparency: 9,
-      total: 93
+      dataPrivacy: 25,
+      security: 26,
+      tracking: 16,
+      userControl: 9,
+      transparency: 10,
+      total: 86
+    },
+    externalScores: {
+      appStore: 3.7,
     },
     platforms: ['iOS', 'Android', 'Windows', 'macOS', 'Linux'],
     pricing: 'Free',

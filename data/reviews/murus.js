@@ -6,12 +6,15 @@ export default {
     tagline: 'A visual interface for your Mac\'s hidden super-firewall',
     category: 'Firewall',
     scores: {
-      dataPrivacy: 28,
-      security: 26,
-      tracking: 20,
+      dataPrivacy: 23,
+      security: 27,
+      tracking: 16,
       userControl: 9,
       transparency: 6,
-      total: 89
+      total: 81
+    },
+    externalScores: {
+      playStore: 4.5,
     },
     platforms: ['macOS'],
     pricing: 'Freemium',

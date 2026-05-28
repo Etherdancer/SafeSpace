@@ -6,12 +6,12 @@ export default {
     tagline: 'Alerts you when your webcam or mic turns on',
     category: 'Privacy Tools',
     scores: {
-      dataPrivacy: 30,
-      security: 28,
-      tracking: 20,
-      userControl: 10,
+      dataPrivacy: 29,
+      security: 29,
+      tracking: 19,
+      userControl: 9,
       transparency: 10,
-      total: 98
+      total: 96
     },
     platforms: ['macOS'],
     pricing: 'Free',
