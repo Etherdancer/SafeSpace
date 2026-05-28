@@ -10,6 +10,7 @@ import android_privacy_settings from './android-privacy-settings.js';
 import linux_privacy_security from './linux-privacy-security.js';
 import bittorrent_explained from './bittorrent-explained.js';
 import privacy_vs_convenience from './privacy-vs-convenience.js';
+import microphone_indicator from './microphone-indicator.js';
 
 const ARTICLES = [
   practical_privacy_stack,
@@ -24,6 +25,7 @@ const ARTICLES = [
   linux_privacy_security,
   bittorrent_explained,
   privacy_vs_convenience,
+  microphone_indicator,
 ];
 
 export default ARTICLES;
