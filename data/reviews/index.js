@@ -1,5 +1,6 @@
 import _1password from './1password.js';
 import _2fas from './2fas.js';
+import aetherworks from './aetherworks.js';
 import addy_io from './addy-io.js';
 import adguard_home from './adguard-home.js';
 import adguard from './adguard.js';
@@ -149,6 +150,7 @@ const REVIEWS = [
   _1password,
   _2fas,
   addy_io,
+  aetherworks,
   adguard_home,
   adguard,
   aegis_authenticator,
