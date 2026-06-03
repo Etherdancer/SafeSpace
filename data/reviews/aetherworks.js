@@ -29,7 +29,7 @@ export default {
     'Peer-to-peer design means content sharing requires network proximity',
     'Android only (via F-Droid or GitHub Releases)'
   ],
-  draft: true,
+  draft: false,
   content: `
 <h2>Why AetherWorks?</h2>
 <p>AetherWorks flips the standard model of social networks and cloud storage on its head. Instead of trusting a company's server, <strong>you are the server</strong>. It is built from the ground up to ensure absolute privacy by eliminating the cloud entirely.</p>
